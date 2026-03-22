@@ -1,0 +1,200 @@
+{
+    "POL01": {
+        "nodo_id": "POL01",
+        "nodo_nombre": "Números reales y propiedades",
+        "total_ejercicios": 10,
+        "umbral_maestria": 0.9,
+        "puntos_por_ejercicio": 1,
+        "ejercicios": [
+            {
+                "id": "POL01_E01",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Clasifica cada uno de los siguientes números indicando el conjunto más restrictivo al que pertenece ($\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{Q}$ o $\\mathbb{R}\\setminus\\mathbb{Q}$):\n$$\\text{(a) } -7 \\qquad \\text{(b) } \\frac{3}{5} \\qquad \\text{(c) } \\sqrt{9} \\qquad \\text{(d) } \\sqrt{5}$$",
+                "solucion": {
+                    "respuesta_directa": "(a) $\\mathbb{Z}$,  (b) $\\mathbb{Q}$,  (c) $\\mathbb{N}$,  (d) $\\mathbb{R}\\setminus\\mathbb{Q}$",
+                    "desarrollo": "- **(a)** $-7$ es entero negativo $\\Rightarrow -7\\in\\mathbb{Z}$.\n- **(b)** $\\dfrac{3}{5}$ es cociente de enteros con denominador no nulo $\\Rightarrow \\dfrac{3}{5}\\in\\mathbb{Q}$.\n- **(c)** $\\sqrt{9}=3\\in\\mathbb{N}$, ya que $3$ es entero positivo.\n- **(d)** $5$ no es cuadrado perfecto, por lo que $\\sqrt{5}$ es irracional $\\Rightarrow \\sqrt{5}\\in\\mathbb{R}\\setminus\\mathbb{Q}$."
+                }
+            },
+            {
+                "id": "POL01_E02",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Calcula:\n$$\\text{(a) } |{-8}| + |3 - 7| \\qquad \\text{(b) } |2x - 6|\\text{ para }x = 1$$",
+                "solucion": {
+                    "respuesta_directa": "(a) $12$,  (b) $4$",
+                    "desarrollo": "- **(a)** $|-8|=8$ y $|3-7|=|-4|=4$, luego $8+4=\\mathbf{12}$.\n- **(b)** Para $x=1$: $|2(1)-6|=|2-6|=|-4|=\\mathbf{4}$."
+                }
+            },
+            {
+                "id": "POL01_E03",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Resuelve la ecuación con valor absoluto:\n$$|3x - 6| = 9$$",
+                "solucion": {
+                    "respuesta_directa": "$x = 5$ o $x = -1$",
+                    "desarrollo": "La ecuación $|3x-6|=9$ equivale a dos casos:\n$$3x-6=9 \\Rightarrow 3x=15 \\Rightarrow x=5$$\n$$3x-6=-9 \\Rightarrow 3x=-3 \\Rightarrow x=-1$$\n**Soluciones:** $x=5$ y $x=-1$."
+                }
+            },
+            {
+                "id": "POL01_E04",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Expresa como un único intervalo la solución de la inecuación:\n$$|x + 2| \\leq 5$$",
+                "solucion": {
+                    "respuesta_directa": "$x \\in [-7,\\, 3]$",
+                    "desarrollo": "Usando la propiedad $|x-a|\\leq r \\Leftrightarrow a-r\\leq x\\leq a+r$ con $a=-2$, $r=5$:\n$$-2-5\\leq x\\leq -2+5 \\Rightarrow -7\\leq x\\leq 3$$\n**Solución:** $x\\in[-7,3]$."
+                }
+            },
+            {
+                "id": "POL01_E05",
+                "tipo": "corto",
+                "dificultad": "intermedia",
+                "enunciado": "Calcula la intersección y la unión de los intervalos $A=(-1,\\,4]$ y $B=[2,\\,+\\infty)$, y representa el resultado en la recta real.",
+                "solucion": {
+                    "respuesta_directa": "$A\\cap B=[2,4]$,  $A\\cup B=(-1,+\\infty)$",
+                    "desarrollo": "- **Intersección:** los valores que pertenecen a ambos intervalos son los que cumplen $x>-1$ **y** $x\\geq 2$ **y** $x\\leq 4$, es decir, $A\\cap B=[2,4]$.\n- **Unión:** los valores que pertenecen a al menos uno de los intervalos, desde $-1$ (excluido) hasta $+\\infty$: $A\\cup B=(-1,+\\infty)$."
+                }
+            },
+            {
+                "id": "POL01_E06",
+                "tipo": "desarrollo",
+                "dificultad": "intermedia",
+                "enunciado": "Determina entre qué dos enteros consecutivos se encuentra $\\sqrt{50}$ y calcula su valor aproximado con dos cifras decimales. Justifica que $\\sqrt{50}\\in\\mathbb{R}\\setminus\\mathbb{Q}$.",
+                "solucion": {
+                    "respuesta_directa": "$7 < \\sqrt{50} < 8$, $\\sqrt{50}\\approx 7{,}07$",
+                    "desarrollo": "**Acotación entre enteros:**\n$$7^2=49 < 50 < 64=8^2 \\Rightarrow 7 < \\sqrt{50} < 8$$\n\n**Aproximación decimal:**\n$$\\sqrt{50}=\\sqrt{25\\cdot 2}=5\\sqrt{2}\\approx 5\\times 1{,}4142=7{,}071\\approx 7{,}07$$\n\n**Irracionalidad:** $50$ no es un cuadrado perfecto (sus factores primos son $2\\cdot 5^2$, y el factor $2$ aparece con exponente impar), por lo que $\\sqrt{50}\\notin\\mathbb{Q}$, luego $\\sqrt{50}\\in\\mathbb{R}\\setminus\\mathbb{Q}$."
+                }
+            },
+            {
+                "id": "POL01_E07",
+                "tipo": "desarrollo",
+                "dificultad": "intermedia",
+                "enunciado": "Resuelve la inecuación con valor absoluto y expresa la solución en notación de intervalos:\n$$|2x - 3| > 7$$",
+                "solucion": {
+                    "respuesta_directa": "$x\\in(-\\infty,\\,-2)\\cup(5,\\,+\\infty)$",
+                    "desarrollo": "La inecuación $|2x-3|>7$ equivale a:\n$$2x-3>7 \\quad \\text{o} \\quad 2x-3<-7$$\n\n**Caso 1:**\n$$2x-3>7 \\Rightarrow 2x>10 \\Rightarrow x>5$$\n\n**Caso 2:**\n$$2x-3<-7 \\Rightarrow 2x<-4 \\Rightarrow x<-2$$\n\n**Solución:** $x\\in(-\\infty,-2)\\cup(5,+\\infty)$."
+                }
+            },
+            {
+                "id": "POL01_E08",
+                "tipo": "desarrollo",
+                "dificultad": "intermedia",
+                "enunciado": "Indica qué propiedad de las operaciones en $\\mathbb{R}$ justifica cada igualdad y completa el hueco:\n$$\\text{(a) } 5\\cdot(3+x)=15+5x \\qquad \\text{(b) } (a+b)+c=a+(\\,\\square\\,)$$\n$$\\text{(c) } 7+(-7)=\\square \\qquad \\text{(d) } \\frac{1}{3}\\cdot 3=\\square$$",
+                "solucion": {
+                    "respuesta_directa": "(a) distributiva; (b) $b+c$, asociativa; (c) $0$, opuesto; (d) $1$, inverso",
+                    "desarrollo": "- **(a)** $5\\cdot(3+x)=5\\cdot 3+5\\cdot x=15+5x$ → **propiedad distributiva** del producto respecto a la suma.\n- **(b)** $(a+b)+c=a+(b+c)$ → **propiedad asociativa** de la suma; el hueco es $b+c$.\n- **(c)** $7+(-7)=0$ → **existencia del elemento opuesto** (o propiedad del opuesto).\n- **(d)** $\\dfrac{1}{3}\\cdot 3=1$ → **existencia del elemento inverso** multiplicativo."
+                }
+            },
+            {
+                "id": "POL01_E09",
+                "tipo": "desarrollo",
+                "dificultad": "avanzada",
+                "enunciado": "Resuelve el siguiente sistema de inecuaciones y expresa la solución como intersección de intervalos:\n$$\\begin{cases} 2x - 1 > 3 \\\\ |x - 4| \\leq 3 \\end{cases}$$",
+                "solucion": {
+                    "respuesta_directa": "$x\\in(2,\\,7]$",
+                    "desarrollo": "**Primera inecuación:** $2x-1>3 \\Rightarrow 2x>4 \\Rightarrow x>2$, es decir, $x\\in(2,+\\infty)$.\n\n**Segunda inecuación:** $|x-4|\\leq 3 \\Rightarrow -3\\leq x-4\\leq 3 \\Rightarrow 1\\leq x\\leq 7$, es decir, $x\\in[1,7]$.\n\n**Intersección:**\n$$x\\in(2,+\\infty)\\cap[1,7]=(2,7]$$\n\n**Solución:** $x\\in(2,7]$."
+                }
+            },
+            {
+                "id": "POL01_E10",
+                "tipo": "desarrollo",
+                "dificultad": "avanzada",
+                "enunciado": "Demuestra que entre dos números racionales cualesquiera siempre existe otro número racional. Utiliza el resultado para encontrar un racional entre $\\dfrac{2}{5}$ y $\\dfrac{1}{2}$.",
+                "solucion": {
+                    "respuesta_directa": "La media aritmética de dos racionales es racional; entre $\\frac{2}{5}$ y $\\frac{1}{2}$ se puede tomar $\\frac{9}{20}$.",
+                    "desarrollo": "**Demostración (densidad de $\\mathbb{Q}$):**\n\nSean $r=\\dfrac{p}{q}$ y $s=\\dfrac{m}{n}$ dos racionales con $r<s$. Consideramos su media aritmética:\n$$t=\\frac{r+s}{2}=\\frac{\\frac{p}{q}+\\frac{m}{n}}{2}=\\frac{pn+mq}{2qn}$$\nComo $p,q,m,n\\in\\mathbb{Z}$ y $q,n\\neq 0$, tanto el numerador $pn+mq$ como el denominador $2qn$ son enteros con denominador no nulo, luego $t\\in\\mathbb{Q}$. Además, como $r<s$, se tiene $r<t<s$. $\\blacksquare$\n\n**Aplicación:** Para $r=\\dfrac{2}{5}$ y $s=\\dfrac{1}{2}$:\n$$t=\\frac{\\dfrac{2}{5}+\\dfrac{1}{2}}{2}=\\frac{\\dfrac{4}{10}+\\dfrac{5}{10}}{2}=\\frac{\\dfrac{9}{10}}{2}=\\frac{9}{20}$$\n\nComprobación: $\\dfrac{2}{5}=\\dfrac{8}{20}<\\dfrac{9}{20}<\\dfrac{10}{20}=\\dfrac{1}{2}$ ✓"
+                }
+            }
+        ]
+    },
+    "ALG01": {
+        "nodo_id": "ALG01",
+        "nodo_nombre": "Concepto de matriz y tipos",
+        "total_ejercicios": 8,
+        "umbral_maestria": 0.9,
+        "puntos_por_ejercicio": 1,
+        "ejercicios": [
+            {
+                "id": "ALG01_E01",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Dada la matriz $A=\\begin{pmatrix} 2 & -1 & 0 \\\\ 3 & 5 & 7 \\\\ -2 & 4 & 1 \\end{pmatrix}$, indica:\n$$\\text{(a) Su dimensión} \\quad \\text{(b) El elemento } a_{23} \\quad \\text{(c) El elemento } a_{31}$$",
+                "solucion": {
+                    "respuesta_directa": "(a) $3\\times 3$, (b) $7$, (c) $-2$",
+                    "desarrollo": "- **(a)** La matriz tiene 3 filas y 3 columnas, luego es $3\\times 3$.\n- **(b)** $a_{23}$ es el elemento de fila 2, columna 3: $a_{23}=7$.\n- **(c)** $a_{31}$ es el elemento de fila 3, columna 1: $a_{31}=-2$."
+                }
+            },
+            {
+                "id": "ALG01_E02",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Clasifica cada una de las siguientes matrices:\n$$A=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}, \\quad B=\\begin{pmatrix} 3 & 2 & 1 \\\\ 0 & 5 & 4 \\\\ 0 & 0 & 2 \\end{pmatrix}, \\quad C=\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\\\ 3 & 0 \\end{pmatrix}$$",
+                "solucion": {
+                    "respuesta_directa": "$A$: matriz identidad $I_3$; $B$: triangular superior; $C$: matriz $3\\times 2$",
+                    "desarrollo": "- **$A$**: Matriz cuadrada con 1's en la diagonal principal y 0's fuera → **matriz identidad** $I_3$.\n- **$B$**: Matriz cuadrada con ceros debajo de la diagonal → **matriz triangular superior**.\n- **$C$**: Tiene 3 filas y 2 columnas → es una matriz **$3\\times 2$** (no cuadrada)."
+                }
+            },
+            {
+                "id": "ALG01_E03",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Escribe la matriz identidad de orden 4, $I_4$.",
+                "solucion": {
+                    "respuesta_directa": "$I_4=\\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$",
+                    "desarrollo": "La matriz identidad $I_n$ tiene 1's en toda la diagonal principal y 0's en el resto de posiciones. Para $n=4$: los elementos $a_{ii}=1$ para $i=1,2,3,4$, y $a_{ij}=0$ si $i\\neq j$."
+                }
+            },
+            {
+                "id": "ALG01_E04",
+                "tipo": "desarrollo",
+                "dificultad": "intermedia",
+                "enunciado": "Clasifica las siguientes matrices y justifica tu respuesta:\n$$D=\\begin{pmatrix} 2 & 1 & 3 \\\\ 1 & 2 & 1 \\\\ 3 & 1 & 4 \\end{pmatrix}, \\quad E=\\begin{pmatrix} 0 & 1 & 2 \\\\ -1 & 0 & 3 \\\\ -2 & -3 & 0 \\end{pmatrix}$$",
+                "solucion": {
+                    "respuesta_directa": "$D$: simétrica; $E$: antisimétrica",
+                    "desarrollo": "- **$D$**: Observamos que $d_{12}=1=d_{21}$, $d_{13}=3=d_{31}$, $d_{23}=1=d_{32}$. Como $a_{ij}=a_{ji}$ para todo $i,j$, la matriz es **simétrica**.\n- **$E$**: $e_{12}=1=-e_{21}$, $e_{13}=2=-e_{31}$, $e_{23}=3=-e_{32}$. Además, $e_{ii}=0$ para todo $i$. Como $a_{ij}=-a_{ji}$, la matriz es **antisimétrica**."
+                }
+            },
+            {
+                "id": "ALG01_E05",
+                "tipo": "desarrollo",
+                "dificultad": "intermedia",
+                "enunciado": "Determina los valores de $x$, $y$, $z$ para que las matrices $A$ y $B$ sean iguales:\n$$A=\\begin{pmatrix} 2x & 5 \\\\ y-1 & 3z+2 \\end{pmatrix}, \\quad B=\\begin{pmatrix} 6 & 5 \\\\ 4 & 8 \\end{pmatrix}$$",
+                "solucion": {
+                    "respuesta_directa": "$x=3$, $y=5$, $z=2$",
+                    "desarrollo": "Para que dos matrices sean iguales, todos sus elementos correspondientes deben ser iguales:\n\n$a_{11}=b_{11} \\Rightarrow 2x=6 \\Rightarrow x=3$\n\n$a_{21}=b_{21} \\Rightarrow y-1=4 \\Rightarrow y=5$\n\n$a_{22}=b_{22} \\Rightarrow 3z+2=8 \\Rightarrow 3z=6 \\Rightarrow z=2$\n\n**Solución:** $x=3$, $y=5$, $z=2$."
+                }
+            },
+            {
+                "id": "ALG01_E06",
+                "tipo": "corto",
+                "dificultad": "basica",
+                "enunciado": "Indica qué tipo de matriz representa cada figura:\n$$\\text{(a) } \\begin{pmatrix} * & 0 & 0 \\\\ 0 & * & 0 \\\\ 0 & 0 & * \\end{pmatrix} \\quad \\text{(b) } \\begin{pmatrix} 0 & * & * \\\\ 0 & 0 & * \\\\ 0 & 0 & 0 \\end{pmatrix} \\quad \\text{(c) } \\begin{pmatrix} 0 & 0 & * \\\\ 0 & * & 0 \\\\ * & 0 & 0 \\end{pmatrix}$$",
+                "solucion": {
+                    "respuesta_directa": "(a) diagonal; (b) triangular superior; (c) antisimétrica",
+                    "desarrollo": "- **(a)**: Solo tiene elementos no nulos en la diagonal → **matriz diagonal**.\n- **(b)**: Ceros bajo la diagonal → **matriz triangular superior**.\n- **(c)**: Los elementos son simétricos cambiados de signo ($a_{13}=-a_{31}$, $a_{23}=-a_{32}$) y la diagonal es nula → **matriz antisimétrica**."
+                }
+            },
+            {
+                "id": "ALG01_E07",
+                "tipo": "desarrollo",
+                "dificultad": "avanzada",
+                "enunciado": "Si $A$ es una matriz triangular superior de dimensión $3\\times 3$, ¿qué puedes decir sobre los elementos $a_{31}$, $a_{32}$ y $a_{23}$? Justifica tu respuesta.",
+                "solucion": {
+                    "respuesta_directa": "$a_{31}=a_{32}=0$; $a_{23}$ puede ser cualquier valor",
+                    "desarrollo": "Por definición de matriz triangular superior, todos los elementos por debajo de la diagonal principal deben ser cero:\n\n- **Fila 3, columna 1:** como $3>1$, tenemos $a_{31}=0$.\n- **Fila 3, columna 2:** como $3>2$, tenemos $a_{32}=0$.\n- **Fila 2, columna 3:** como $2<3$, este elemento está **por encima** de la diagonal, luego **puede ser cualquier valor** (no tiene restricción).\n\nPor tanto, los elementos bajo la diagonal son cero, pero los elementos sobre o en la diagonal pueden ser cualquier número real."
+                }
+            },
+            {
+                "id": "ALG01_E08",
+                "tipo": "desarrollo",
+                "dificultad": "avanzada",
+                "enunciado": "Demuestra que si una matriz es simultáneamente triangular superior e inferior, entonces es una matriz diagonal.",
+                "solucion": {
+                    "respuesta_directa": "Los elementos fuera de la diagonal son cero, por lo que solo quedan elementos en la diagonal.",
+                    "desarrollo": "Sea $A$ una matriz cuadrada de dimensión $n\\times n$.\n\n**Ser triangular superior** significa: si $i>j$, entonces $a_{ij}=0$ (todos los elementos bajo la diagonal son cero).\n\n**Ser triangular inferior** significa: si $i<j$, entonces $a_{ij}=0$ (todos los elementos sobre la diagonal son cero).\n\nPara cualquier par de índices $(i,j)$ con $i\\neq j$, se cumple $i>j$ o $i<j$. En el primer caso, $a_{ij}=0$ por ser triangular superior; en el segundo, $a_{ij}=0$ por ser triangular inferior.\n\nPor tanto, **todos los elementos fuera de la diagonal son cero**, y solo pueden ser no nulos los elementos $a_{ii}$ de la diagonal. Esto es exactamente la definición de **matriz diagonal**. $\\blacksquare$"
+                }
+            }
+        ]
+    }
+}

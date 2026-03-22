@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafo de Conocimiento — PAU/EBAU Matemáticas</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div id="container">
+        <svg id="graph"></svg>
+        
+        <div id="tooltip">
+            <div class="id"></div>
+            <h3></h3>
+            <div class="block"></div>
+            <div class="description"></div>
+            <div class="status"></div>
+            <div class="prereq">Prerrequisitos: <span></span></div>
+            <div class="unlocks">Desbloquea: <span></span></div>
+        </div>
+        
+        <div id="legend">
+            <h2>Bloques Tematicos</h2>
+        </div>
+        
+        <input type="text" id="search" placeholder="Buscar nodo...">
+        
+        <div id="controls">
+            <button id="zoomIn">Zoom +</button>
+            <button id="zoomOut">Zoom -</button>
+            <button id="reset">Reset Vista</button>
+            <button id="toggleLabels">Mostrar/Ocultar Etiquetas</button>
+            <button id="resetProgress">Reset Progreso</button>
+        </div>
+        
+        <div id="stats">
+            Total de nodos: <span id="totalNodes">0</span> | 
+            Conexiones: <span id="totalLinks">0</span>
+        </div>
+    </div>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <h2 id="modal-title" class="modal-title">Titulo del nodo</h2>
+                    <div class="modal-header-meta">
+                        <span id="modal-node-id" class="modal-node-id"></span>
+                        <span id="modal-block-badge" class="modal-block-badge"></span>
+                    </div>
+                </div>
+                <button id="modal-close" class="modal-close">&times;</button>
+            </div>
+            
+            <div class="modal-tabs">
+                <button id="btn-tab-theory" class="modal-tab-btn active">Teoria</button>
+                <button id="btn-tab-exercises" class="modal-tab-btn">Ejercicios</button>
+            </div>
+            
+            <div class="modal-body">
+                <div id="theory-view">
+                    <div id="theory-content" class="modal-content"></div>
+                    <div id="no-curriculum" class="no-curriculum" style="display: none;">
+                        <p>Contenido del curriculo no disponible.</p>
+                        <p>Este contenido se cargara desde el archivo curriculum.json</p>
+                    </div>
+                </div>
+                
+                <div id="exercises-view">
+                    <div id="exercises-content" class="modal-content"></div>
+                    <div id="no-questions" class="no-questions" style="display: none;">
+                        <p>Ejercicios no disponibles.</p>
+                        <p>Este contenido se cargara desde el archivo questions.json</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <div class="modal-footer-left">
+                </div>
+                <div class="modal-footer-right">
+                    <button id="btn-completar" class="modal-btn modal-btn-success">Marcar como completado</button>
+                    <button id="btn-cerrar" class="modal-btn modal-btn-secondary">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/graph.js"></script>
+    <script src="js/modal.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (typeof initModal === 'function') {
+                initModal();
+            }
+        });
+    </script>
+</body>
+</html>

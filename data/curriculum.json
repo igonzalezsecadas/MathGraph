@@ -1,0 +1,123 @@
+{
+    "POL01": {
+        "id": "POL01",
+        "bloque": "POL",
+        "bloque_nombre": "Álgebra Elemental",
+        "nombre": "Números reales y propiedades",
+        "prerrequisitos": [],
+        "desbloquea": ["POL02", "POL03", "POL04", "POL11", "POL15", "POL21", "POL22", "POL23"],
+        "umbral_maestria": 0.9,
+        "descripcion": "Estudio de la estructura de los números reales, sus propiedades operativas, el valor absoluto y la representación mediante intervalos.",
+        "contenidos": [
+            {
+                "titulo": "Conjuntos numéricos",
+                "cuerpo": "Los números reales se organizan en una jerarquía de conjuntos anidados: $$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$ Los **naturales** ($\\mathbb{N}$) son los enteros positivos (y el cero según convenio). Los **enteros** ($\\mathbb{Z}$) incluyen los negativos. Los **racionales** ($\\mathbb{Q}$) son los que se expresan como cociente $\\frac{p}{q}$ con $p,q\\in\\mathbb{Z}$, $q\\neq 0$; su expresión decimal es exacta o periódica. Los **irracionales** ($\\mathbb{R}\\setminus\\mathbb{Q}$) tienen decimal infinito no periódico (ej.: $\\sqrt{2}$, $\\pi$, $e$)."
+            },
+            {
+                "titulo": "Propiedades de las operaciones en $\\mathbb{R}$",
+                "cuerpo": "Para todo $a, b, c \\in \\mathbb{R}$:\n- **Conmutativa:** $a+b=b+a$ y $a\\cdot b=b\\cdot a$\n- **Asociativa:** $(a+b)+c=a+(b+c)$ y $(a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)$\n- **Distributiva:** $a\\cdot(b+c)=a\\cdot b+a\\cdot c$\n- **Elemento neutro:** $a+0=a$ y $a\\cdot 1=a$\n- **Elemento opuesto:** $a+(-a)=0$\n- **Elemento inverso:** $a\\cdot\\dfrac{1}{a}=1$ si $a\\neq 0$"
+            },
+            {
+                "titulo": "Valor absoluto",
+                "cuerpo": "El valor absoluto de $a\\in\\mathbb{R}$ se define como: $$|a|=\\begin{cases} a & \\text{si } a\\geq 0 \\\\ -a & \\text{si } a<0 \\end{cases}$$ Propiedades clave: $|a|\\geq 0$, $|a\\cdot b|=|a|\\cdot|b|$, $|a+b|\\leq|a|+|b|$ (desigualdad triangular).\n\nResolución de ecuaciones: $|x-a|=r \\Leftrightarrow x=a+r$ o $x=a-r$.\n\nResolución de inecuaciones: $|x-a|<r \\Leftrightarrow a-r<x<a+r$."
+            },
+            {
+                "titulo": "Intervalos en $\\mathbb{R}$",
+                "cuerpo": "Un intervalo es un subconjunto conexo de $\\mathbb{R}$. Los tipos principales son:\n\n- $(a,b)$: Abierto, $a < x < b$\n- $[a,b]$: Cerrado, $a \\leq x \\leq b$\n- $[a,b)$: Semiabierto, $a \\leq x < b$\n- $(a,+\\infty)$: Semirrecta abierta, $x > a$\n- $(-\\infty,b]$: Semirrecta cerrada, $x \\leq b$\n\nOperaciones: unión $\\cup$, intersección $\\cap$ y complementario."
+            }
+        ],
+        "objetivos": [
+            "Clasificar cualquier número real en el conjunto numérico más restrictivo al que pertenece.",
+            "Identificar y aplicar las propiedades operativas de $\\mathbb{R}$ en simplificaciones algebraicas.",
+            "Resolver ecuaciones e inecuaciones con valor absoluto.",
+            "Operar con intervalos y representarlos en la recta real."
+        ]
+    },
+    "ALG01": {
+        "id": "ALG01",
+        "bloque": "ALG",
+        "bloque_nombre": "Álgebra Lineal",
+        "nombre": "Concepto de matriz y tipos",
+        "prerrequisitos": [],
+        "desbloquea": ["ALG02", "ALG05", "ALG18"],
+        "umbral_maestria": 0.9,
+        "descripcion": "Introducción al concepto de matriz, sus elementos, dimensión y los tipos fundamentales de matrices.",
+        "contenidos": [
+            {
+                "titulo": "Definición de matriz",
+                "cuerpo": "Una **matriz** de dimensión $m\\times n$ es una disposición rectangular de números reales organizados en $m$ filas y $n$ columnas: $$A=\\begin{pmatrix} a_{11} & a_{12} & \\cdots & a_{1n} \\\\ a_{21} & a_{22} & \\cdots & a_{2n} \\\\ \\vdots & \\vdots & \\ddots & \\vdots \\\\ a_{m1} & a_{m2} & \\cdots & a_{mn} \\end{pmatrix}$$\n\nEl elemento $a_{ij}$ ocupa la fila $i$ y la columna $j$."
+            },
+            {
+                "titulo": "Tipos de matrices",
+                "cuerpo": "- **Matriz fila:** $1\\times n$ (una sola fila)\n- **Matriz columna:** $m\\times 1$ (una sola columna)\n- **Matriz cuadrada:** $m=n$ (igual número de filas que de columnas)\n- **Matriz nula:** todos los elementos son cero\n- **Matriz identidad** $I_n$: diagonal principal con 1's, resto 0's\n- **Matriz diagonal:** elementos fuera de la diagonal son cero\n- **Matriz triangular superior:** $a_{ij}=0$ si $i>j$\n- **Matriz triangular inferior:** $a_{ij}=0$ si $i<j$\n- **Matriz simétrica:** $a_{ij}=a_{ji}$"
+            },
+            {
+                "titulo": "Igualdad de matrices",
+                "cuerpo": "Dos matrices $A$ y $B$ son **iguales** si y solo si tienen la misma dimensión y $a_{ij}=b_{ij}$ para todo $i,j$."
+            }
+        ],
+        "objetivos": [
+            "Identificar la dimensión de una matriz y localizar sus elementos.",
+            "Reconocer los diferentes tipos de matrices.",
+            "Clasificar matrices según sus propiedades."
+        ]
+    },
+    "EST01": {
+        "id": "EST01",
+        "bloque": "EST",
+        "bloque_nombre": "Estadística y Probabilidad",
+        "nombre": "Variable estadística: tipos",
+        "prerrequisitos": [],
+        "desbloquea": ["EST02", "EST07"],
+        "umbral_maestria": 0.9,
+        "descripcion": "Conceptos fundamentales de estadística: población, muestra, variable estadística y su clasificación.",
+        "contenidos": [
+            {
+                "titulo": "Población y muestra",
+                "cuerpo": "- **Población:** conjunto total de elementos que se desea estudiar.\n- **Muestra:** subconjunto de la población del que realmente se obtienen datos.\n- **Censo:** estudio de toda la población.\n- **Muestreo:** técnica para seleccionar la muestra."
+            },
+            {
+                "titulo": "Variable estadística",
+                "cuerpo": "Una **variable estadística** es la característica que se observa en los elementos de la muestra.\n\n**Clasificación:**\n\n- **Cualitativa (o categórica):** valores que expresan cualidades o categorías.\n  - *Nominal:* sin orden (ej.: color de ojos, nacionalidad)\n  - *Ordinal:* con orden (ej.: nivel de estudios)\n- **Cuantitativa (o numérica):** valores numéricos.\n  - *Discreta:* valores aislados (ej.: número de hermanos)\n  - *Continua:* cualquier valor en un intervalo (ej.: peso, altura)"
+            },
+            {
+                "titulo": "Datos y frecuencias",
+                "cuerpo": "- **Dato:** valor particular de la variable.\n- **Frecuencia absoluta ($n_i$):** veces que aparece un valor.\n- **Frecuencia relativa ($f_i$):** proporción $n_i/N$, donde $N$ es el total.\n- **Frecuencia acumulada ($N_i$):** suma de frecuencias absolutas hasta ese valor."
+            }
+        ],
+        "objetivos": [
+            "Diferenciar entre población y muestra.",
+            "Clasificar variables según su tipo.",
+            "Identificar ejemplos de cada tipo de variable."
+        ]
+    },
+    "EST11": {
+        "id": "EST11",
+        "bloque": "EST",
+        "bloque_nombre": "Estadística y Probabilidad",
+        "nombre": "Experimento aleatorio y espacio muestral",
+        "prerrequisitos": [],
+        "desbloquea": ["EST12", "EST19"],
+        "umbral_maestria": 0.9,
+        "descripcion": "Introducción a la teoría de probabilidades: experimentos aleatorios, espacio muestral y tipos de sucesos.",
+        "contenidos": [
+            {
+                "titulo": "Experimento aleatorio",
+                "cuerpo": "Un **experimento aleatorio** es aquel cuyo resultado no puede predecirse con certeza antes de realizarlo, aunque se conozca el conjunto de posibles resultados.\n\n**Ejemplos:**\n- Lanzar una moneda\n- Lanzar un dado\n- Extraer una carta de una baraja\n\nSe distingue del **experimento determinista**, cuyo resultado se puede predecir."
+            },
+            {
+                "titulo": "Espacio muestral",
+                "cuerpo": "El **espacio muestral** $\\Omega$ es el conjunto de todos los resultados posibles de un experimento aleatorio.\n\n**Ejemplos:**\n- Moneda: $\\Omega=\\{Cara,\\ Cruz\\}$ o $\\{C,\\ X\\}$\n- Dado: $\\Omega=\\{1,2,3,4,5,6\\}$\n- Dos monedas: $\\Omega=\\{CC, CX, XC, XX\\}$"
+            },
+            {
+                "titulo": "Sucesos",
+                "cuerpo": "- **Suceso elemental:** un único resultado ($\\{3\\}$ al lanzar dado)\n- **Suceso compuesto:** varios resultados ($\\{2,4,6\\}$ = sacar par)\n- **Suceso seguro:** coincide con $\\Omega$ (siempre ocurre)\n- **Suceso imposible:** $\\emptyset$ (nunca ocurre)\n- **Sucesos incompatibles:** no pueden ocurrir simultáneamente ($A\\cap B=\\emptyset$)"
+            }
+        ],
+        "objetivos": [
+            "Identificar experimentos aleatorios y deterministas.",
+            "Determinar el espacio muestral de un experimento.",
+            "Clasificar diferentes tipos de sucesos."
+        ]
+    }
+}
