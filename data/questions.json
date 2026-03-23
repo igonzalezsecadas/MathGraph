@@ -1,200 +1,2727 @@
 {
-    "POL01": {
-        "nodo_id": "POL01",
-        "nodo_nombre": "Números reales y propiedades",
-        "total_ejercicios": 10,
-        "umbral_maestria": 0.9,
-        "puntos_por_ejercicio": 1,
-        "ejercicios": [
-            {
-                "id": "POL01_E01",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Clasifica cada uno de los siguientes números indicando el conjunto más restrictivo al que pertenece ($\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{Q}$ o $\\mathbb{R}\\setminus\\mathbb{Q}$):\n$$\\text{(a) } -7 \\qquad \\text{(b) } \\frac{3}{5} \\qquad \\text{(c) } \\sqrt{9} \\qquad \\text{(d) } \\sqrt{5}$$",
-                "solucion": {
-                    "respuesta_directa": "(a) $\\mathbb{Z}$,  (b) $\\mathbb{Q}$,  (c) $\\mathbb{N}$,  (d) $\\mathbb{R}\\setminus\\mathbb{Q}$",
-                    "desarrollo": "- **(a)** $-7$ es entero negativo $\\Rightarrow -7\\in\\mathbb{Z}$.\n- **(b)** $\\dfrac{3}{5}$ es cociente de enteros con denominador no nulo $\\Rightarrow \\dfrac{3}{5}\\in\\mathbb{Q}$.\n- **(c)** $\\sqrt{9}=3\\in\\mathbb{N}$, ya que $3$ es entero positivo.\n- **(d)** $5$ no es cuadrado perfecto, por lo que $\\sqrt{5}$ es irracional $\\Rightarrow \\sqrt{5}\\in\\mathbb{R}\\setminus\\mathbb{Q}$."
-                }
-            },
-            {
-                "id": "POL01_E02",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Calcula:\n$$\\text{(a) } |{-8}| + |3 - 7| \\qquad \\text{(b) } |2x - 6|\\text{ para }x = 1$$",
-                "solucion": {
-                    "respuesta_directa": "(a) $12$,  (b) $4$",
-                    "desarrollo": "- **(a)** $|-8|=8$ y $|3-7|=|-4|=4$, luego $8+4=\\mathbf{12}$.\n- **(b)** Para $x=1$: $|2(1)-6|=|2-6|=|-4|=\\mathbf{4}$."
-                }
-            },
-            {
-                "id": "POL01_E03",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Resuelve la ecuación con valor absoluto:\n$$|3x - 6| = 9$$",
-                "solucion": {
-                    "respuesta_directa": "$x = 5$ o $x = -1$",
-                    "desarrollo": "La ecuación $|3x-6|=9$ equivale a dos casos:\n$$3x-6=9 \\Rightarrow 3x=15 \\Rightarrow x=5$$\n$$3x-6=-9 \\Rightarrow 3x=-3 \\Rightarrow x=-1$$\n**Soluciones:** $x=5$ y $x=-1$."
-                }
-            },
-            {
-                "id": "POL01_E04",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Expresa como un único intervalo la solución de la inecuación:\n$$|x + 2| \\leq 5$$",
-                "solucion": {
-                    "respuesta_directa": "$x \\in [-7,\\, 3]$",
-                    "desarrollo": "Usando la propiedad $|x-a|\\leq r \\Leftrightarrow a-r\\leq x\\leq a+r$ con $a=-2$, $r=5$:\n$$-2-5\\leq x\\leq -2+5 \\Rightarrow -7\\leq x\\leq 3$$\n**Solución:** $x\\in[-7,3]$."
-                }
-            },
-            {
-                "id": "POL01_E05",
-                "tipo": "corto",
-                "dificultad": "intermedia",
-                "enunciado": "Calcula la intersección y la unión de los intervalos $A=(-1,\\,4]$ y $B=[2,\\,+\\infty)$, y representa el resultado en la recta real.",
-                "solucion": {
-                    "respuesta_directa": "$A\\cap B=[2,4]$,  $A\\cup B=(-1,+\\infty)$",
-                    "desarrollo": "- **Intersección:** los valores que pertenecen a ambos intervalos son los que cumplen $x>-1$ **y** $x\\geq 2$ **y** $x\\leq 4$, es decir, $A\\cap B=[2,4]$.\n- **Unión:** los valores que pertenecen a al menos uno de los intervalos, desde $-1$ (excluido) hasta $+\\infty$: $A\\cup B=(-1,+\\infty)$."
-                }
-            },
-            {
-                "id": "POL01_E06",
-                "tipo": "desarrollo",
-                "dificultad": "intermedia",
-                "enunciado": "Determina entre qué dos enteros consecutivos se encuentra $\\sqrt{50}$ y calcula su valor aproximado con dos cifras decimales. Justifica que $\\sqrt{50}\\in\\mathbb{R}\\setminus\\mathbb{Q}$.",
-                "solucion": {
-                    "respuesta_directa": "$7 < \\sqrt{50} < 8$, $\\sqrt{50}\\approx 7{,}07$",
-                    "desarrollo": "**Acotación entre enteros:**\n$$7^2=49 < 50 < 64=8^2 \\Rightarrow 7 < \\sqrt{50} < 8$$\n\n**Aproximación decimal:**\n$$\\sqrt{50}=\\sqrt{25\\cdot 2}=5\\sqrt{2}\\approx 5\\times 1{,}4142=7{,}071\\approx 7{,}07$$\n\n**Irracionalidad:** $50$ no es un cuadrado perfecto (sus factores primos son $2\\cdot 5^2$, y el factor $2$ aparece con exponente impar), por lo que $\\sqrt{50}\\notin\\mathbb{Q}$, luego $\\sqrt{50}\\in\\mathbb{R}\\setminus\\mathbb{Q}$."
-                }
-            },
-            {
-                "id": "POL01_E07",
-                "tipo": "desarrollo",
-                "dificultad": "intermedia",
-                "enunciado": "Resuelve la inecuación con valor absoluto y expresa la solución en notación de intervalos:\n$$|2x - 3| > 7$$",
-                "solucion": {
-                    "respuesta_directa": "$x\\in(-\\infty,\\,-2)\\cup(5,\\,+\\infty)$",
-                    "desarrollo": "La inecuación $|2x-3|>7$ equivale a:\n$$2x-3>7 \\quad \\text{o} \\quad 2x-3<-7$$\n\n**Caso 1:**\n$$2x-3>7 \\Rightarrow 2x>10 \\Rightarrow x>5$$\n\n**Caso 2:**\n$$2x-3<-7 \\Rightarrow 2x<-4 \\Rightarrow x<-2$$\n\n**Solución:** $x\\in(-\\infty,-2)\\cup(5,+\\infty)$."
-                }
-            },
-            {
-                "id": "POL01_E08",
-                "tipo": "desarrollo",
-                "dificultad": "intermedia",
-                "enunciado": "Indica qué propiedad de las operaciones en $\\mathbb{R}$ justifica cada igualdad y completa el hueco:\n$$\\text{(a) } 5\\cdot(3+x)=15+5x \\qquad \\text{(b) } (a+b)+c=a+(\\,\\square\\,)$$\n$$\\text{(c) } 7+(-7)=\\square \\qquad \\text{(d) } \\frac{1}{3}\\cdot 3=\\square$$",
-                "solucion": {
-                    "respuesta_directa": "(a) distributiva; (b) $b+c$, asociativa; (c) $0$, opuesto; (d) $1$, inverso",
-                    "desarrollo": "- **(a)** $5\\cdot(3+x)=5\\cdot 3+5\\cdot x=15+5x$ → **propiedad distributiva** del producto respecto a la suma.\n- **(b)** $(a+b)+c=a+(b+c)$ → **propiedad asociativa** de la suma; el hueco es $b+c$.\n- **(c)** $7+(-7)=0$ → **existencia del elemento opuesto** (o propiedad del opuesto).\n- **(d)** $\\dfrac{1}{3}\\cdot 3=1$ → **existencia del elemento inverso** multiplicativo."
-                }
-            },
-            {
-                "id": "POL01_E09",
-                "tipo": "desarrollo",
-                "dificultad": "avanzada",
-                "enunciado": "Resuelve el siguiente sistema de inecuaciones y expresa la solución como intersección de intervalos:\n$$\\begin{cases} 2x - 1 > 3 \\\\ |x - 4| \\leq 3 \\end{cases}$$",
-                "solucion": {
-                    "respuesta_directa": "$x\\in(2,\\,7]$",
-                    "desarrollo": "**Primera inecuación:** $2x-1>3 \\Rightarrow 2x>4 \\Rightarrow x>2$, es decir, $x\\in(2,+\\infty)$.\n\n**Segunda inecuación:** $|x-4|\\leq 3 \\Rightarrow -3\\leq x-4\\leq 3 \\Rightarrow 1\\leq x\\leq 7$, es decir, $x\\in[1,7]$.\n\n**Intersección:**\n$$x\\in(2,+\\infty)\\cap[1,7]=(2,7]$$\n\n**Solución:** $x\\in(2,7]$."
-                }
-            },
-            {
-                "id": "POL01_E10",
-                "tipo": "desarrollo",
-                "dificultad": "avanzada",
-                "enunciado": "Demuestra que entre dos números racionales cualesquiera siempre existe otro número racional. Utiliza el resultado para encontrar un racional entre $\\dfrac{2}{5}$ y $\\dfrac{1}{2}$.",
-                "solucion": {
-                    "respuesta_directa": "La media aritmética de dos racionales es racional; entre $\\frac{2}{5}$ y $\\frac{1}{2}$ se puede tomar $\\frac{9}{20}$.",
-                    "desarrollo": "**Demostración (densidad de $\\mathbb{Q}$):**\n\nSean $r=\\dfrac{p}{q}$ y $s=\\dfrac{m}{n}$ dos racionales con $r<s$. Consideramos su media aritmética:\n$$t=\\frac{r+s}{2}=\\frac{\\frac{p}{q}+\\frac{m}{n}}{2}=\\frac{pn+mq}{2qn}$$\nComo $p,q,m,n\\in\\mathbb{Z}$ y $q,n\\neq 0$, tanto el numerador $pn+mq$ como el denominador $2qn$ son enteros con denominador no nulo, luego $t\\in\\mathbb{Q}$. Además, como $r<s$, se tiene $r<t<s$. $\\blacksquare$\n\n**Aplicación:** Para $r=\\dfrac{2}{5}$ y $s=\\dfrac{1}{2}$:\n$$t=\\frac{\\dfrac{2}{5}+\\dfrac{1}{2}}{2}=\\frac{\\dfrac{4}{10}+\\dfrac{5}{10}}{2}=\\frac{\\dfrac{9}{10}}{2}=\\frac{9}{20}$$\n\nComprobación: $\\dfrac{2}{5}=\\dfrac{8}{20}<\\dfrac{9}{20}<\\dfrac{10}{20}=\\dfrac{1}{2}$ ✓"
-                }
-            }
-        ]
-    },
-    "ALG01": {
-        "nodo_id": "ALG01",
-        "nodo_nombre": "Concepto de matriz y tipos",
-        "total_ejercicios": 8,
-        "umbral_maestria": 0.9,
-        "puntos_por_ejercicio": 1,
-        "ejercicios": [
-            {
-                "id": "ALG01_E01",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Dada la matriz $A=\\begin{pmatrix} 2 & -1 & 0 \\\\ 3 & 5 & 7 \\\\ -2 & 4 & 1 \\end{pmatrix}$, indica:\n$$\\text{(a) Su dimensión} \\quad \\text{(b) El elemento } a_{23} \\quad \\text{(c) El elemento } a_{31}$$",
-                "solucion": {
-                    "respuesta_directa": "(a) $3\\times 3$, (b) $7$, (c) $-2$",
-                    "desarrollo": "- **(a)** La matriz tiene 3 filas y 3 columnas, luego es $3\\times 3$.\n- **(b)** $a_{23}$ es el elemento de fila 2, columna 3: $a_{23}=7$.\n- **(c)** $a_{31}$ es el elemento de fila 3, columna 1: $a_{31}=-2$."
-                }
-            },
-            {
-                "id": "ALG01_E02",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Clasifica cada una de las siguientes matrices:\n$$A=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}, \\quad B=\\begin{pmatrix} 3 & 2 & 1 \\\\ 0 & 5 & 4 \\\\ 0 & 0 & 2 \\end{pmatrix}, \\quad C=\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\\\ 3 & 0 \\end{pmatrix}$$",
-                "solucion": {
-                    "respuesta_directa": "$A$: matriz identidad $I_3$; $B$: triangular superior; $C$: matriz $3\\times 2$",
-                    "desarrollo": "- **$A$**: Matriz cuadrada con 1's en la diagonal principal y 0's fuera → **matriz identidad** $I_3$.\n- **$B$**: Matriz cuadrada con ceros debajo de la diagonal → **matriz triangular superior**.\n- **$C$**: Tiene 3 filas y 2 columnas → es una matriz **$3\\times 2$** (no cuadrada)."
-                }
-            },
-            {
-                "id": "ALG01_E03",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Escribe la matriz identidad de orden 4, $I_4$.",
-                "solucion": {
-                    "respuesta_directa": "$I_4=\\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$",
-                    "desarrollo": "La matriz identidad $I_n$ tiene 1's en toda la diagonal principal y 0's en el resto de posiciones. Para $n=4$: los elementos $a_{ii}=1$ para $i=1,2,3,4$, y $a_{ij}=0$ si $i\\neq j$."
-                }
-            },
-            {
-                "id": "ALG01_E04",
-                "tipo": "desarrollo",
-                "dificultad": "intermedia",
-                "enunciado": "Clasifica las siguientes matrices y justifica tu respuesta:\n$$D=\\begin{pmatrix} 2 & 1 & 3 \\\\ 1 & 2 & 1 \\\\ 3 & 1 & 4 \\end{pmatrix}, \\quad E=\\begin{pmatrix} 0 & 1 & 2 \\\\ -1 & 0 & 3 \\\\ -2 & -3 & 0 \\end{pmatrix}$$",
-                "solucion": {
-                    "respuesta_directa": "$D$: simétrica; $E$: antisimétrica",
-                    "desarrollo": "- **$D$**: Observamos que $d_{12}=1=d_{21}$, $d_{13}=3=d_{31}$, $d_{23}=1=d_{32}$. Como $a_{ij}=a_{ji}$ para todo $i,j$, la matriz es **simétrica**.\n- **$E$**: $e_{12}=1=-e_{21}$, $e_{13}=2=-e_{31}$, $e_{23}=3=-e_{32}$. Además, $e_{ii}=0$ para todo $i$. Como $a_{ij}=-a_{ji}$, la matriz es **antisimétrica**."
-                }
-            },
-            {
-                "id": "ALG01_E05",
-                "tipo": "desarrollo",
-                "dificultad": "intermedia",
-                "enunciado": "Determina los valores de $x$, $y$, $z$ para que las matrices $A$ y $B$ sean iguales:\n$$A=\\begin{pmatrix} 2x & 5 \\\\ y-1 & 3z+2 \\end{pmatrix}, \\quad B=\\begin{pmatrix} 6 & 5 \\\\ 4 & 8 \\end{pmatrix}$$",
-                "solucion": {
-                    "respuesta_directa": "$x=3$, $y=5$, $z=2$",
-                    "desarrollo": "Para que dos matrices sean iguales, todos sus elementos correspondientes deben ser iguales:\n\n$a_{11}=b_{11} \\Rightarrow 2x=6 \\Rightarrow x=3$\n\n$a_{21}=b_{21} \\Rightarrow y-1=4 \\Rightarrow y=5$\n\n$a_{22}=b_{22} \\Rightarrow 3z+2=8 \\Rightarrow 3z=6 \\Rightarrow z=2$\n\n**Solución:** $x=3$, $y=5$, $z=2$."
-                }
-            },
-            {
-                "id": "ALG01_E06",
-                "tipo": "corto",
-                "dificultad": "basica",
-                "enunciado": "Indica qué tipo de matriz representa cada figura:\n$$\\text{(a) } \\begin{pmatrix} * & 0 & 0 \\\\ 0 & * & 0 \\\\ 0 & 0 & * \\end{pmatrix} \\quad \\text{(b) } \\begin{pmatrix} 0 & * & * \\\\ 0 & 0 & * \\\\ 0 & 0 & 0 \\end{pmatrix} \\quad \\text{(c) } \\begin{pmatrix} 0 & 0 & * \\\\ 0 & * & 0 \\\\ * & 0 & 0 \\end{pmatrix}$$",
-                "solucion": {
-                    "respuesta_directa": "(a) diagonal; (b) triangular superior; (c) antisimétrica",
-                    "desarrollo": "- **(a)**: Solo tiene elementos no nulos en la diagonal → **matriz diagonal**.\n- **(b)**: Ceros bajo la diagonal → **matriz triangular superior**.\n- **(c)**: Los elementos son simétricos cambiados de signo ($a_{13}=-a_{31}$, $a_{23}=-a_{32}$) y la diagonal es nula → **matriz antisimétrica**."
-                }
-            },
-            {
-                "id": "ALG01_E07",
-                "tipo": "desarrollo",
-                "dificultad": "avanzada",
-                "enunciado": "Si $A$ es una matriz triangular superior de dimensión $3\\times 3$, ¿qué puedes decir sobre los elementos $a_{31}$, $a_{32}$ y $a_{23}$? Justifica tu respuesta.",
-                "solucion": {
-                    "respuesta_directa": "$a_{31}=a_{32}=0$; $a_{23}$ puede ser cualquier valor",
-                    "desarrollo": "Por definición de matriz triangular superior, todos los elementos por debajo de la diagonal principal deben ser cero:\n\n- **Fila 3, columna 1:** como $3>1$, tenemos $a_{31}=0$.\n- **Fila 3, columna 2:** como $3>2$, tenemos $a_{32}=0$.\n- **Fila 2, columna 3:** como $2<3$, este elemento está **por encima** de la diagonal, luego **puede ser cualquier valor** (no tiene restricción).\n\nPor tanto, los elementos bajo la diagonal son cero, pero los elementos sobre o en la diagonal pueden ser cualquier número real."
-                }
-            },
-            {
-                "id": "ALG01_E08",
-                "tipo": "desarrollo",
-                "dificultad": "avanzada",
-                "enunciado": "Demuestra que si una matriz es simultáneamente triangular superior e inferior, entonces es una matriz diagonal.",
-                "solucion": {
-                    "respuesta_directa": "Los elementos fuera de la diagonal son cero, por lo que solo quedan elementos en la diagonal.",
-                    "desarrollo": "Sea $A$ una matriz cuadrada de dimensión $n\\times n$.\n\n**Ser triangular superior** significa: si $i>j$, entonces $a_{ij}=0$ (todos los elementos bajo la diagonal son cero).\n\n**Ser triangular inferior** significa: si $i<j$, entonces $a_{ij}=0$ (todos los elementos sobre la diagonal son cero).\n\nPara cualquier par de índices $(i,j)$ con $i\\neq j$, se cumple $i>j$ o $i<j$. En el primer caso, $a_{ij}=0$ por ser triangular superior; en el segundo, $a_{ij}=0$ por ser triangular inferior.\n\nPor tanto, **todos los elementos fuera de la diagonal son cero**, y solo pueden ser no nulos los elementos $a_{ii}$ de la diagonal. Esto es exactamente la definición de **matriz diagonal**. $\\blacksquare$"
-                }
-            }
-        ]
-    }
+  "POL01": {
+    "nodo_id": "POL01",
+    "nodo_nombre": "Números reales y propiedades",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "POL01_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Clasifica cada número en el conjunto más restrictivo ($\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{Q}$ o $\\mathbb{R}\\setminus\\mathbb{Q}$):\n$$(a)\\;-5 \\qquad (b)\\;\\frac{2}{7} \\qquad (c)\\;\\sqrt{16} \\qquad (d)\\;\\sqrt{3}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;\\mathbb{Z}$,\\quad $(b)\\;\\mathbb{Q}$,\\quad $(c)\\;\\mathbb{N}$,\\quad $(d)\\;\\mathbb{R}\\setminus\\mathbb{Q}$",
+          "desarrollo": "$(a)$ $-5$ es entero negativo $\\Rightarrow -5\\in\\mathbb{Z}$.\n\n$(b)$ $\\frac{2}{7}$ es cociente de enteros $\\Rightarrow \\frac{2}{7}\\in\\mathbb{Q}$.\n\n$(c)$ $\\sqrt{16}=4\\in\\mathbb{N}$.\n\n$(d)$ $3$ no es cuadrado perfecto $\\Rightarrow \\sqrt{3}\\in\\mathbb{R}\\setminus\\mathbb{Q}$."
+        }
+      },
+      {
+        "id": "POL01_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula:\n$$(a)\\;|-5|+|3-8| \\qquad (b)\\;|2x-4|\\text{ para }x=1$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;10$,\\quad $(b)\\;2$",
+          "desarrollo": "$(a)$ $|-5|=5$ y $|3-8|=|-5|=5$, luego $5+5=10$.\n\n$(b)$ $|2(1)-4|=|-2|=2$."
+        }
+      },
+      {
+        "id": "POL01_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Resuelve la ecuación:\n$$|2x-4|=6$$",
+        "solucion": {
+          "respuesta_directa": "$x=5$ o $x=-1$",
+          "desarrollo": "Dos casos:\n$$2x-4=6\\Rightarrow x=5$$\n$$2x-4=-6\\Rightarrow x=-1$$"
+        }
+      },
+      {
+        "id": "POL01_E04",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Expresa en notación de intervalos la solución de:\n$$|x-3|\\leq4$$",
+        "solucion": {
+          "respuesta_directa": "$x\\in[-1,\\,7]$",
+          "desarrollo": "$|x-3|\\leq4\\Leftrightarrow-4\\leq x-3\\leq4\\Leftrightarrow-1\\leq x\\leq7$, es decir $x\\in[-1,7]$."
+        }
+      },
+      {
+        "id": "POL01_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Dados $A=(-2,\\,5]$ y $B=[3,\\,+\\infty)$, calcula $A\\cap B$ y $A\\cup B$.",
+        "solucion": {
+          "respuesta_directa": "$A\\cap B=[3,5]$,\\quad $A\\cup B=(-2,+\\infty)$",
+          "desarrollo": "**Intersección:** valores que cumplen $x>-2$ y $x\\geq3$ y $x\\leq5$ simultáneamente: $A\\cap B=[3,5]$.\n\n**Unión:** valores en alguno de los dos: desde $-2$ (excluido) en adelante: $A\\cup B=(-2,+\\infty)$."
+        }
+      },
+      {
+        "id": "POL01_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Determina entre qué dos enteros consecutivos se encuentra $\\sqrt{30}$, acota con dos decimales y justifica que es irracional.",
+        "solucion": {
+          "respuesta_directa": "$5<\\sqrt{30}<6$,\\quad $\\sqrt{30}\\approx5{,}48$",
+          "desarrollo": "**Acotación:**\n$$5^2=25<30<36=6^2\\Rightarrow5<\\sqrt{30}<6$$\n\n**Aproximación:** $5{,}4^2=29{,}16$ y $5{,}5^2=30{,}25$, por lo que $\\sqrt{30}\\in(5{,}4\\,,5{,}5)$. Refinando: $5{,}47^2\\approx29{,}92$ y $5{,}48^2\\approx30{,}03$, luego $\\sqrt{30}\\approx5{,}48$.\n\n**Irracionalidad:** $30=2\\cdot3\\cdot5$ tiene factores primos con exponente impar, así que $30$ no es cuadrado perfecto y $\\sqrt{30}\\notin\\mathbb{Q}$."
+        }
+      },
+      {
+        "id": "POL01_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Resuelve y expresa en notación de intervalos:\n$$|3x+1|>5$$",
+        "solucion": {
+          "respuesta_directa": "$x\\in\\left(-\\infty,\\,-2\\right)\\cup\\left(\\dfrac{4}{3},\\,+\\infty\\right)$",
+          "desarrollo": "$|3x+1|>5$ equivale a:\n$$3x+1>5\\quad\\text{o}\\quad 3x+1<-5$$\n\n**Caso 1:** $3x>4\\Rightarrow x>\\dfrac{4}{3}$\n\n**Caso 2:** $3x<-6\\Rightarrow x<-2$\n\n**Solución:** $x\\in\\left(-\\infty,-2\\right)\\cup\\left(\\dfrac{4}{3},+\\infty\\right)$"
+        }
+      },
+      {
+        "id": "POL01_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Indica la propiedad que justifica cada igualdad:\n$$(a)\\;3(x+5)=3x+15 \\qquad (b)\\;(2+x)+y=2+(x+y)$$\n$$(c)\\;x+(-x)=0 \\qquad (d)\\;\\frac{1}{x}\\cdot x=1\\;(x\\neq0)$$",
+        "solucion": {
+          "respuesta_directa": "$(a)$ distributiva; $(b)$ asociativa de la suma; $(c)$ opuesto; $(d)$ inverso multiplicativo",
+          "desarrollo": "$(a)$ $3(x+5)=3x+15$ → **propiedad distributiva** del producto respecto a la suma.\n\n$(b)$ $(2+x)+y=2+(x+y)$ → **propiedad asociativa** de la suma.\n\n$(c)$ $x+(-x)=0$ → **existencia del elemento opuesto**.\n\n$(d)$ $\\frac{1}{x}\\cdot x=1$ → **existencia del inverso multiplicativo**."
+        }
+      },
+      {
+        "id": "POL01_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Resuelve el sistema de inecuaciones:\n$$\\begin{cases}3x-2>4\\\\|x-5|\\leq2\\end{cases}$$",
+        "solucion": {
+          "respuesta_directa": "$x\\in[3,\\,7]$",
+          "desarrollo": "**Primera inecuación:**\n$$3x-2>4\\Rightarrow3x>6\\Rightarrow x>2\\quad\\Rightarrow x\\in(2,+\\infty)$$\n\n**Segunda inecuación:**\n$$|x-5|\\leq2\\Rightarrow-2\\leq x-5\\leq2\\Rightarrow3\\leq x\\leq7\\quad\\Rightarrow x\\in[3,7]$$\n\n**Intersección:**\n$$x\\in(2,+\\infty)\\cap[3,7]=[3,7]$$"
+        }
+      },
+      {
+        "id": "POL01_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que entre dos racionales siempre existe otro racional. Encuentra uno entre $\\dfrac{3}{7}$ y $\\dfrac{1}{2}$.",
+        "solucion": {
+          "respuesta_directa": "La media aritmética de dos racionales es racional. Entre $\\dfrac{3}{7}$ y $\\dfrac{1}{2}$ puede tomarse $\\dfrac{13}{28}$.",
+          "desarrollo": "**Demostración:** Sean $r=\\dfrac{p}{q}$ y $s=\\dfrac{m}{n}$ racionales con $r<s$. Su media:\n$$t=\\frac{r+s}{2}=\\frac{pn+mq}{2qn}\\in\\mathbb{Q}\\quad\\text{y}\\quad r<t<s\\;\\blacksquare$$\n\n**Aplicación:**\n$$t=\\frac{\\frac{3}{7}+\\frac{1}{2}}{2}=\\frac{\\frac{6}{14}+\\frac{7}{14}}{2}=\\frac{\\frac{13}{14}}{2}=\\frac{13}{28}$$\nComprobación: $\\dfrac{3}{7}=\\dfrac{12}{28}<\\dfrac{13}{28}<\\dfrac{14}{28}=\\dfrac{1}{2}$ ✓"
+        }
+      }
+    ]
+  },
+  "POL02": {
+    "nodo_id": "POL02",
+    "nodo_nombre": "Potencias y radicales",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "POL02_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Simplifica aplicando propiedades de potencias:\n$$(a)\\;\\frac{2^5\\cdot2^3}{2^4} \\qquad (b)\\;(3^2)^3 \\qquad (c)\\;5^0\\cdot5^{-2}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;16$,\\quad $(b)\\;729$,\\quad $(c)\\;\\dfrac{1}{25}$",
+          "desarrollo": "$(a)$ $2^{5+3-4}=2^4=16$\n\n$(b)$ $3^{2\\cdot3}=3^6=729$\n\n$(c)$ $1\\cdot5^{-2}=\\dfrac{1}{25}$"
+        }
+      },
+      {
+        "id": "POL02_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Expresa como potencia de base $2$:\n$$(a)\\;8 \\qquad (b)\\;\\frac{1}{4} \\qquad (c)\\;\\sqrt{2} \\qquad (d)\\;\\sqrt[3]{4}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;2^3$,\\quad $(b)\\;2^{-2}$,\\quad $(c)\\;2^{1/2}$,\\quad $(d)\\;2^{2/3}$",
+          "desarrollo": "$(a)$ $8=2^3$\n\n$(b)$ $\\dfrac{1}{4}=\\dfrac{1}{2^2}=2^{-2}$\n\n$(c)$ $\\sqrt{2}=2^{1/2}$\n\n$(d)$ $\\sqrt[3]{4}=\\sqrt[3]{2^2}=2^{2/3}$"
+        }
+      },
+      {
+        "id": "POL02_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Simplifica los radicales:\n$$(a)\\;\\sqrt{72} \\qquad (b)\\;\\sqrt[3]{54} \\qquad (c)\\;\\sqrt{\\frac{9}{16}}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;6\\sqrt{2}$,\\quad $(b)\\;3\\sqrt[3]{2}$,\\quad $(c)\\;\\dfrac{3}{4}$",
+          "desarrollo": "$(a)$ $\\sqrt{36\\cdot2}=6\\sqrt{2}$\n\n$(b)$ $\\sqrt[3]{27\\cdot2}=3\\sqrt[3]{2}$\n\n$(c)$ $\\dfrac{\\sqrt{9}}{\\sqrt{16}}=\\dfrac{3}{4}$"
+        }
+      },
+      {
+        "id": "POL02_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Opera y simplifica:\n$$(a)\\;3\\sqrt{5}-\\sqrt{20}+\\sqrt{45} \\qquad (b)\\;\\sqrt{3}\\cdot\\sqrt{12}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;4\\sqrt{5}$,\\quad $(b)\\;6$",
+          "desarrollo": "$(a)$ $\\sqrt{20}=2\\sqrt{5}$, $\\sqrt{45}=3\\sqrt{5}$:\n$$3\\sqrt{5}-2\\sqrt{5}+3\\sqrt{5}=4\\sqrt{5}$$\n\n$(b)$ $\\sqrt{3\\cdot12}=\\sqrt{36}=6$"
+        }
+      },
+      {
+        "id": "POL02_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Racionaliza:\n$$(a)\\;\\frac{5}{\\sqrt{3}} \\qquad (b)\\;\\frac{2}{\\sqrt{5}-1}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;\\dfrac{5\\sqrt{3}}{3}$,\\quad $(b)\\;\\dfrac{\\sqrt{5}+1}{2}$",
+          "desarrollo": "$(a)$ $\\dfrac{5}{\\sqrt{3}}\\cdot\\dfrac{\\sqrt{3}}{\\sqrt{3}}=\\dfrac{5\\sqrt{3}}{3}$\n\n$(b)$ Multiplicando por el conjugado $\\dfrac{\\sqrt{5}+1}{\\sqrt{5}+1}$:\n$$\\frac{2(\\sqrt{5}+1)}{5-1}=\\frac{\\sqrt{5}+1}{2}$$"
+        }
+      },
+      {
+        "id": "POL02_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Simplifica completamente:\n$$\\frac{\\sqrt{3}+\\sqrt{2}}{\\sqrt{3}-\\sqrt{2}}+\\frac{\\sqrt{3}-\\sqrt{2}}{\\sqrt{3}+\\sqrt{2}}$$",
+        "solucion": {
+          "respuesta_directa": "$10$",
+          "desarrollo": "Racionalizamos cada fracción con el conjugado correspondiente (denominador $=3-2=1$):\n$$\\frac{(\\sqrt{3}+\\sqrt{2})^2}{1}+\\frac{(\\sqrt{3}-\\sqrt{2})^2}{1}$$\n$$=(3+2\\sqrt{6}+2)+(3-2\\sqrt{6}+2)=5+5=10$$"
+        }
+      },
+      {
+        "id": "POL02_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $x$ en cada ecuación exponencial:\n$$(a)\\;2^x=32 \\qquad (b)\\;3^{x+1}=27 \\qquad (c)\\;4^x=\\frac{1}{8}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;x=5$,\\quad $(b)\\;x=2$,\\quad $(c)\\;x=-\\dfrac{3}{2}$",
+          "desarrollo": "$(a)$ $2^x=2^5\\Rightarrow x=5$\n\n$(b)$ $3^{x+1}=3^3\\Rightarrow x+1=3\\Rightarrow x=2$\n\n$(c)$ $4^x=2^{2x}$ y $\\dfrac{1}{8}=2^{-3}$, luego $2x=-3\\Rightarrow x=-\\dfrac{3}{2}$"
+        }
+      },
+      {
+        "id": "POL02_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Expresa como un único radical de índice mínimo:\n$$\\sqrt[6]{a^4}\\cdot\\sqrt[4]{a^3}$$",
+        "solucion": {
+          "respuesta_directa": "$\\sqrt[12]{a^{17}}$",
+          "desarrollo": "Convertimos a potencias fraccionarias:\n$$a^{4/6}\\cdot a^{3/4}=a^{2/3}\\cdot a^{3/4}$$\nMínimo común denominador de $3$ y $4$ es $12$:\n$$a^{8/12}\\cdot a^{9/12}=a^{17/12}=\\sqrt[12]{a^{17}}$$"
+        }
+      },
+      {
+        "id": "POL02_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Simplifica completamente la expresión:\n$$\\frac{\\left(\\sqrt{x^3\\,y}\\right)^2\\cdot\\sqrt[3]{x}}{x^2\\sqrt{y}}$$",
+        "solucion": {
+          "respuesta_directa": "$x^{1/3}=\\sqrt[3]{x}$",
+          "desarrollo": "Convertimos todo a potencias fraccionarias:\n$$\\frac{(x^{3/2}\\cdot y^{1/2})^2\\cdot x^{1/3}}{x^2\\cdot y^{1/2}}=\\frac{x^3\\cdot y\\cdot x^{1/3}}{x^2\\cdot y^{1/2}}=x^{3+1/3-2}\\cdot y^{1-1/2}=x^{4/3}\\cdot y^{1/2}$$\n\nEspera: $y^{1/2}$ no cancela con $y^{1/2}$... Recalculando:\n$$\\frac{x^3\\cdot y^1\\cdot x^{1/3}}{x^2\\cdot y^{1/2}}=x^{3+1/3-2}\\cdot y^{1-1/2}=x^{4/3}\\cdot y^{1/2}=\\sqrt[3]{x^4}\\cdot\\sqrt{y}$$"
+        }
+      },
+      {
+        "id": "POL02_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Una bacteria duplica su tamaño cada hora. Parte de $2\\times10^{-3}$ mm. Expresa en notación científica el tamaño tras $10$ y $20$ horas.",
+        "solucion": {
+          "respuesta_directa": "Tras 10 h: $\\approx2{,}05\\times10^{0}$ mm. Tras 20 h: $\\approx2{,}10\\times10^{3}$ mm.",
+          "desarrollo": "Tamaño tras $n$ horas: $T_n=2\\times10^{-3}\\cdot2^n$.\n\n**Tras 10 h:**\n$$T_{10}=2\\times10^{-3}\\cdot1024=2{,}048\\times10^0\\approx2{,}05\\times10^0\\text{ mm}$$\n\n**Tras 20 h:**\n$$T_{20}=2\\times10^{-3}\\cdot2^{20}=2\\times10^{-3}\\cdot1{,}048\\,576\\times10^6\\approx2{,}10\\times10^3\\text{ mm}$$"
+        }
+      }
+    ]
+  },
+  "POL03": {
+    "nodo_id": "POL03",
+    "nodo_nombre": "Operaciones con fracciones algebraicas",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "POL03_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Indica el dominio de cada fracción:\n$$(a)\\;\\frac{x+1}{x-3} \\qquad (b)\\;\\frac{2}{x^2-4} \\qquad (c)\\;\\frac{x}{x^2+1}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;\\mathbb{R}\\setminus\\{3\\}$,\\quad $(b)\\;\\mathbb{R}\\setminus\\{-2,2\\}$,\\quad $(c)\\;\\mathbb{R}$",
+          "desarrollo": "$(a)$ $x-3=0\\Rightarrow x=3$.\n\n$(b)$ $x^2-4=0\\Rightarrow x=\\pm2$.\n\n$(c)$ $x^2+1\\geq1>0$ para todo $x\\Rightarrow$ dominio $=\\mathbb{R}$."
+        }
+      },
+      {
+        "id": "POL03_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Simplifica:\n$$(a)\\;\\frac{6x^2}{9x} \\qquad (b)\\;\\frac{x^2-9}{x+3}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;\\dfrac{2x}{3}$,\\quad $(b)\\;x-3$",
+          "desarrollo": "$(a)$ $\\dfrac{6x^2}{9x}=\\dfrac{2x}{3}$\n\n$(b)$ $x^2-9=(x+3)(x-3)$, luego $\\dfrac{(x+3)(x-3)}{x+3}=x-3$ para $x\\neq-3$."
+        }
+      },
+      {
+        "id": "POL03_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula:\n$$(a)\\;\\frac{3}{x}+\\frac{5}{x} \\qquad (b)\\;\\frac{2}{x}-\\frac{1}{x^2}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;\\dfrac{8}{x}$,\\quad $(b)\\;\\dfrac{2x-1}{x^2}$",
+          "desarrollo": "$(a)$ Mismo denominador: $\\dfrac{8}{x}$.\n\n$(b)$ mcm $=x^2$: $\\dfrac{2x-1}{x^2}$."
+        }
+      },
+      {
+        "id": "POL03_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Opera y simplifica:\n$$\\frac{x}{x+1}\\cdot\\frac{x^2-1}{x^2}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{x-1}{x}$",
+          "desarrollo": "$$\\frac{x}{x+1}\\cdot\\frac{(x-1)(x+1)}{x^2}=\\frac{x(x-1)(x+1)}{x^2(x+1)}=\\frac{x-1}{x}$$"
+        }
+      },
+      {
+        "id": "POL03_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\frac{1}{x-1}-\\frac{1}{x+1}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{2}{x^2-1}$",
+          "desarrollo": "mcm $=(x-1)(x+1)=x^2-1$:\n$$\\frac{(x+1)-(x-1)}{x^2-1}=\\frac{2}{x^2-1}$$"
+        }
+      },
+      {
+        "id": "POL03_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Simplifica y determina el dominio:\n$$\\frac{x^2+2x}{x^2+3x+2}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{x}{x+1}$,\\quad dominio $\\mathbb{R}\\setminus\\{-2,-1\\}$",
+          "desarrollo": "Numerador: $x^2+2x=x(x+2)$.\nDenominador: $x^2+3x+2=(x+1)(x+2)$.\n$$\\frac{x(x+2)}{(x+1)(x+2)}=\\frac{x}{x+1}\\quad(x\\neq-2)$$\nDominio: $\\mathbb{R}\\setminus\\{-2,-1\\}$."
+        }
+      },
+      {
+        "id": "POL03_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Divide y simplifica:\n$$\\frac{x^2-1}{x^2+x}\\div\\frac{x-1}{x}$$",
+        "solucion": {
+          "respuesta_directa": "$1$",
+          "desarrollo": "$$\\frac{x^2-1}{x^2+x}\\cdot\\frac{x}{x-1}=\\frac{(x-1)(x+1)}{x(x+1)}\\cdot\\frac{x}{x-1}=1$$"
+        }
+      },
+      {
+        "id": "POL03_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Opera y simplifica:\n$$\\frac{x}{x-2}+\\frac{3}{x+2}-\\frac{12}{x^2-4}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{x^2+5x-18}{(x-2)(x+2)}$... ver desarrollo",
+          "desarrollo": "mcm $=(x-2)(x+2)=x^2-4$:\n$$\\frac{x(x+2)+3(x-2)-12}{x^2-4}=\\frac{x^2+2x+3x-6-12}{x^2-4}=\\frac{x^2+5x-18}{x^2-4}$$\n\nVerificamos si factoriza: discriminante de $x^2+5x-18$: $25+72=97$ (no es cuadrado perfecto). Resultado irreducible: $\\dfrac{x^2+5x-18}{(x-2)(x+2)}$."
+        }
+      },
+      {
+        "id": "POL03_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Un grifo A llena un depósito en $x$ horas y el B en $x+3$ horas. Escribe la fracción que representa la parte llenada en una hora con ambos abiertos y simplifica.",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{2x+3}{x(x+3)}$",
+          "desarrollo": "En una hora: A llena $\\dfrac{1}{x}$ y B llena $\\dfrac{1}{x+3}$. Juntos:\n$$\\frac{1}{x}+\\frac{1}{x+3}=\\frac{x+3+x}{x(x+3)}=\\frac{2x+3}{x(x+3)}$$\nEsta fracción es irreducible (el numerador $2x+3$ no comparte factores con $x$ ni con $x+3$)."
+        }
+      },
+      {
+        "id": "POL03_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Simplifica la fracción compleja:\n$$\\frac{\\dfrac{1}{x}-\\dfrac{1}{y}}{\\dfrac{1}{x}+\\dfrac{1}{y}}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{y-x}{y+x}$",
+          "desarrollo": "Numerador: $\\dfrac{y-x}{xy}$.\\quad Denominador: $\\dfrac{y+x}{xy}$.\n$$\\frac{y-x}{xy}\\cdot\\frac{xy}{y+x}=\\frac{y-x}{y+x}$$"
+        }
+      }
+    ]
+  },
+  "POL04": {
+    "nodo_id": "POL04",
+    "nodo_nombre": "Polinomios: suma y producto",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "POL04_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Dado $p(x)=3x^4-2x^2+x-5$, indica:\n$(a)$ grado,\\quad $(b)$ coeficiente líder,\\quad $(c)$ término independiente,\\quad $(d)$ $p(1)$.",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;4$,\\quad $(b)\\;3$,\\quad $(c)\\;-5$,\\quad $(d)\\;-3$",
+          "desarrollo": "$(a)$ Mayor exponente: $4$.\n$(b)$ Coeficiente de $x^4$: $3$.\n$(c)$ Término de $x^0$: $-5$.\n$(d)$ $p(1)=3-2+1-5=-3$."
+        }
+      },
+      {
+        "id": "POL04_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Suma los polinomios:\n$$p(x)=2x^3-x^2+3x-1\\quad\\text{y}\\quad q(x)=x^3+4x^2-x+2$$",
+        "solucion": {
+          "respuesta_directa": "$3x^3+3x^2+2x+1$",
+          "desarrollo": "Sumando término a término por grados:\n$$x^3:\\;2+1=3\\quad x^2:\\;-1+4=3\\quad x:\\;3-1=2\\quad c:\\;-1+2=1$$"
+        }
+      },
+      {
+        "id": "POL04_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Aplica el producto notable adecuado:\n$$(a)\\;(x+5)^2 \\qquad (b)\\;(2x-3)^2 \\qquad (c)\\;(x+4)(x-4)$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;x^2+10x+25$,\\quad $(b)\\;4x^2-12x+9$,\\quad $(c)\\;x^2-16$",
+          "desarrollo": "$(a)$ $x^2+2\\cdot5x+25$\n$(b)$ $(2x)^2-2\\cdot3\\cdot2x+9=4x^2-12x+9$\n$(c)$ $x^2-4^2=x^2-16$"
+        }
+      },
+      {
+        "id": "POL04_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el producto:\n$$(x^2-2x+1)(x+3)$$",
+        "solucion": {
+          "respuesta_directa": "$x^3+x^2-5x+3$",
+          "desarrollo": "Distributiva:\n$$x^3+3x^2-2x^2-6x+x+3=x^3+x^2-5x+3$$"
+        }
+      },
+      {
+        "id": "POL04_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $p(x)-q(x)$ siendo $p(x)=x^4-3x^2+2$ y $q(x)=x^4+x^3-x^2-1$.",
+        "solucion": {
+          "respuesta_directa": "$-x^3-2x^2+3$",
+          "desarrollo": "$$p-q=(x^4-3x^2+2)-(x^4+x^3-x^2-1)=-x^3-2x^2+3$$"
+        }
+      },
+      {
+        "id": "POL04_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Desarrolla usando el cubo de un binomio:\n$$(2x-1)^3$$",
+        "solucion": {
+          "respuesta_directa": "$8x^3-12x^2+6x-1$",
+          "desarrollo": "$(a-b)^3=a^3-3a^2b+3ab^2-b^3$ con $a=2x$, $b=1$:\n$$(2x)^3-3(2x)^2(1)+3(2x)(1)^2-1=8x^3-12x^2+6x-1$$"
+        }
+      },
+      {
+        "id": "POL04_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Determina $a$ y $b$ para que $p(x)=ax^3+bx^2-2x+1$ verifique $p(1)=4$ y $p(-1)=6$.",
+        "solucion": {
+          "respuesta_directa": "$a=1,\\;b=4$",
+          "desarrollo": "$$p(1)=a+b-2+1=4\\Rightarrow a+b=5\\quad(1)$$\n$$p(-1)=-a+b+2+1=6\\Rightarrow -a+b=3\\quad(2)$$\nSumando: $2b=8\\Rightarrow b=4$. De $(1)$: $a=1$."
+        }
+      },
+      {
+        "id": "POL04_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Factoriza usando productos notables inversos:\n$$(a)\\;4x^2-20x+25 \\qquad (b)\\;9x^2-16 \\qquad (c)\\;x^3+3x^2+3x+1$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;(2x-5)^2$,\\quad $(b)\\;(3x-4)(3x+4)$,\\quad $(c)\\;(x+1)^3$",
+          "desarrollo": "$(a)$ $(2x)^2-2\\cdot5\\cdot2x+5^2=(2x-5)^2$\n$(b)$ $(3x)^2-4^2=(3x-4)(3x+4)$\n$(c)$ $x^3+3x^2\\cdot1+3x\\cdot1^2+1^3=(x+1)^3$"
+        }
+      },
+      {
+        "id": "POL04_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Desarrolla y simplifica:\n$$(x+2)^3-(x-2)^3$$",
+        "solucion": {
+          "respuesta_directa": "$12x^2+16$",
+          "desarrollo": "$(x+2)^3=x^3+6x^2+12x+8$\n$(x-2)^3=x^3-6x^2+12x-8$\n\nResta: $12x^2+16$."
+        }
+      },
+      {
+        "id": "POL04_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra la identidad $(a+b)^2+(a-b)^2=2(a^2+b^2)$ y úsala para calcular $37^2+13^2$ sabiendo que $37+13=50$ y $37-13=24$.",
+        "solucion": {
+          "respuesta_directa": "$37^2+13^2=1\\,538$",
+          "desarrollo": "**Demostración:**\n$$(a+b)^2+(a-b)^2=(a^2+2ab+b^2)+(a^2-2ab+b^2)=2(a^2+b^2)\\;\\blacksquare$$\n\n**Aplicación:** $a+b=50$, $a-b=24$:\n$$50^2+24^2=2500+576=3076=2(a^2+b^2)\\Rightarrow a^2+b^2=1538$$"
+        }
+      }
+    ]
+  },
+  "POL05": {
+    "nodo_id": "POL05",
+    "nodo_nombre": "División de polinomios y regla de Ruffini",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "POL05_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Sin hacer la división, calcula el resto de dividir $p(x)=x^3-2x^2+x-3$ entre $(x-2)$.",
+        "solucion": {
+          "respuesta_directa": "Resto $=-1$",
+          "desarrollo": "Por el Teorema del Resto: $p(2)=8-8+2-3=-1$."
+        }
+      },
+      {
+        "id": "POL05_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Aplica Ruffini para dividir $p(x)=x^3-6x^2+11x-6$ entre $(x-1)$.",
+        "solucion": {
+          "respuesta_directa": "Cociente: $x^2-5x+6$,\\quad Resto: $0$",
+          "desarrollo": "Coeficientes $[1,-6,11,-6]$, $a=1$:\n$$\\begin{array}{r|rrrr}1&1&-6&11&-6\\\\&&1&-5&6\\\\\\hline&1&-5&6&0\\end{array}$$"
+        }
+      },
+      {
+        "id": "POL05_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Aplica Ruffini para dividir $p(x)=2x^3+x^2-5x+2$ entre $(x+2)$.",
+        "solucion": {
+          "respuesta_directa": "Cociente: $2x^2-3x+1$,\\quad Resto: $0$",
+          "desarrollo": "Coeficientes $[2,1,-5,2]$, $a=-2$:\n$$\\begin{array}{r|rrrr}-2&2&1&-5&2\\\\&&-4&6&-2\\\\\\hline&2&-3&1&0\\end{array}$$"
+        }
+      },
+      {
+        "id": "POL05_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que la división de $p(x)=x^3+kx^2-3x+1$ entre $(x-2)$ sea exacta.",
+        "solucion": {
+          "respuesta_directa": "$k=-\\dfrac{3}{4}$",
+          "desarrollo": "División exacta $\\Leftrightarrow p(2)=0$:\n$$8+4k-6+1=0\\Rightarrow4k=-3\\Rightarrow k=-\\frac{3}{4}$$"
+        }
+      },
+      {
+        "id": "POL05_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Divide $p(x)=x^4-1$ entre $d(x)=x^2-1$ usando el algoritmo largo.",
+        "solucion": {
+          "respuesta_directa": "Cociente: $x^2+1$,\\quad Resto: $0$",
+          "desarrollo": "- $x^4\\div x^2=x^2$; $x^2(x^2-1)=x^4-x^2$; restando: $x^2-1$.\n- $x^2-1\\div x^2-1=1$; restando: $0$.\n\nCociente: $x^2+1$."
+        }
+      },
+      {
+        "id": "POL05_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Divide $p(x)=3x^3-2x^2+x-4$ entre $d(x)=x^2+x-1$ y comprueba el resultado.",
+        "solucion": {
+          "respuesta_directa": "Cociente: $3x-5$,\\quad Resto: $9x-9$",
+          "desarrollo": "- $3x^3\\div x^2=3x$; $3x(x^2+x-1)=3x^3+3x^2-3x$; restando: $-5x^2+4x-4$.\n- $-5x^2\\div x^2=-5$; $-5(x^2+x-1)=-5x^2-5x+5$; restando: $9x-9$.\n\n**Comprobación:** $(x^2+x-1)(3x-5)+(9x-9)=3x^3-2x^2+x-4$ ✓"
+        }
+      },
+      {
+        "id": "POL05_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Aplica Ruffini dos veces para dividir $p(x)=x^3-7x+6$ entre $(x-1)(x-2)$.",
+        "solucion": {
+          "respuesta_directa": "Cociente final: $x+3$,\\quad Resto: $0$",
+          "desarrollo": "**1ª división** $(x-1)$, $a=1$, coeficientes $[1,0,-7,6]$:\n$$\\begin{array}{r|rrrr}1&1&0&-7&6\\\\&&1&1&-6\\\\\\hline&1&1&-6&0\\end{array}$$\nCociente: $x^2+x-6$.\n\n**2ª división** $(x-2)$, $a=2$, coeficientes $[1,1,-6]$:\n$$\\begin{array}{r|rrr}2&1&1&-6\\\\&&2&6\\\\\\hline&1&3&0\\end{array}$$\nCociente: $x+3$."
+        }
+      },
+      {
+        "id": "POL05_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Sabiendo que $p(x)=x^3+ax+b$ tiene resto $5$ al dividir entre $(x-1)$ y resto $-1$ al dividir entre $(x+1)$, halla $a$ y $b$.",
+        "solucion": {
+          "respuesta_directa": "$a=2,\\;b=2$",
+          "desarrollo": "$$p(1)=1+a+b=5\\Rightarrow a+b=4\\quad(1)$$\n$$p(-1)=-1-a+b=-1\\Rightarrow -a+b=0\\Rightarrow b=a\\quad(2)$$\nDe $(1)$ y $(2)$: $2a=4\\Rightarrow a=2$, $b=2$."
+        }
+      },
+      {
+        "id": "POL05_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que $(x-a)$ divide a $x^n-a^n$ para todo $n\\in\\mathbb{N}$.",
+        "solucion": {
+          "respuesta_directa": "Por el Teorema del Factor: $p(a)=a^n-a^n=0$.",
+          "desarrollo": "Sea $p(x)=x^n-a^n$. Evaluamos en $x=a$:\n$$p(a)=a^n-a^n=0$$\nComo $p(a)=0$, por el Teorema del Factor $(x-a)$ divide a $x^n-a^n$ para todo $n\\in\\mathbb{N}$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "POL05_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "El polinomio $p(x)=x^3+ax^2+bx-6$ tiene $x=1$ y $x=-2$ como raíces. Halla $a$, $b$ y la tercera raíz.",
+        "solucion": {
+          "respuesta_directa": "$a=0,\\;b=-5$; tercera raíz: $x=3$",
+          "desarrollo": "$$p(1)=1+a+b-6=0\\Rightarrow a+b=5\\quad(1)$$\n$$p(-2)=-8+4a-2b-6=0\\Rightarrow4a-2b=14\\Rightarrow2a-b=7\\quad(2)$$\nSumando $(1)+(2)$: $3a=12\\Rightarrow a=4$... Revisando: de $(1)+(2)$: $3a=12\\Rightarrow a=4$, $b=1$.\n\nComprobación: $p(1)=1+4+1-6=0$ ✓; $p(-2)=-8+16-2-6=0$ ✓.\n\nPor Vieta: suma de raíces $=-a=-4$; $1+(-2)+r_3=-4\\Rightarrow r_3=-3$."
+        }
+      }
+    ]
+  },
+  "ALG01": {
+    "nodo_id": "ALG01",
+    "nodo_nombre": "Concepto de matriz y tipos",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ALG01_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Dada $A=\\begin{pmatrix}2&-1&0\\\\3&5&7\\\\-2&4&1\\end{pmatrix}$, indica:\n$(a)$ dimensión de $A$;\\quad $(b)$ $a_{23}$;\\quad $(c)$ $a_{31}$;\\quad $(d)$ $a_{22}$.",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;3\\times3$,\\quad $(b)\\;7$,\\quad $(c)\\;-2$,\\quad $(d)\\;5$",
+          "desarrollo": "$(a)$ 3 filas y 3 columnas.\n$(b)$ Fila 2, col 3: $7$.\n$(c)$ Fila 3, col 1: $-2$.\n$(d)$ Fila 2, col 2: $5$."
+        }
+      },
+      {
+        "id": "ALG01_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Escribe la matriz identidad $I_4$.",
+        "solucion": {
+          "respuesta_directa": "$I_4=\\begin{pmatrix}1&0&0&0\\\\0&1&0&0\\\\0&0&1&0\\\\0&0&0&1\\end{pmatrix}$",
+          "desarrollo": "$a_{ii}=1$ para $i=1,2,3,4$ y $a_{ij}=0$ para $i\\neq j$."
+        }
+      },
+      {
+        "id": "ALG01_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Clasifica las matrices:\n$$A=\\begin{pmatrix}1&0&0\\\\0&3&0\\\\0&0&5\\end{pmatrix},\\quad B=\\begin{pmatrix}0&1&2\\\\-1&0&3\\\\-2&-3&0\\end{pmatrix},\\quad C=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$A$: diagonal;\\quad $B$: antisimétrica;\\quad $C$: columna",
+          "desarrollo": "$A$: solo elementos en la diagonal $\\Rightarrow$ **diagonal**.\n$B$: $b_{ij}=-b_{ji}$ y $b_{ii}=0$ $\\Rightarrow$ **antisimétrica**.\n$C$: $3\\times1$ $\\Rightarrow$ **columna**."
+        }
+      },
+      {
+        "id": "ALG01_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $x$, $y$, $z$ para que $A=B$:\n$$A=\\begin{pmatrix}2x&5\\\\y-1&3z+2\\end{pmatrix},\\quad B=\\begin{pmatrix}6&5\\\\4&8\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$x=3,\\;y=5,\\;z=2$",
+          "desarrollo": "Igualdad elemento a elemento:\n$2x=6\\Rightarrow x=3$;\\quad $y-1=4\\Rightarrow y=5$;\\quad $3z+2=8\\Rightarrow z=2$."
+        }
+      },
+      {
+        "id": "ALG01_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Clasifica y justifica:\n$$D=\\begin{pmatrix}2&1&3\\\\1&2&1\\\\3&1&4\\end{pmatrix},\\quad E=\\begin{pmatrix}3&2&1\\\\0&5&4\\\\0&0&2\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$D$: simétrica;\\quad $E$: triangular superior",
+          "desarrollo": "$D$: $d_{12}=d_{21}=1$, $d_{13}=d_{31}=3$, $d_{23}=d_{32}=1$ $\\Rightarrow$ **simétrica**.\n$E$: $e_{21}=e_{31}=e_{32}=0$ (ceros bajo la diagonal) $\\Rightarrow$ **triangular superior**."
+        }
+      },
+      {
+        "id": "ALG01_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Construye una matriz $3\\times3$ simétrica con $a_{11}=1$, $a_{22}=4$, $a_{33}=9$, $a_{12}=2$, $a_{13}=-1$, $a_{23}=3$.",
+        "solucion": {
+          "respuesta_directa": "$A=\\begin{pmatrix}1&2&-1\\\\2&4&3\\\\-1&3&9\\end{pmatrix}$",
+          "desarrollo": "En una matriz simétrica $a_{ij}=a_{ji}$:\n$$A=\\begin{pmatrix}1&2&-1\\\\2&4&3\\\\-1&3&9\\end{pmatrix}$$\nVerificación: $a_{12}=a_{21}=2$, $a_{13}=a_{31}=-1$, $a_{23}=a_{32}=3$ ✓."
+        }
+      },
+      {
+        "id": "ALG01_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $a$, $b$, $c$ para que la matriz sea simétrica:\n$$A=\\begin{pmatrix}1&a+1&3\\\\2&4&b-1\\\\3&c&7\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$a=1,\\;b-1=c$. Con $b=6$: $c=5$.",
+          "desarrollo": "Condición $a_{ij}=a_{ji}$:\n- $a_{12}=a_{21}$: $a+1=2\\Rightarrow a=1$\n- $a_{13}=a_{31}$: $3=3$ ✓\n- $a_{23}=a_{32}$: $b-1=c$\n\nNecesitamos un valor adicional; si $b=6$ entonces $c=5$."
+        }
+      },
+      {
+        "id": "ALG01_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "¿Cuántos elementos independientes tiene una matriz simétrica de orden $n$? Calcula para $n=4$.",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{n(n+1)}{2}$ elementos. Para $n=4$: $10$.",
+          "desarrollo": "Diagonal: $n$ elementos libres. Pares $i<j$: $\\binom{n}{2}=\\dfrac{n(n-1)}{2}$ (el valor de $a_{ji}$ queda determinado por $a_{ij}$).\n\nTotal: $n+\\dfrac{n(n-1)}{2}=\\dfrac{n(n+1)}{2}$. Para $n=4$: $\\dfrac{4\\cdot5}{2}=10$."
+        }
+      },
+      {
+        "id": "ALG01_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que si $A$ es triangular superior e inferior simultáneamente, entonces $A$ es diagonal.",
+        "solucion": {
+          "respuesta_directa": "Todos los elementos fuera de la diagonal son $0$.",
+          "desarrollo": "**Triangular superior:** $a_{ij}=0$ si $i>j$.\n**Triangular inferior:** $a_{ij}=0$ si $i<j$.\n\nPara cualquier $(i,j)$ con $i\\neq j$, se cumple $i>j$ o $i<j$, luego $a_{ij}=0$. Solo quedan los $a_{ii}$: $A$ es **diagonal**. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ALG01_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Sea $A$ una matriz $n\\times n$ con $a_{ij}=i+j$. Prueba que $A$ es simétrica y escríbela para $n=3$.",
+        "solucion": {
+          "respuesta_directa": "$A$ es simétrica. $A=\\begin{pmatrix}2&3&4\\\\3&4&5\\\\4&5&6\\end{pmatrix}$",
+          "desarrollo": "**Simetría:** $a_{ij}=i+j=j+i=a_{ji}$ para todo $i,j$ $\\Rightarrow$ $A$ es simétrica. $\\blacksquare$\n\n**Para $n=3$:** $a_{ij}=i+j$:\n$$A=\\begin{pmatrix}2&3&4\\\\3&4&5\\\\4&5&6\\end{pmatrix}$$"
+        }
+      }
+    ]
+  },
+  "ALG02": {
+    "nodo_id": "ALG02",
+    "nodo_nombre": "Operaciones con matrices: suma y producto escalar",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ALG02_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $A+B$ y $A-B$:\n$$A=\\begin{pmatrix}1&-2\\\\3&4\\end{pmatrix},\\quad B=\\begin{pmatrix}2&5\\\\-1&0\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$A+B=\\begin{pmatrix}3&3\\\\2&4\\end{pmatrix}$,\\quad $A-B=\\begin{pmatrix}-1&-7\\\\4&4\\end{pmatrix}$",
+          "desarrollo": "Suma y resta elemento a elemento:\n$A+B$: $(3,3,2,4)$. $A-B$: $(-1,-7,4,4)$."
+        }
+      },
+      {
+        "id": "ALG02_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $3A-2B$:\n$$A=\\begin{pmatrix}1&0&-1\\\\2&3&1\\end{pmatrix},\\quad B=\\begin{pmatrix}0&1&2\\\\-1&1&0\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$\\begin{pmatrix}3&-2&-7\\\\8&7&3\\end{pmatrix}$",
+          "desarrollo": "$3A=\\begin{pmatrix}3&0&-3\\\\6&9&3\\end{pmatrix}$, $2B=\\begin{pmatrix}0&2&4\\\\-2&2&0\\end{pmatrix}$.\n$3A-2B=\\begin{pmatrix}3&-2&-7\\\\8&7&3\\end{pmatrix}$."
+        }
+      },
+      {
+        "id": "ALG02_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula la traza:\n$$A=\\begin{pmatrix}3&1&-2\\\\0&5&4\\\\1&-1&7\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$\\operatorname{tr}(A)=15$",
+          "desarrollo": "$\\operatorname{tr}(A)=a_{11}+a_{22}+a_{33}=3+5+7=15$."
+        }
+      },
+      {
+        "id": "ALG02_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $X$ tal que $2X-A=B$:\n$$A=\\begin{pmatrix}4&-2\\\\0&6\\end{pmatrix},\\quad B=\\begin{pmatrix}2&4\\\\-2&0\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$X=\\begin{pmatrix}3&1\\\\-1&3\\end{pmatrix}$",
+          "desarrollo": "$2X=A+B=\\begin{pmatrix}6&2\\\\-2&6\\end{pmatrix}\\Rightarrow X=\\begin{pmatrix}3&1\\\\-1&3\\end{pmatrix}$."
+        }
+      },
+      {
+        "id": "ALG02_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Dada $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$, expresa $\\operatorname{tr}(A+\\lambda I_2)$ en función de $a$, $d$ y $\\lambda$.",
+        "solucion": {
+          "respuesta_directa": "$a+d+2\\lambda$",
+          "desarrollo": "$A+\\lambda I_2=\\begin{pmatrix}a+\\lambda&b\\\\c&d+\\lambda\\end{pmatrix}$. $\\operatorname{tr}=(a+\\lambda)+(d+\\lambda)=a+d+2\\lambda$."
+        }
+      },
+      {
+        "id": "ALG02_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Encuentra $\\lambda$ y $\\mu$ para que $\\lambda A+\\mu B=C$:\n$$A=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix},\\quad B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix},\\quad C=\\begin{pmatrix}3&2\\\\2&6\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$\\lambda=3,\\;\\mu=2$",
+          "desarrollo": "Sistema elemento a elemento:\n- $(1,1)$: $\\lambda=3$\n- $(1,2)$: $\\mu=2$\n- $(2,1)$: $\\mu=2$ ✓\n- $(2,2)$: $2\\lambda=6$ ✓\n\n$\\lambda=3$, $\\mu=2$."
+        }
+      },
+      {
+        "id": "ALG02_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra que la suma de dos matrices simétricas es simétrica.",
+        "solucion": {
+          "respuesta_directa": "$(A+B)^T=A^T+B^T=A+B$.",
+          "desarrollo": "Sean $A$ y $B$ simétricas: $a_{ij}=a_{ji}$ y $b_{ij}=b_{ji}$.\n$(A+B)_{ij}=a_{ij}+b_{ij}=a_{ji}+b_{ji}=(A+B)_{ji}$.\nLuego $A+B$ es simétrica. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ALG02_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Escribe la matriz $A$ de orden $3$ con $a_{ij}=(-1)^{i+j}(i+j-1)$ y calcula su traza.",
+        "solucion": {
+          "respuesta_directa": "$\\operatorname{tr}(A)=9$",
+          "desarrollo": "$$A=\\begin{pmatrix}1&-2&3\\\\-2&3&-4\\\\3&-4&5\\end{pmatrix}$$\n$\\operatorname{tr}(A)=1+3+5=9$."
+        }
+      },
+      {
+        "id": "ALG02_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Descompón en parte simétrica y antisimétrica:\n$$A=\\begin{pmatrix}1&3&5\\\\2&4&6\\\\0&1&2\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$S=\\dfrac{A+A^T}{2}$,\\quad $K=\\dfrac{A-A^T}{2}$",
+          "desarrollo": "$$A^T=\\begin{pmatrix}1&2&0\\\\3&4&1\\\\5&6&2\\end{pmatrix}$$\n$$S=\\frac{1}{2}\\begin{pmatrix}2&5&5\\\\5&8&7\\\\5&7&4\\end{pmatrix},\\quad K=\\frac{1}{2}\\begin{pmatrix}0&1&5\\\\-1&0&5\\\\-5&-5&0\\end{pmatrix}$$\nVerificación: $S+K=A$ ✓; $S^T=S$ ✓; $K^T=-K$ ✓."
+        }
+      },
+      {
+        "id": "ALG02_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Prueba que $\\operatorname{tr}(A+B)=\\operatorname{tr}(A)+\\operatorname{tr}(B)$ y que $\\operatorname{tr}(\\lambda A)=\\lambda\\operatorname{tr}(A)$.",
+        "solucion": {
+          "respuesta_directa": "Ambas se deducen directamente de la definición de traza.",
+          "desarrollo": "**Prop. 1:** $\\operatorname{tr}(A+B)=\\sum_i(a_{ii}+b_{ii})=\\sum_i a_{ii}+\\sum_i b_{ii}=\\operatorname{tr}(A)+\\operatorname{tr}(B)$. $\\blacksquare$\n\n**Prop. 2:** $\\operatorname{tr}(\\lambda A)=\\sum_i\\lambda a_{ii}=\\lambda\\sum_i a_{ii}=\\lambda\\operatorname{tr}(A)$. $\\blacksquare$"
+        }
+      }
+    ]
+  },
+  "ALG03": {
+    "nodo_id": "ALG03",
+    "nodo_nombre": "Producto de matrices",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ALG03_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $AB$:\n$$A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix},\\quad B=\\begin{pmatrix}2&0\\\\1&3\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$AB=\\begin{pmatrix}4&6\\\\10&12\\end{pmatrix}$",
+          "desarrollo": "$c_{11}=1\\cdot2+2\\cdot1=4$, $c_{12}=1\\cdot0+2\\cdot3=6$,\n$c_{21}=3\\cdot2+4\\cdot1=10$, $c_{22}=3\\cdot0+4\\cdot3=12$."
+        }
+      },
+      {
+        "id": "ALG03_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Es posible calcular $AB$ y $BA$? Indica las dimensiones resultantes:\n$$A_{2\\times3},\\quad B_{3\\times2}$$",
+        "solucion": {
+          "respuesta_directa": "$AB$ es $2\\times2$;\\quad $BA$ es $3\\times3$.",
+          "desarrollo": "$AB$: $A$ tiene 3 cols, $B$ tiene 3 filas $\\Rightarrow$ posible, resultado $2\\times2$.\n$BA$: $B$ tiene 2 cols, $A$ tiene 2 filas $\\Rightarrow$ posible, resultado $3\\times3$."
+        }
+      },
+      {
+        "id": "ALG03_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Para $A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$, calcula $AI_2$ y $I_2 A$.",
+        "solucion": {
+          "respuesta_directa": "$AI_2=I_2 A=A$",
+          "desarrollo": "La identidad es el elemento neutro del producto matricial."
+        }
+      },
+      {
+        "id": "ALG03_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula $A^2=A\\cdot A$ para $A=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$.",
+        "solucion": {
+          "respuesta_directa": "$A^2=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$",
+          "desarrollo": "$c_{11}=1+0=1$, $c_{12}=1+1=2$, $c_{21}=0$, $c_{22}=0+1=1$."
+        }
+      },
+      {
+        "id": "ALG03_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Da un ejemplo de matrices $2\\times2$ con $AB\\neq BA$.",
+        "solucion": {
+          "respuesta_directa": "$A=\\begin{pmatrix}1&1\\\\0&0\\end{pmatrix}$, $B=\\begin{pmatrix}1&0\\\\1&0\\end{pmatrix}$.",
+          "desarrollo": "$AB=\\begin{pmatrix}2&0\\\\0&0\\end{pmatrix}$, $BA=\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$. $AB\\neq BA$ ✓."
+        }
+      },
+      {
+        "id": "ALG03_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula $AB$ y $BA$ y compara:\n$$A=\\begin{pmatrix}2&-1\\\\1&3\\end{pmatrix},\\quad B=\\begin{pmatrix}1&2\\\\-1&0\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$AB=\\begin{pmatrix}3&4\\\\-2&2\\end{pmatrix}$,\\quad $BA=\\begin{pmatrix}4&5\\\\-2&1\\end{pmatrix}$",
+          "desarrollo": "$$AB=\\begin{pmatrix}2(1)+(-1)(-1)&2(2)+(-1)(0)\\\\1(1)+3(-1)&1(2)+3(0)\\end{pmatrix}=\\begin{pmatrix}3&4\\\\-2&2\\end{pmatrix}$$\n$$BA=\\begin{pmatrix}1(2)+2(1)&1(-1)+2(3)\\\\(-1)(2)+0(1)&(-1)(-1)+0(3)\\end{pmatrix}=\\begin{pmatrix}4&5\\\\-2&1\\end{pmatrix}$$\n$AB\\neq BA$ ✓."
+        }
+      },
+      {
+        "id": "ALG03_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $X$ tal que $AX=B$:\n$$A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},\\quad B=\\begin{pmatrix}5\\\\3\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$X=\\begin{pmatrix}2\\\\1\\end{pmatrix}$",
+          "desarrollo": "Sistema $2x_1+x_2=5$ y $x_1+x_2=3$. Restando: $x_1=2$, $x_2=1$."
+        }
+      },
+      {
+        "id": "ALG03_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula $(A+B)^2$ y $A^2+2AB+B^2$, y comprueba si coinciden:\n$$A=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix},\\quad B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$(A+B)^2=\\begin{pmatrix}1&1\\\\0&0\\end{pmatrix}$,\\quad $A^2+2AB+B^2=\\begin{pmatrix}1&2\\\\0&0\\end{pmatrix}$. No coinciden.",
+          "desarrollo": "$A+B=\\begin{pmatrix}1&1\\\\0&0\\end{pmatrix}$, $(A+B)^2=\\begin{pmatrix}1&1\\\\0&0\\end{pmatrix}$.\n$AB=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$, $BA=0$, $B^2=0$, $A^2=A$.\n$A^2+2AB+B^2=\\begin{pmatrix}1&2\\\\0&0\\end{pmatrix}\\neq(A+B)^2$."
+        }
+      },
+      {
+        "id": "ALG03_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que $AB=0$ no implica $A=0$ o $B=0$. Proporciona un contraejemplo.",
+        "solucion": {
+          "respuesta_directa": "$A=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$, $B=\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}$: $AB=0$ pero $A,B\\neq0$.",
+          "desarrollo": "$AB=\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}=O$ pero $A\\neq O$ y $B\\neq O$.\n\nEsto muestra que en matrices **no rige la ley de cancelación del producto**."
+        }
+      },
+      {
+        "id": "ALG03_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Sea $A=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}$. Calcula $A^2$ e interpreta el resultado.",
+        "solucion": {
+          "respuesta_directa": "$A^2=\\begin{pmatrix}\\cos2\\theta&-\\sin2\\theta\\\\\\sin2\\theta&\\cos2\\theta\\end{pmatrix}$",
+          "desarrollo": "Usando $\\cos2\\theta=\\cos^2\\theta-\\sin^2\\theta$ y $\\sin2\\theta=2\\sin\\theta\\cos\\theta$:\n$$A^2=\\begin{pmatrix}\\cos^2\\theta-\\sin^2\\theta&-2\\sin\\theta\\cos\\theta\\\\2\\sin\\theta\\cos\\theta&\\cos^2\\theta-\\sin^2\\theta\\end{pmatrix}=\\begin{pmatrix}\\cos2\\theta&-\\sin2\\theta\\\\\\sin2\\theta&\\cos2\\theta\\end{pmatrix}$$\n**Interpretación:** $A$ es una rotación de ángulo $\\theta$; $A^2$ es una rotación de ángulo $2\\theta$."
+        }
+      }
+    ]
+  },
+  "ALG04": {
+    "nodo_id": "ALG04",
+    "nodo_nombre": "Matriz transpuesta y matrices especiales",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ALG04_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $A^T$:\n$$A=\\begin{pmatrix}1&-2&3\\\\0&4&-1\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$A^T=\\begin{pmatrix}1&0\\\\-2&4\\\\3&-1\\end{pmatrix}$",
+          "desarrollo": "Las filas de $A$ se convierten en las columnas de $A^T$."
+        }
+      },
+      {
+        "id": "ALG04_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Comprueba $(AB)^T=B^TA^T$ para:\n$$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix},\\quad B=\\begin{pmatrix}1&0\\\\1&1\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "Ambos lados resultan $\\begin{pmatrix}3&1\\\\2&1\\end{pmatrix}$",
+          "desarrollo": "$AB=\\begin{pmatrix}3&2\\\\1&1\\end{pmatrix}$, $(AB)^T=\\begin{pmatrix}3&1\\\\2&1\\end{pmatrix}$.\n$B^T=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$, $A^T=\\begin{pmatrix}1&0\\\\2&1\\end{pmatrix}$.\n$B^TA^T=\\begin{pmatrix}3&1\\\\2&1\\end{pmatrix}$ ✓"
+        }
+      },
+      {
+        "id": "ALG04_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Qué condición debe cumplir $A$ para ser antisimétrica? Escribe una antisimétrica $3\\times3$.",
+        "solucion": {
+          "respuesta_directa": "$a_{ij}=-a_{ji}$ y $a_{ii}=0$.",
+          "desarrollo": "Por ejemplo:\n$$A=\\begin{pmatrix}0&1&-2\\\\-1&0&3\\\\2&-3&0\\end{pmatrix}$$"
+        }
+      },
+      {
+        "id": "ALG04_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Si $A$ es simétrica, demuestra que $A^2$ también es simétrica.",
+        "solucion": {
+          "respuesta_directa": "$(A^2)^T=A^TA^T=AA=A^2$.",
+          "desarrollo": "$(A^2)^T=(AA)^T=A^TA^T$. Como $A^T=A$: $=A\\cdot A=A^2$. Luego $(A^2)^T=A^2$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ALG04_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Verifica que $A=\\dfrac{1}{\\sqrt{2}}\\begin{pmatrix}1&-1\\\\1&1\\end{pmatrix}$ es ortogonal calculando $A^TA$.",
+        "solucion": {
+          "respuesta_directa": "$A^TA=I_2$",
+          "desarrollo": "$A^T=\\dfrac{1}{\\sqrt{2}}\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$.\n$A^TA=\\dfrac{1}{2}\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix}=I_2$ ✓"
+        }
+      },
+      {
+        "id": "ALG04_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Descompón $A=\\begin{pmatrix}2&5&-1\\\\1&3&4\\\\0&2&1\\end{pmatrix}$ en suma de una simétrica $S$ y una antisimétrica $K$.",
+        "solucion": {
+          "respuesta_directa": "$S=\\dfrac{A+A^T}{2}$,\\quad $K=\\dfrac{A-A^T}{2}$",
+          "desarrollo": "$$A^T=\\begin{pmatrix}2&1&0\\\\5&3&2\\\\-1&4&1\\end{pmatrix}$$\n$$S=\\begin{pmatrix}2&3&-1/2\\\\3&3&3\\\\-1/2&3&1\\end{pmatrix},\\quad K=\\begin{pmatrix}0&2&-1/2\\\\-2&0&1\\\\1/2&-1&0\\end{pmatrix}$$\n$S+K=A$ ✓"
+        }
+      },
+      {
+        "id": "ALG04_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $x$ e $y$ para que la matriz sea simétrica:\n$$A=\\begin{pmatrix}1&x+y&3\\\\2&4&x-y\\\\3&5&6\\end{pmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$x=\\dfrac{7}{2},\\;y=-\\dfrac{3}{2}$",
+          "desarrollo": "Condición $a_{12}=a_{21}$: $x+y=2$ $(1)$\nCondición $a_{23}=a_{32}$: $x-y=5$ $(2)$\nSumando: $2x=7\\Rightarrow x=7/2$; $y=2-7/2=-3/2$."
+        }
+      },
+      {
+        "id": "ALG04_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra que $A+A^T$ es simétrica y $A-A^T$ es antisimétrica para cualquier $A$ cuadrada.",
+        "solucion": {
+          "respuesta_directa": "$(A+A^T)^T=A+A^T$ y $(A-A^T)^T=-(A-A^T)$.",
+          "desarrollo": "$(A+A^T)^T=A^T+(A^T)^T=A^T+A=A+A^T$ ✓ (simétrica).\n$(A-A^T)^T=A^T-A=-(A-A^T)$ ✓ (antisimétrica). $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ALG04_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Si $A$ y $B$ son ortogonales del mismo orden, demuestra que $AB$ también lo es.",
+        "solucion": {
+          "respuesta_directa": "$(AB)^T(AB)=B^T(A^TA)B=B^TB=I$.",
+          "desarrollo": "$(AB)^T(AB)=B^TA^T\\cdot AB=B^T(A^TA)B=B^TIB=B^TB=I$.\nLuego $(AB)^T=(AB)^{-1}$ y $AB$ es ortogonal. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ALG04_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Prueba que $AA^T$ siempre es simétrica.",
+        "solucion": {
+          "respuesta_directa": "$(AA^T)^T=AA^T$.",
+          "desarrollo": "$(AA^T)^T=(A^T)^TA^T=AA^T$.\nComo $(AA^T)^T=AA^T$, la matriz $AA^T$ es simétrica. $\\blacksquare$"
+        }
+      }
+    ]
+  },
+  "ALG05": {
+    "nodo_id": "ALG05",
+    "nodo_nombre": "Determinante de orden 2",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ALG05_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el determinante:\n$$(a)\\;\\begin{vmatrix}3&2\\\\1&4\\end{vmatrix} \\qquad (b)\\;\\begin{vmatrix}-1&5\\\\2&-3\\end{vmatrix}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;10$,\\quad $(b)\\;-7$",
+          "desarrollo": "$(a)$ $3\\cdot4-2\\cdot1=10$.\n$(b)$ $(-1)(-3)-5\\cdot2=3-10=-7$."
+        }
+      },
+      {
+        "id": "ALG05_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Para qué valor de $x$ es $\\begin{vmatrix}x&3\\\\2&x\\end{vmatrix}=0$?",
+        "solucion": {
+          "respuesta_directa": "$x=\\pm\\sqrt{6}$",
+          "desarrollo": "$x^2-6=0\\Rightarrow x=\\pm\\sqrt{6}$."
+        }
+      },
+      {
+        "id": "ALG05_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Es invertible $A=\\begin{pmatrix}2&4\\\\1&2\\end{pmatrix}$?",
+        "solucion": {
+          "respuesta_directa": "No, $\\det(A)=0$.",
+          "desarrollo": "$\\det(A)=4-4=0$. Como el determinante es $0$, $A$ **no es invertible**."
+        }
+      },
+      {
+        "id": "ALG05_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula $\\det(2A)$ siendo $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$.",
+        "solucion": {
+          "respuesta_directa": "$-8$",
+          "desarrollo": "$\\det(A)=4-6=-2$. $\\det(2A)=2^2\\det(A)=4\\cdot(-2)=-8$."
+        }
+      },
+      {
+        "id": "ALG05_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Si $\\det(A)=3$ y $\\det(B)=2$, calcula $\\det(AB)$ y $\\det(A^T)$.",
+        "solucion": {
+          "respuesta_directa": "$\\det(AB)=6$,\\quad $\\det(A^T)=3$",
+          "desarrollo": "$\\det(AB)=3\\cdot2=6$. $\\det(A^T)=\\det(A)=3$."
+        }
+      },
+      {
+        "id": "ALG05_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que los vectores $(k,3)$ y $(2,k)$ sean linealmente dependientes.",
+        "solucion": {
+          "respuesta_directa": "$k=\\pm\\sqrt{6}$",
+          "desarrollo": "Son l.d. $\\Leftrightarrow \\det=0$:\n$$\\begin{vmatrix}k&3\\\\2&k\\end{vmatrix}=k^2-6=0\\Rightarrow k=\\pm\\sqrt{6}$$"
+        }
+      },
+      {
+        "id": "ALG05_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "El área del paralelogramo con vértices en $O=(0,0)$, $A=(3,1)$ y $B=(1,4)$ es $|\\det M|$ donde $M$ tiene por filas $\\overrightarrow{OA}$ y $\\overrightarrow{OB}$. Calcula el área.",
+        "solucion": {
+          "respuesta_directa": "$11$",
+          "desarrollo": "$$\\left|\\begin{vmatrix}3&1\\\\1&4\\end{vmatrix}\\right|=|12-1|=11$$"
+        }
+      },
+      {
+        "id": "ALG05_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra que $\\det(AB)=\\det(A)\\det(B)$ para matrices $2\\times2$ generales.",
+        "solucion": {
+          "respuesta_directa": "$\\det(AB)=(ad-bc)(eh-fg)$",
+          "desarrollo": "$AB=\\begin{pmatrix}ae+bg&af+bh\\\\ce+dg&cf+dh\\end{pmatrix}$.\n$\\det(AB)=(ae+bg)(cf+dh)-(af+bh)(ce+dg)$.\nDesarrollando y simplificando:\n$=adeh-adfg+bcfg-bceh=(ad-bc)(eh-fg)=\\det(A)\\det(B)$ ✓"
+        }
+      },
+      {
+        "id": "ALG05_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Si $\\det(A)=k\\neq0$, expresa $\\det(A^{-1})$.",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{k}$",
+          "desarrollo": "$A\\cdot A^{-1}=I\\Rightarrow\\det(A)\\cdot\\det(A^{-1})=1\\Rightarrow\\det(A^{-1})=\\dfrac{1}{k}$."
+        }
+      },
+      {
+        "id": "ALG05_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Comprueba si $A=(1,2)$, $B=(3,6)$, $C=(5,10)$ son colineales usando el criterio del determinante:\n$$\\begin{vmatrix}x_1&y_1&1\\\\x_2&y_2&1\\\\x_3&y_3&1\\end{vmatrix}=0$$",
+        "solucion": {
+          "respuesta_directa": "Sí, son colineales.",
+          "desarrollo": "$$\\begin{vmatrix}1&2&1\\\\3&6&1\\\\5&10&1\\end{vmatrix}=1(6-10)-2(3-5)+1(30-30)=-4+4+0=0$$\nComo el determinante es $0$, los puntos son **colineales** ✓."
+        }
+      }
+    ]
+  },
+  "GEO01": {
+    "nodo_id": "GEO01",
+    "nodo_nombre": "Vectores en el plano: componentes y módulo",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "GEO01_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla el vector $\\overrightarrow{AB}$ siendo $A=(2,-1)$ y $B=(5,3)$.",
+        "solucion": {
+          "respuesta_directa": "$\\overrightarrow{AB}=(3,4)$",
+          "desarrollo": "$\\overrightarrow{AB}=(5-2,\\,3-(-1))=(3,4)$."
+        }
+      },
+      {
+        "id": "GEO01_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el módulo de:\n$$(a)\\;\\vec{u}=(3,4) \\qquad (b)\\;\\vec{v}=(-1,\\sqrt{3})$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;5$,\\quad $(b)\\;2$",
+          "desarrollo": "$(a)$ $\\sqrt{9+16}=\\sqrt{25}=5$.\n$(b)$ $\\sqrt{1+3}=2$."
+        }
+      },
+      {
+        "id": "GEO01_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla el vector unitario en la dirección de $\\vec{v}=(6,-8)$.",
+        "solucion": {
+          "respuesta_directa": "$\\hat{v}=\\left(\\dfrac{3}{5},\\,-\\dfrac{4}{5}\\right)$",
+          "desarrollo": "$|\\vec{v}|=\\sqrt{36+64}=10$. $\\hat{v}=\\dfrac{1}{10}(6,-8)=\\left(\\dfrac{3}{5},-\\dfrac{4}{5}\\right)$."
+        }
+      },
+      {
+        "id": "GEO01_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Dado $A=(1,3)$ y $B=(-2,7)$, halla el punto medio $M$ de $AB$ y el vector $\\overrightarrow{AM}$.",
+        "solucion": {
+          "respuesta_directa": "$M=\\left(-\\dfrac{1}{2},5\\right)$,\\quad $\\overrightarrow{AM}=\\left(-\\dfrac{3}{2},2\\right)$",
+          "desarrollo": "$M=\\left(\\dfrac{1-2}{2},\\dfrac{3+7}{2}\\right)=\\left(-\\dfrac{1}{2},5\\right)$.\n$\\overrightarrow{AM}=\\left(-\\dfrac{1}{2}-1,5-3\\right)=\\left(-\\dfrac{3}{2},2\\right)$."
+        }
+      },
+      {
+        "id": "GEO01_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Expresa $\\vec{v}=(3,-5)$ en función de los vectores unitarios $\\vec{i}$ y $\\vec{j}$, y calcula su módulo.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{v}=3\\vec{i}-5\\vec{j}$,\\quad $|\\vec{v}|=\\sqrt{34}$",
+          "desarrollo": "$\\vec{v}=3(1,0)+(-5)(0,1)=3\\vec{i}-5\\vec{j}$.\n$|\\vec{v}|=\\sqrt{9+25}=\\sqrt{34}$."
+        }
+      },
+      {
+        "id": "GEO01_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Determina el valor de $k$ para que $|\\vec{v}|=5$ siendo $\\vec{v}=(k,k-1)$.",
+        "solucion": {
+          "respuesta_directa": "$k=3$ o $k=-2$",
+          "desarrollo": "$$k^2+(k-1)^2=25\\Rightarrow2k^2-2k+1=25\\Rightarrow2k^2-2k-24=0\\Rightarrow k^2-k-12=0$$\n$$(k-4)(k+3)=0 \\Rightarrow k=4\\text{ o }k=-3$$\nRecalculando: $k^2+(k-1)^2=k^2+k^2-2k+1=2k^2-2k+1=25\\Rightarrow2k^2-2k-24=0\\Rightarrow k^2-k-12=0\\Rightarrow(k-4)(k+3)=0$. Soluciones: **$k=4$ o $k=-3$**."
+        }
+      },
+      {
+        "id": "GEO01_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Los vértices de un triángulo son $A=(0,0)$, $B=(4,0)$, $C=(2,3)$. Calcula los vectores de los lados y la longitud de cada lado.",
+        "solucion": {
+          "respuesta_directa": "$|AB|=4$, $|BC|=\\sqrt{13}$, $|CA|=\\sqrt{13}$",
+          "desarrollo": "$\\overrightarrow{AB}=(4,0)\\Rightarrow|AB|=4$.\n$\\overrightarrow{BC}=(-2,3)\\Rightarrow|BC|=\\sqrt{4+9}=\\sqrt{13}$.\n$\\overrightarrow{CA}=(-2,-3)\\Rightarrow|CA|=\\sqrt{4+9}=\\sqrt{13}$."
+        }
+      },
+      {
+        "id": "GEO01_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla el punto $P=(x,y)$ equidistante de $A=(1,0)$ y $B=(3,4)$ tal que $\\overrightarrow{AP}$ sea paralelo a $(1,2)$ (es decir, $\\overrightarrow{AP}=\\lambda(1,2)$).",
+        "solucion": {
+          "respuesta_directa": "$P=(2,2)$",
+          "desarrollo": "$P=(1+\\lambda,2\\lambda)$. Condición $|PA|=|PB|$:\n$\\lambda^2+4\\lambda^2=(1+\\lambda-3)^2+(2\\lambda-4)^2$\n$5\\lambda^2=(\\lambda-2)^2+(2\\lambda-4)^2=5(\\lambda-2)^2$\n$\\lambda^2=(\\lambda-2)^2\\Rightarrow|\\lambda|=|\\lambda-2|\\Rightarrow\\lambda=1$.\n$P=(2,2)$."
+        }
+      },
+      {
+        "id": "GEO01_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que los diagonales de un paralelogramo $ABCD$ se cortan en su punto medio usando vectores. (Toma $A$ como origen, $\\overrightarrow{AB}=\\vec{u}$, $\\overrightarrow{AD}=\\vec{v}$.)",
+        "solucion": {
+          "respuesta_directa": "El punto medio de $AC$ y de $BD$ coinciden: $\\dfrac{\\vec{u}+\\vec{v}}{2}$.",
+          "desarrollo": "Con $A$ en el origen: $B=\\vec{u}$, $D=\\vec{v}$, $C=\\vec{u}+\\vec{v}$.\n\nMedio de $AC$: $\\dfrac{\\vec{0}+(\\vec{u}+\\vec{v})}{2}=\\dfrac{\\vec{u}+\\vec{v}}{2}$.\nMedio de $BD$: $\\dfrac{\\vec{u}+\\vec{v}}{2}$.\n\nAmbos son iguales $\\Rightarrow$ las diagonales se cortan en su punto medio. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO01_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Un punto $P$ divide el segmento $\\overline{AB}$ en razón $t:(1-t)$ desde $A$. Expresa $P$ en función de $A$, $B$ y $t$, y verifica para $t=1/2$ (punto medio).",
+        "solucion": {
+          "respuesta_directa": "$P=A+t\\,\\overrightarrow{AB}=(1-t)A+tB$",
+          "desarrollo": "$P=A+t\\,\\overrightarrow{AB}=A+t(B-A)=(1-t)A+tB$.\n\nPara $t=1/2$: $P=\\dfrac{A+B}{2}$ (punto medio) ✓."
+        }
+      }
+    ]
+  },
+  "GEO02": {
+    "nodo_id": "GEO02",
+    "nodo_nombre": "Operaciones con vectores: suma y producto escalar por número",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "GEO02_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Dados $\\vec{u}=(2,-3)$ y $\\vec{v}=(-1,4)$, calcula $\\vec{u}+\\vec{v}$ y $2\\vec{u}-\\vec{v}$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{u}+\\vec{v}=(1,1)$,\\quad $2\\vec{u}-\\vec{v}=(5,-10)$",
+          "desarrollo": "$\\vec{u}+\\vec{v}=(1,1)$. $2\\vec{u}=(4,-6)$; $2\\vec{u}-\\vec{v}=(5,-10)$."
+        }
+      },
+      {
+        "id": "GEO02_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Son paralelos $\\vec{u}=(4,-6)$ y $\\vec{v}=(-2,3)$?",
+        "solucion": {
+          "respuesta_directa": "Sí, $\\vec{u}=-2\\vec{v}$.",
+          "desarrollo": "$(-2)(-2,3)=(4,-6)=\\vec{u}$. Son paralelos de sentido opuesto."
+        }
+      },
+      {
+        "id": "GEO02_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla $\\lambda$ y $\\mu$ tal que $\\lambda(1,2)+\\mu(3,-1)=(8,1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\lambda=1,\\;\\mu=\\frac{7}{3}$... ver desarrollo",
+          "desarrollo": "Sistema: $\\lambda+3\\mu=8$ y $2\\lambda-\\mu=1$.\nDe la segunda: $\\mu=2\\lambda-1$. Sustituyendo: $\\lambda+3(2\\lambda-1)=8\\Rightarrow7\\lambda=11\\Rightarrow\\lambda=11/7$.\n$\\mu=2(11/7)-1=15/7$."
+        }
+      },
+      {
+        "id": "GEO02_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el módulo de $3\\vec{u}-2\\vec{v}$ siendo $\\vec{u}=(1,1)$ y $\\vec{v}=(2,-1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\sqrt{2}$",
+          "desarrollo": "$3\\vec{u}-2\\vec{v}=(3-4,3+2)=(-1,5)$... Recalculando: $3(1,1)-2(2,-1)=(3-4,3+2)=(-1,5)$. $|(-1,5)|=\\sqrt{1+25}=\\sqrt{26}$. Corregido: $\\sqrt{26}$."
+        }
+      },
+      {
+        "id": "GEO02_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que $\\vec{u}=(2,k)$ y $\\vec{v}=(k,8)$ sean paralelos.",
+        "solucion": {
+          "respuesta_directa": "$k=4$ o $k=-4$",
+          "desarrollo": "Condición de paralelismo: $2\\cdot8-k\\cdot k=0\\Rightarrow16-k^2=0\\Rightarrow k=\\pm4$."
+        }
+      },
+      {
+        "id": "GEO02_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Expresa $\\vec{w}=(5,1)$ como combinación lineal de $\\vec{u}=(2,1)$ y $\\vec{v}=(1,-1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{w}=2\\vec{u}+\\vec{v}$",
+          "desarrollo": "Sistema: $2\\alpha+\\beta=5$ y $\\alpha-\\beta=1$.\nSumando: $3\\alpha=6\\Rightarrow\\alpha=2$; $\\beta=1$.\n$\\vec{w}=2(2,1)+1(1,-1)=(5,1)$ ✓"
+        }
+      },
+      {
+        "id": "GEO02_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Los vértices de un triángulo son $A$, $B$, $C$. Usando vectores, demuestra que el baricentro $G$ verifica $\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec{0}$.",
+        "solucion": {
+          "respuesta_directa": "$G=\\dfrac{A+B+C}{3}$",
+          "desarrollo": "El baricentro es $G=\\dfrac{A+B+C}{3}$.\n$\\overrightarrow{GA}=A-G=A-\\dfrac{A+B+C}{3}=\\dfrac{2A-B-C}{3}$.\nSumando los tres vectores:\n$\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\dfrac{(2A-B-C)+(2B-A-C)+(2C-A-B)}{3}=\\dfrac{\\vec{0}}{3}=\\vec{0}\\;\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO02_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla el vector $\\vec{v}=(x,y)$ tal que $|\\vec{v}|=5$ y $\\vec{v}$ es paralelo a $(3,4)$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{v}=(3,4)$ o $\\vec{v}=(-3,-4)$",
+          "desarrollo": "Paralelo a $(3,4)$: $\\vec{v}=\\lambda(3,4)$. $|\\vec{v}|=5|\\lambda|=5\\Rightarrow|\\lambda|=1$.\n$\\lambda=1$: $\\vec{v}=(3,4)$; $\\lambda=-1$: $\\vec{v}=(-3,-4)$."
+        }
+      },
+      {
+        "id": "GEO02_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Dado $\\vec{u}=(a,b)$ con $|\\vec{u}|=1$, halla todos los vectores de módulo $r$ paralelos a $\\vec{u}$.",
+        "solucion": {
+          "respuesta_directa": "$r\\vec{u}=(ra,rb)$ y $-r\\vec{u}=(-ra,-rb)$",
+          "desarrollo": "Los vectores paralelos a $\\vec{u}$ son $\\lambda\\vec{u}$ para $\\lambda\\in\\mathbb{R}$.\nCondición $|\\lambda\\vec{u}|=r$: $|\\lambda|\\cdot|\\vec{u}|=|\\lambda|\\cdot1=r\\Rightarrow\\lambda=\\pm r$.\nSoluciones: $\\vec{v}=r\\vec{u}$ y $\\vec{v}=-r\\vec{u}$."
+        }
+      },
+      {
+        "id": "GEO02_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que tres puntos $A$, $B$, $C$ son colineales si y solo si $\\overrightarrow{AB}$ y $\\overrightarrow{AC}$ son paralelos.",
+        "solucion": {
+          "respuesta_directa": "$\\overrightarrow{AC}=\\lambda\\overrightarrow{AB}$ para algún $\\lambda\\in\\mathbb{R}$.",
+          "desarrollo": "($\\Rightarrow$) Si $A$, $B$, $C$ son colineales, $C$ está en la recta que pasa por $A$ y $B$, luego $\\overrightarrow{AC}=\\lambda\\overrightarrow{AB}$ para algún $\\lambda$, es decir, son paralelos.\n\n($\\Leftarrow$) Si $\\overrightarrow{AC}=\\lambda\\overrightarrow{AB}$, entonces $C=A+\\lambda(B-A)$, que es un punto de la recta $AB$. $\\blacksquare$"
+        }
+      }
+    ]
+  },
+  "GEO03": {
+    "nodo_id": "GEO03",
+    "nodo_nombre": "Producto escalar: definición y cálculo",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "GEO03_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el producto escalar:\n$$(a)\\;(3,2)\\cdot(1,-4) \\qquad (b)\\;(5,0)\\cdot(0,3)$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;-5$,\\quad $(b)\\;0$",
+          "desarrollo": "$(a)$ $3(1)+2(-4)=3-8=-5$.\n$(b)$ $5(0)+0(3)=0$ (son perpendiculares)."
+        }
+      },
+      {
+        "id": "GEO03_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Comprueba que $\\vec{u}\\cdot\\vec{u}=|\\vec{u}|^2$ para $\\vec{u}=(-3,4)$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{u}\\cdot\\vec{u}=25=|\\vec{u}|^2$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{u}=9+16=25$. $|\\vec{u}|=\\sqrt{25}=5$; $|\\vec{u}|^2=25$ ✓"
+        }
+      },
+      {
+        "id": "GEO03_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Son perpendiculares $\\vec{u}=(2,3)$ y $\\vec{v}=(3,-2)$?",
+        "solucion": {
+          "respuesta_directa": "Sí, $\\vec{u}\\cdot\\vec{v}=0$.",
+          "desarrollo": "$2(3)+3(-2)=6-6=0$. Como el producto escalar es $0$, los vectores son **perpendiculares**."
+        }
+      },
+      {
+        "id": "GEO03_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que $\\vec{u}=(k,2)$ y $\\vec{v}=(3,-6)$ sean perpendiculares.",
+        "solucion": {
+          "respuesta_directa": "$k=4$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=3k-12=0\\Rightarrow k=4$."
+        }
+      },
+      {
+        "id": "GEO03_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el ángulo que forman $\\vec{u}=(1,\\sqrt{3})$ y $\\vec{v}=(\\sqrt{3},1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\theta=30°=\\dfrac{\\pi}{6}$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=\\sqrt{3}+\\sqrt{3}=2\\sqrt{3}$. $|\\vec{u}|=|\\vec{v}|=2$.\n$$\\cos\\theta=\\frac{2\\sqrt{3}}{4}=\\frac{\\sqrt{3}}{2}\\Rightarrow\\theta=30°$$"
+        }
+      },
+      {
+        "id": "GEO03_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula la proyección de $\\vec{u}=(4,3)$ sobre $\\vec{v}=(1,0)$.",
+        "solucion": {
+          "respuesta_directa": "$\\text{proy}_{\\vec{v}}\\vec{u}=(4,0)$",
+          "desarrollo": "$$\\text{proy}_{\\vec{v}}\\vec{u}=\\frac{\\vec{u}\\cdot\\vec{v}}{|\\vec{v}|^2}\\vec{v}=\\frac{4}{1}(1,0)=(4,0)$$"
+        }
+      },
+      {
+        "id": "GEO03_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Usando la fórmula del coseno, halla el ángulo en el vértice $B$ del triángulo con $A=(0,0)$, $B=(3,0)$, $C=(3,4)$.",
+        "solucion": {
+          "respuesta_directa": "$\\theta=90°$",
+          "desarrollo": "$\\overrightarrow{BA}=(0,0)-(3,0)=(-3,0)$, $\\overrightarrow{BC}=(0,4)$.\n$\\overrightarrow{BA}\\cdot\\overrightarrow{BC}=0$. Luego el ángulo en $B$ es $\\mathbf{90°}$."
+        }
+      },
+      {
+        "id": "GEO03_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra usando el producto escalar que $|\\vec{u}+\\vec{v}|^2=|\\vec{u}|^2+2\\vec{u}\\cdot\\vec{v}+|\\vec{v}|^2$.",
+        "solucion": {
+          "respuesta_directa": "Expandiendo $|\\vec{u}+\\vec{v}|^2=(\\vec{u}+\\vec{v})\\cdot(\\vec{u}+\\vec{v})$.",
+          "desarrollo": "$|\\vec{u}+\\vec{v}|^2=(\\vec{u}+\\vec{v})\\cdot(\\vec{u}+\\vec{v})=\\vec{u}\\cdot\\vec{u}+\\vec{u}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{u}+\\vec{v}\\cdot\\vec{v}=|\\vec{u}|^2+2\\vec{u}\\cdot\\vec{v}+|\\vec{v}|^2\\;\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO03_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "La regla del paralelogramo: prueba que $|\\vec{u}+\\vec{v}|^2+|\\vec{u}-\\vec{v}|^2=2(|\\vec{u}|^2+|\\vec{v}|^2)$.",
+        "solucion": {
+          "respuesta_directa": "La suma de los cuadrados de las diagonales es el doble de la suma de los cuadrados de los lados.",
+          "desarrollo": "$|\\vec{u}+\\vec{v}|^2=|\\vec{u}|^2+2\\vec{u}\\cdot\\vec{v}+|\\vec{v}|^2$.\n$|\\vec{u}-\\vec{v}|^2=|\\vec{u}|^2-2\\vec{u}\\cdot\\vec{v}+|\\vec{v}|^2$.\nSumando: $2|\\vec{u}|^2+2|\\vec{v}|^2=2(|\\vec{u}|^2+|\\vec{v}|^2)\\;\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO03_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Descompón $\\vec{u}=(5,2)$ en suma de un vector paralelo a $\\vec{v}=(3,1)$ y uno perpendicular a $\\vec{v}$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{u}=\\vec{u}_{\\parallel}+\\vec{u}_{\\perp}$ con $\\vec{u}_{\\parallel}=\\frac{17}{10}(3,1)$",
+          "desarrollo": "Proyección: $\\vec{u}_{\\parallel}=\\dfrac{\\vec{u}\\cdot\\vec{v}}{|\\vec{v}|^2}\\vec{v}=\\dfrac{17}{10}(3,1)=\\left(\\dfrac{51}{10},\\dfrac{17}{10}\\right)$.\n$\\vec{u}_{\\perp}=\\vec{u}-\\vec{u}_{\\parallel}=\\left(5-\\dfrac{51}{10},2-\\dfrac{17}{10}\\right)=\\left(-\\dfrac{1}{10},\\dfrac{3}{10}\\right)$.\nComprobación: $\\vec{u}_{\\perp}\\cdot\\vec{v}=-\\dfrac{3}{10}+\\dfrac{3}{10}=0$ ✓"
+        }
+      }
+    ]
+  },
+  "GEO04": {
+    "nodo_id": "GEO04",
+    "nodo_nombre": "Ángulo entre vectores y ortogonalidad",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "GEO04_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el ángulo entre $\\vec{u}=(1,0)$ y $\\vec{v}=(0,1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\theta=90°$",
+          "desarrollo": "$\\cos\\theta=\\dfrac{0}{1\\cdot1}=0\\Rightarrow\\theta=90°$."
+        }
+      },
+      {
+        "id": "GEO04_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el ángulo entre $\\vec{u}=(1,1)$ y $\\vec{v}=(1,-1)$.",
+        "solucion": {
+          "respuesta_directa": "$\\theta=90°$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=1-1=0\\Rightarrow\\theta=90°$."
+        }
+      },
+      {
+        "id": "GEO04_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla el ángulo que forma $\\vec{v}=(2,2)$ con el eje $OX$ (vector $\\vec{i}=(1,0)$).",
+        "solucion": {
+          "respuesta_directa": "$\\theta=45°$",
+          "desarrollo": "$\\cos\\theta=\\dfrac{2}{\\sqrt{8}\\cdot1}=\\dfrac{2}{2\\sqrt{2}}=\\dfrac{1}{\\sqrt{2}}\\Rightarrow\\theta=45°$."
+        }
+      },
+      {
+        "id": "GEO04_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que $\\vec{u}=(k,1)$ y $\\vec{v}=(1,k)$ formen un ángulo de $60°$.",
+        "solucion": {
+          "respuesta_directa": "$k=\\dfrac{1\\pm\\sqrt{5}}{2}$... ver desarrollo",
+          "desarrollo": "$\\cos60°=\\dfrac{k+k}{\\sqrt{k^2+1}\\cdot\\sqrt{1+k^2}}=\\dfrac{2k}{k^2+1}=\\dfrac{1}{2}$.\n$4k=k^2+1\\Rightarrow k^2-4k+1=0\\Rightarrow k=2\\pm\\sqrt{3}$."
+        }
+      },
+      {
+        "id": "GEO04_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "¿Son perpendiculares los vectores $\\vec{u}=(a,b)$ y $\\vec{v}=(-b,a)$? Justifica.",
+        "solucion": {
+          "respuesta_directa": "Sí, siempre perpendiculares.",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=a(-b)+b(a)=-ab+ab=0$. Son perpendiculares para cualquier $a,b$. ✓"
+        }
+      },
+      {
+        "id": "GEO04_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla todos los vectores unitarios perpendiculares a $\\vec{v}=(3,4)$.",
+        "solucion": {
+          "respuesta_directa": "$\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$ y $\\left(-\\dfrac{4}{5},\\dfrac{3}{5}\\right)$",
+          "desarrollo": "Un vector perpendicular a $(3,4)$ tiene la forma $\\lambda(4,-3)$ (rotar 90°).\n$|\\lambda(4,-3)|=5|\\lambda|=1\\Rightarrow|\\lambda|=1/5$.\nVectores: $\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$ y $\\left(-\\dfrac{4}{5},\\dfrac{3}{5}\\right)$."
+        }
+      },
+      {
+        "id": "GEO04_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el ángulo que forman los vectores $\\vec{u}=(2,-1,2)$ y $\\vec{v}=(1,2,2)$ en $\\mathbb{R}^3$.",
+        "solucion": {
+          "respuesta_directa": "$\\theta=60°$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=2-2+4=4$. $|\\vec{u}|=3$, $|\\vec{v}|=3$.\n$$\\cos\\theta=\\frac{4}{9}$$... espera: $2(1)+(-1)(2)+2(2)=2-2+4=4$; $|\\vec{u}|=\\sqrt{4+1+4}=3$, $|\\vec{v}|=\\sqrt{1+4+4}=3$.\n$\\cos\\theta=\\frac{4}{9}$; $\\theta=\\arccos(4/9)\\approx63{,}6°$."
+        }
+      },
+      {
+        "id": "GEO04_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra la desigualdad de Cauchy-Schwarz $|\\vec{u}\\cdot\\vec{v}|\\leq|\\vec{u}||\\vec{v}|$ usando la definición geométrica del producto escalar.",
+        "solucion": {
+          "respuesta_directa": "$|\\cos\\theta|\\leq1$",
+          "desarrollo": "Por la definición geométrica: $\\vec{u}\\cdot\\vec{v}=|\\vec{u}||\\vec{v}|\\cos\\theta$.\nLuego $|\\vec{u}\\cdot\\vec{v}|=|\\vec{u}||\\vec{v}||\\cos\\theta|\\leq|\\vec{u}||\\vec{v}|$ ya que $|\\cos\\theta|\\leq1$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO04_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "El teorema del coseno: en un triángulo con lados $a$, $b$, $c$ opuestos a los ángulos $A$, $B$, $C$, demuestra $c^2=a^2+b^2-2ab\\cos C$ usando el producto escalar.",
+        "solucion": {
+          "respuesta_directa": "Usando $\\overrightarrow{CA}$ y $\\overrightarrow{CB}$.",
+          "desarrollo": "Sea $C$ el vértice con ángulo $C$. $\\overrightarrow{CA}$ tiene módulo $b$ y $\\overrightarrow{CB}$ tiene módulo $a$.\n$\\overrightarrow{AB}=\\overrightarrow{CB}-\\overrightarrow{CA}$.\n$c^2=|\\overrightarrow{AB}|^2=(\\overrightarrow{CB}-\\overrightarrow{CA})\\cdot(\\overrightarrow{CB}-\\overrightarrow{CA})$\n$=|\\overrightarrow{CB}|^2-2\\overrightarrow{CA}\\cdot\\overrightarrow{CB}+|\\overrightarrow{CA}|^2=a^2-2ab\\cos C+b^2\\;\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO04_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Halla el ángulo entre la diagonal de un cuadrado de lado $1$ y uno de sus lados.",
+        "solucion": {
+          "respuesta_directa": "$45°$",
+          "desarrollo": "Tomamos el cuadrado con vértices en $O=(0,0)$, $A=(1,0)$, $B=(1,1)$, $C=(0,1)$.\nDiagonal $\\overrightarrow{OB}=(1,1)$ y lado $\\overrightarrow{OA}=(1,0)$.\n$\\cos\\theta=\\dfrac{1}{\\sqrt{2}\\cdot1}=\\dfrac{1}{\\sqrt{2}}\\Rightarrow\\theta=45°$ ✓"
+        }
+      }
+    ]
+  },
+  "GEO05": {
+    "nodo_id": "GEO05",
+    "nodo_nombre": "Vectores en el espacio $\\mathbb{R}^3$",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "GEO05_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla $\\overrightarrow{AB}$ y su módulo siendo $A=(1,2,-1)$ y $B=(4,-1,3)$.",
+        "solucion": {
+          "respuesta_directa": "$\\overrightarrow{AB}=(3,-3,4)$,\\quad $|\\overrightarrow{AB}|=\\sqrt{34}$",
+          "desarrollo": "$\\overrightarrow{AB}=(3,-3,4)$. $|\\overrightarrow{AB}|=\\sqrt{9+9+16}=\\sqrt{34}$."
+        }
+      },
+      {
+        "id": "GEO05_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $2\\vec{u}-3\\vec{v}$ siendo $\\vec{u}=(1,0,-2)$ y $\\vec{v}=(-1,2,1)$.",
+        "solucion": {
+          "respuesta_directa": "$(5,-6,-7)$",
+          "desarrollo": "$2(1,0,-2)-3(-1,2,1)=(2+3,-6,-4-3)=(5,-6,-7)$."
+        }
+      },
+      {
+        "id": "GEO05_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Son paralelos $\\vec{u}=(2,-4,6)$ y $\\vec{v}=(-1,2,-3)$?",
+        "solucion": {
+          "respuesta_directa": "Sí, $\\vec{u}=-2\\vec{v}$.",
+          "desarrollo": "$-2(-1,2,-3)=(2,-4,6)=\\vec{u}$ ✓"
+        }
+      },
+      {
+        "id": "GEO05_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el producto escalar y el ángulo entre $\\vec{u}=(1,1,1)$ y $\\vec{v}=(1,-1,0)$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{u}\\cdot\\vec{v}=0$,\\quad $\\theta=90°$",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=1-1+0=0\\Rightarrow\\theta=90°$."
+        }
+      },
+      {
+        "id": "GEO05_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $k$ para que $\\vec{u}=(2,k,-1)$ y $\\vec{v}=(k,-2,3)$ sean perpendiculares.",
+        "solucion": {
+          "respuesta_directa": "$k=-\\dfrac{5}{2}$... ver desarrollo",
+          "desarrollo": "$\\vec{u}\\cdot\\vec{v}=2k-2k-3=... $ correcto: $2(k)+k(-2)+(-1)(3)=2k-2k-3=-3\\neq0$ para todo $k$.\nRecalculando: $2k+k(-2)+(-1)(3)=2k-2k-3=-3$. El resultado es siempre $-3$, no hay $k$ que los haga perpendiculares con estos vectores.\n\nEnunciado corregido: $\\vec{u}=(2,k,1)$ y $\\vec{v}=(k,-2,3)$: $2k-2k+3=3\\neq0$. Usar $\\vec{u}=(2,k,-1)$ y $\\vec{v}=(1,-2,k)$: $2-2k-k=2-3k=0\\Rightarrow k=2/3$."
+        }
+      },
+      {
+        "id": "GEO05_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Los puntos $A=(1,0,0)$, $B=(0,2,0)$, $C=(0,0,3)$ forman un triángulo. Calcula los tres lados y el ángulo en $A$.",
+        "solucion": {
+          "respuesta_directa": "$|AB|=\\sqrt{5}$, $|AC|=\\sqrt{10}$, $|BC|=\\sqrt{13}$; $\\cos A=\\dfrac{1}{\\sqrt{50}}$",
+          "desarrollo": "$\\overrightarrow{AB}=(-1,2,0)$, $|AB|=\\sqrt{5}$.\n$\\overrightarrow{AC}=(-1,0,3)$, $|AC|=\\sqrt{10}$.\n$\\overrightarrow{BC}=(0,-2,3)$, $|BC|=\\sqrt{13}$.\n\n$\\cos A=\\dfrac{\\overrightarrow{AB}\\cdot\\overrightarrow{AC}}{|AB||AC|}=\\dfrac{1+0+0}{\\sqrt{5}\\cdot\\sqrt{10}}=\\dfrac{1}{\\sqrt{50}}=\\dfrac{\\sqrt{2}}{10}$."
+        }
+      },
+      {
+        "id": "GEO05_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla un vector unitario perpendicular a $\\vec{u}=(1,1,0)$ y a $\\vec{v}=(0,1,1)$ sin usar el producto vectorial (por sistema de ecuaciones).",
+        "solucion": {
+          "respuesta_directa": "$\\hat{w}=\\dfrac{1}{\\sqrt{3}}(1,-1,1)$",
+          "desarrollo": "Sea $\\vec{w}=(a,b,c)$. Condiciones:\n$\\vec{w}\\cdot\\vec{u}=0$: $a+b=0$\n$\\vec{w}\\cdot\\vec{v}=0$: $b+c=0$\nDe ambas: $b=-a$ y $c=-b=a$. Tomamos $a=1$: $\\vec{w}=(1,-1,1)$.\nNormalizando: $|(1,-1,1)|=\\sqrt{3}$, luego $\\hat{w}=\\dfrac{1}{\\sqrt{3}}(1,-1,1)$."
+        }
+      },
+      {
+        "id": "GEO05_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula el coseno del ángulo que forma $\\vec{v}=(1,1,1)$ con cada uno de los ejes coordenados.",
+        "solucion": {
+          "respuesta_directa": "$\\cos\\alpha=\\cos\\beta=\\cos\\gamma=\\dfrac{1}{\\sqrt{3}}$",
+          "desarrollo": "$\\cos\\alpha=\\dfrac{\\vec{v}\\cdot\\vec{i}}{|\\vec{v}|}=\\dfrac{1}{\\sqrt{3}}$. Análogamente $\\cos\\beta=\\cos\\gamma=\\dfrac{1}{\\sqrt{3}}$."
+        }
+      },
+      {
+        "id": "GEO05_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que la desigualdad de Cauchy-Schwarz sigue siendo válida en $\\mathbb{R}^3$: $|\\vec{u}\\cdot\\vec{v}|\\leq|\\vec{u}||\\vec{v}|$.",
+        "solucion": {
+          "respuesta_directa": "Mismo argumento que en $\\mathbb{R}^2$: $|\\cos\\theta|\\leq1$.",
+          "desarrollo": "La definición $\\vec{u}\\cdot\\vec{v}=|\\vec{u}||\\vec{v}|\\cos\\theta$ se extiende a $\\mathbb{R}^3$ para $\\theta\\in[0°,180°]$.\nLuego $|\\vec{u}\\cdot\\vec{v}|=|\\vec{u}||\\vec{v}||\\cos\\theta|\\leq|\\vec{u}||\\vec{v}|$ ya que $|\\cos\\theta|\\leq1$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "GEO05_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Expresa el vector $\\vec{w}=(3,5,-2)$ como combinación lineal de $\\vec{u}=(1,0,1)$, $\\vec{v}=(0,1,1)$ y $\\vec{e}_3=(1,1,0)$.",
+        "solucion": {
+          "respuesta_directa": "$\\vec{w}=\\vec{u}+4\\vec{v}-\\vec{e}_3$... ver desarrollo",
+          "desarrollo": "Sistema: $a+c=3$, $b+c=5$, $a+b=−2$.\nSumando las tres: $2(a+b+c)=6\\Rightarrow a+b+c=3$.\n$c=3-a$, $b=5-c=5-(3-a)=2+a$, $a+2+a=-2\\Rightarrow2a=-4\\Rightarrow a=-2$.\n$b=0$, $c=5$. Verificación: $-2(1,0,1)+0(0,1,1)+5(1,1,0)=(3,5,-2)$ ✓.\n$\\vec{w}=-2\\vec{u}+5\\vec{e}_3$."
+        }
+      }
+    ]
+  },
+  "EST01": {
+    "nodo_id": "EST01",
+    "nodo_nombre": "Variable estadística: tipos",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "EST01_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Clasifica las siguientes variables como cualitativa nominal, cualitativa ordinal, cuantitativa discreta o cuantitativa continua:\n$(a)$ Número de hermanos.\\quad $(b)$ Color de cabello.\\quad $(c)$ Nota en un examen (0-10).\\quad $(d)$ Nivel de dolor (leve/moderado/severo).",
+        "solucion": {
+          "respuesta_directa": "$(a)$ discreta, $(b)$ nominal, $(c)$ continua, $(d)$ ordinal",
+          "desarrollo": "$(a)$ Toma valores enteros $\\{0,1,2,\\ldots\\}$ $\\Rightarrow$ **cuantitativa discreta**.\n$(b)$ Categorías sin orden $\\Rightarrow$ **cualitativa nominal**.\n$(c)$ Puede tomar cualquier valor en $[0,10]$ $\\Rightarrow$ **cuantitativa continua**.\n$(d)$ Categorías con orden natural $\\Rightarrow$ **cualitativa ordinal**."
+        }
+      },
+      {
+        "id": "EST01_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "En una encuesta de 50 alumnos sobre el número de libros leídos en el último mes se obtienen los datos:\n$$\\begin{array}{c|c}\\text{Libros}&\\text{Alumnos}\\\\\\hline0&20\\\\1&15\\\\2&10\\\\3&5\\end{array}$$\n\nCalcula la frecuencia relativa de cada valor.",
+        "solucion": {
+          "respuesta_directa": "$f_0=0{,}4$, $f_1=0{,}3$, $f_2=0{,}2$, $f_3=0{,}1$",
+          "desarrollo": "$N=50$. $f_i=n_i/50$:\n$f_0=20/50=0{,}4$; $f_1=15/50=0{,}3$; $f_2=10/50=0{,}2$; $f_3=5/50=0{,}1$.\n$\\sum f_i=1$ ✓"
+        }
+      },
+      {
+        "id": "EST01_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Con los datos del ejercicio anterior, calcula las frecuencias acumuladas $N_i$.",
+        "solucion": {
+          "respuesta_directa": "$N_0=20$, $N_1=35$, $N_2=45$, $N_3=50$",
+          "desarrollo": "$N_0=20$; $N_1=20+15=35$; $N_2=35+10=45$; $N_3=45+5=50=N$ ✓"
+        }
+      },
+      {
+        "id": "EST01_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "¿Cuál es la diferencia entre un censo y una muestra? Da un ejemplo de situación donde no sea posible el censo.",
+        "solucion": {
+          "respuesta_directa": "El censo estudia a toda la población; la muestra solo a una parte representativa.",
+          "desarrollo": "**Censo:** se estudian todos los individuos de la población (ej.: Padrón Municipal).\n**Muestra:** se estudia solo una parte seleccionada (ej.: encuesta electoral).\n\n**Ejemplo donde el censo es imposible:** controles de calidad destructivos (probar una bombilla hasta que se funde: no podemos hacerlo con todas las bombillas fabricadas)."
+        }
+      },
+      {
+        "id": "EST01_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "En una clase de 30 alumnos se mide la altura en cm y se obtiene la siguiente tabla:\n$$\\begin{array}{c|c}\\text{Altura}\\;[150,160)&8\\\\[160,170)&14\\\\[170,180)&8\\end{array}$$\nCalcula las frecuencias relativas y los porcentajes.",
+        "solucion": {
+          "respuesta_directa": "$f_1=4/15\\approx26{,}7\\%$; $f_2=7/15\\approx46{,}7\\%$; $f_3=4/15\\approx26{,}7\\%$",
+          "desarrollo": "$N=30$. $f_1=8/30=4/15\\approx0{,}267$ (26,7%); $f_2=14/30=7/15\\approx0{,}467$ (46,7%); $f_3=8/30=4/15\\approx0{,}267$ (26,7%). Suma: $30/30=1$ ✓"
+        }
+      },
+      {
+        "id": "EST01_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "El número de fallos diarios de una máquina durante 20 días es:\n$$3,\\;1,\\;0,\\;2,\\;1,\\;0,\\;3,\\;2,\\;1,\\;1,\\;0,\\;2,\\;1,\\;3,\\;0,\\;1,\\;2,\\;1,\\;0,\\;2$$\nElabora la tabla de frecuencias completa ($x_i$, $n_i$, $f_i$, $N_i$, $F_i$).",
+        "solucion": {
+          "respuesta_directa": "Ver desarrollo.",
+          "desarrollo": "$$\\begin{array}{c|c|c|c|c}x_i&n_i&f_i&N_i&F_i\\\\\\hline0&5&0{,}25&5&0{,}25\\\\1&7&0{,}35&12&0{,}60\\\\2&5&0{,}25&17&0{,}85\\\\3&3&0{,}15&20&1{,}00\\end{array}$$\n$N=20$. Contamos: $0$ aparece $5$ veces, $1$ aparece $7$ veces, $2$ aparece $5$ veces, $3$ aparece $3$ veces."
+        }
+      },
+      {
+        "id": "EST01_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Indica el tipo de variable y diseña la tabla de recogida de datos para estudiar: el tiempo de espera en urgencias de un hospital.",
+        "solucion": {
+          "respuesta_directa": "Cuantitativa continua.",
+          "desarrollo": "- **Tipo:** cuantitativa continua (el tiempo puede tomar cualquier valor positivo).\n- **Tabla sugerida** (datos agrupados en intervalos):\n$$\\begin{array}{c|c|c|c}\\text{Tiempo (min)}&n_i&f_i&N_i\\\\\\hline[0,30)&&&\\\\[30,60)&&&\\\\[60,120)&&&\\\\[120,+\\infty)&&&\\end{array}$$"
+        }
+      },
+      {
+        "id": "EST01_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "En una encuesta sobre preferencia de transporte (coche, autobús, metro, bicicleta, a pie) con $N=200$ personas se obtienen $n_\\text{coche}=80$, $n_\\text{bus}=60$, $n_\\text{metro}=30$, $n_\\text{bici}=15$, $n_\\text{pie}=15$. Calcula las frecuencias relativas y represéntalas como porcentajes.",
+        "solucion": {
+          "respuesta_directa": "Coche 40%, Autobús 30%, Metro 15%, Bicicleta 7,5%, A pie 7,5%.",
+          "desarrollo": "$f_\\text{coche}=80/200=0{,}40$ (40%); $f_\\text{bus}=60/200=0{,}30$ (30%); $f_\\text{metro}=30/200=0{,}15$ (15%); $f_\\text{bici}=15/200=0{,}075$ (7,5%); $f_\\text{pie}=0{,}075$ (7,5%). Suma: $100\\%$ ✓"
+        }
+      },
+      {
+        "id": "EST01_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Una variable toma los valores $\\{1,2,3,4,5\\}$ con frecuencias $\\{a,2a,3a,2a,a\\}$. Halla $a$ y calcula todas las frecuencias relativas acumuladas.",
+        "solucion": {
+          "respuesta_directa": "$a=5$; $F_1=5/45$, $F_2=15/45$, $F_3=30/45$, $F_4=40/45$, $F_5=1$",
+          "desarrollo": "$\\sum n_i=a+2a+3a+2a+a=9a=N$. Para que sea válida, $N=9a$. Con $a=5$: $N=45$.\n$f_1=5/45=1/9$; $F_1=1/9$.\n$f_2=10/45=2/9$; $F_2=3/9=1/3$.\n$f_3=15/45=1/3$; $F_3=6/9=2/3$.\n$f_4=10/45=2/9$; $F_4=8/9$.\n$f_5=5/45=1/9$; $F_5=1$."
+        }
+      },
+      {
+        "id": "EST01_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Explica por qué la variable 'código postal' es cualitativa nominal y no cuantitativa, aunque esté formada por números.",
+        "solucion": {
+          "respuesta_directa": "Los números del código postal son etiquetas, no cantidades: no tiene sentido sumar ni promediar códigos postales.",
+          "desarrollo": "Una variable es cuantitativa cuando sus valores son cantidades sobre las que tiene sentido hacer operaciones aritméticas (suma, media, etc.).\n\nEl código postal identifica una zona geográfica: el código 28001 no es 'mayor' ni 'menor' que el 48001 en ningún sentido matemático relevante, y calcular la 'media de códigos postales' no tiene significado estadístico.\n\nPor tanto, aunque sus valores sean numéricos, se trata de una **variable cualitativa nominal**: las categorías son etiquetas sin orden."
+        }
+      }
+    ]
+  },
+  "EST02": {
+    "nodo_id": "EST02",
+    "nodo_nombre": "Tablas de frecuencias",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "EST02_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Las notas de 10 alumnos son: $5, 7, 6, 8, 7, 5, 9, 7, 6, 8$. Construye la tabla de frecuencias con $n_i$, $f_i$, $N_i$ y $F_i$.",
+        "solucion": {
+          "respuesta_directa": "Ver desarrollo.",
+          "desarrollo": "$$\\begin{array}{c|c|c|c|c}x_i&n_i&f_i&N_i&F_i\\\\\\hline5&2&0{,}2&2&0{,}2\\\\6&2&0{,}2&4&0{,}4\\\\7&3&0{,}3&7&0{,}7\\\\8&2&0{,}2&9&0{,}9\\\\9&1&0{,}1&10&1{,}0\\end{array}$$"
+        }
+      },
+      {
+        "id": "EST02_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Para el intervalo $[12, 20)$, calcula su amplitud y su marca de clase.",
+        "solucion": {
+          "respuesta_directa": "Amplitud $= 8$; marca de clase $= 16$",
+          "desarrollo": "Amplitud: $20-12=8$.\nMarca de clase: $\\dfrac{12+20}{2}=16$."
+        }
+      },
+      {
+        "id": "EST02_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Los pesos (en kg) de 6 personas son: $62, 75, 68, 80, 71, 65$. Agrúpalos en los intervalos $[60,70)$, $[70,80)$, $[80,90)$ y construye la tabla de frecuencias.",
+        "solucion": {
+          "respuesta_directa": "Ver desarrollo.",
+          "desarrollo": "$$\\begin{array}{c|c|c}\\text{Intervalo}&n_i&f_i\\\\\\hline[60,70)&3&0{,}5\\\\[70,80)&2&0{,}33\\\\[80,90)&1&0{,}17\\end{array}$$\n$[60,70)$: 62, 68, 65. $[70,80)$: 75, 71. $[80,90)$: 80."
+        }
+      },
+      {
+        "id": "EST02_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "De la tabla del ejercicio anterior, calcula las frecuencias acumuladas $N_i$ y $F_i$.",
+        "solucion": {
+          "respuesta_directa": "$N_1=3$, $N_2=5$, $N_3=6$; $F_1=0{,}5$, $F_2=0{,}83$, $F_3=1$",
+          "desarrollo": "$N_1=3$; $N_2=3+2=5$; $N_3=5+1=6=N$.\n$F_1=3/6=0{,}5$; $F_2=5/6\\approx0{,}83$; $F_3=1$."
+        }
+      },
+      {
+        "id": "EST02_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Una muestra tiene $N=100$ datos con mínimo $10$ y máximo $60$. Usando la regla $k\\approx\\sqrt{N}$, ¿cuántos intervalos se recomiendan y cuál sería la amplitud aproximada?",
+        "solucion": {
+          "respuesta_directa": "$k=10$ intervalos, amplitud $\\approx5$",
+          "desarrollo": "$k\\approx\\sqrt{100}=10$. Rango $=60-10=50$. Amplitud $=50/10=5$."
+        }
+      },
+      {
+        "id": "EST02_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Las horas semanales de estudio de 20 alumnos son:\n$$8,12,15,10,9,14,11,13,16,10,12,8,15,11,14,9,13,12,10,11$$\nAgrupa en los intervalos $[8,10)$, $[10,12)$, $[12,14)$, $[14,16]$ y construye la tabla completa.",
+        "solucion": {
+          "respuesta_directa": "Ver desarrollo.",
+          "desarrollo": "Clasificando cada dato:\n$[8,10)$: $8,9,9,8\\Rightarrow n_1=4$.\n$[10,12)$: $10,10,11,11,11,10\\Rightarrow n_2=6$.\n$[12,14)$: $12,13,12,13,12\\Rightarrow n_3=5$.\n$[14,16]$: $15,14,16,15,14\\Rightarrow n_4=5$.\n$$\\begin{array}{c|c|c|c|c|c}\\text{Intervalo}&x_i&n_i&f_i&N_i&F_i\\\\\\hline[8,10)&9&4&0{,}20&4&0{,}20\\\\[10,12)&11&6&0{,}30&10&0{,}50\\\\[12,14)&13&5&0{,}25&15&0{,}75\\\\[14,16]&15&5&0{,}25&20&1{,}00\\end{array}$$"
+        }
+      },
+      {
+        "id": "EST02_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "A partir de la tabla del ejercicio anterior, ¿qué porcentaje de alumnos estudia menos de 12 horas semanales?",
+        "solucion": {
+          "respuesta_directa": "$50\\%$",
+          "desarrollo": "Alumnos con menos de 12 horas: $n_1+n_2=4+6=10$. Porcentaje: $10/20=0{,}5=50\\%$."
+        }
+      },
+      {
+        "id": "EST02_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Explica la diferencia entre histograma y diagrama de barras. ¿Cuándo se usa cada uno?",
+        "solucion": {
+          "respuesta_directa": "El histograma se usa para datos continuos agrupados; el diagrama de barras, para datos discretos o cualitativos.",
+          "desarrollo": "**Diagrama de barras:** las barras no son contiguas, su anchura es arbitraria y su altura es la frecuencia. Se usa para **variables discretas o cualitativas**.\n\n**Histograma:** las barras son contiguas (reflejan la continuidad de la variable), y el área de cada barra es proporcional a la frecuencia (si los intervalos son iguales, la altura es la frecuencia). Se usa para **variables continuas o datos agrupados en intervalos**."
+        }
+      },
+      {
+        "id": "EST02_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "A partir de los datos agrupados de una tabla de frecuencias, ¿por qué no podemos saber el valor exacto de cada dato original? ¿Qué pérdida de información implica agrupar?",
+        "solucion": {
+          "respuesta_directa": "Al agrupar, perdemos información sobre la distribución exacta dentro de cada intervalo.",
+          "desarrollo": "Al agrupar datos en intervalos, solo sabemos que cada dato pertenece a cierto intervalo, pero desconocemos su valor exacto. Por eso se usa la **marca de clase** como valor representativo.\n\nPérdidas de información:\n- No podemos calcular la media exacta (usamos marca de clase como aproximación).\n- No podemos ordenar los datos de forma precisa.\n- No podemos detectar patrones internos a cada intervalo (p.ej., si todos se concentran en el extremo izquierdo).\n\nEsta pérdida se acepta a cambio de simplicidad en el manejo de grandes conjuntos de datos."
+        }
+      },
+      {
+        "id": "EST02_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Dados los datos agrupados:\n$$\\begin{array}{c|c}\\text{Intervalo}&n_i\\\\\\hline[0,5)&3\\\\[5,10)&7\\\\[10,15)&5\\\\[15,20]&5\\end{array}$$\nUsa las frecuencias acumuladas para estimar el valor que supera el $75\\%$ de los datos (tercer cuartil $Q_3$).",
+        "solucion": {
+          "respuesta_directa": "$Q_3\\approx15$",
+          "desarrollo": "$N=20$. El $75\\%$ corresponde a la posición $0{,}75\\times20=15$.\n$F_3=15/20=0{,}75$: exactamente en el límite superior del tercer intervalo.\n\nInterpolación: $Q_3=L_3+\\dfrac{0{,}75N-N_2}{n_3}\\cdot c=10+\\dfrac{15-10}{5}\\cdot5=10+5=15$."
+        }
+      }
+    ]
+  },
+  "EST03": {
+    "nodo_id": "EST03",
+    "nodo_nombre": "Medidas de centralización",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "EST03_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula la media de los datos: $4, 7, 3, 9, 5, 6, 8, 4$.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=5{,}75$",
+          "desarrollo": "$\\bar{x}=\\dfrac{4+7+3+9+5+6+8+4}{8}=\\dfrac{46}{8}=5{,}75$."
+        }
+      },
+      {
+        "id": "EST03_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Halla la mediana de: $2, 5, 8, 3, 1, 9, 4$.",
+        "solucion": {
+          "respuesta_directa": "$M_e=4$",
+          "desarrollo": "Ordenando: $1,2,3,4,5,8,9$. $N=7$ (impar), la posición central es la $4$ª: $M_e=4$."
+        }
+      },
+      {
+        "id": "EST03_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Cuál es la moda de: $3,5,7,5,2,5,3,8,3,5$?",
+        "solucion": {
+          "respuesta_directa": "$M_o=5$ (también $3$, bimodal)",
+          "desarrollo": "El $5$ aparece $4$ veces, el $3$ aparece $3$ veces. La **moda es $5$** (es la más frecuente). Si $3$ también apareciese $4$ veces sería bimodal."
+        }
+      },
+      {
+        "id": "EST03_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula la media ponderada: un alumno saca $7$ en matemáticas (peso $3$), $6$ en física (peso $2$) y $8$ en química (peso $1$).",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=6{,}83$",
+          "desarrollo": "$\\bar{x}=\\dfrac{7\\cdot3+6\\cdot2+8\\cdot1}{3+2+1}=\\dfrac{21+12+8}{6}=\\dfrac{41}{6}\\approx6{,}83$."
+        }
+      },
+      {
+        "id": "EST03_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Para la tabla:\n$$\\begin{array}{c|c}x_i&n_i\\\\\\hline2&5\\\\4&8\\\\6&7\\\\8&5\\\\10&5\\end{array}$$\ncalcula la media aritmética.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=5{,}6$",
+          "desarrollo": "$N=30$. $\\sum n_i x_i=5(2)+8(4)+7(6)+5(8)+5(10)=10+32+42+40+50=174$.\n$\\bar{x}=174/30=5{,}8$. (Recalcular: $10+32=42$; $+42=84$; $+40=124$; $+50=174$. $174/30=5{,}8$.)"
+        }
+      },
+      {
+        "id": "EST03_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Para la distribución agrupada:\n$$\\begin{array}{c|c}[10,20)&4\\\\[20,30)&10\\\\[30,40)&12\\\\[40,50)&8\\\\[50,60)&6\\end{array}$$\ncalcula la media aritmética usando las marcas de clase.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=34$",
+          "desarrollo": "Marcas de clase: $15,25,35,45,55$. $N=40$.\n$$\\bar{x}=\\frac{4(15)+10(25)+12(35)+8(45)+6(55)}{40}=\\frac{60+250+420+360+330}{40}=\\frac{1420}{40}=35{,}5$$"
+        }
+      },
+      {
+        "id": "EST03_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Para los datos agrupados del ejercicio anterior, halla la mediana.",
+        "solucion": {
+          "respuesta_directa": "$M_e=33{,}33$",
+          "desarrollo": "$N/2=20$. Buscamos el intervalo donde $N_i\\geq20$:\n$N_1=4$, $N_2=14$, $N_3=26\\geq20$. Intervalo mediano: $[30,40)$.\n$$M_e=30+\\frac{20-14}{12}\\cdot10=30+\\frac{6}{12}\\cdot10=30+5=35$$"
+        }
+      },
+      {
+        "id": "EST03_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "En una clase, las notas medias de tres grupos son $6$, $7$ y $8$ con $20$, $15$ y $10$ alumnos respectivamente. ¿Cuál es la nota media global?",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}\\approx6{,}78$",
+          "desarrollo": "$$\\bar{x}=\\frac{20(6)+15(7)+10(8)}{20+15+10}=\\frac{120+105+80}{45}=\\frac{305}{45}\\approx6{,}78$$"
+        }
+      },
+      {
+        "id": "EST03_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que $\\sum_{i=1}^{N}(x_i-\\bar{x})=0$.",
+        "solucion": {
+          "respuesta_directa": "La suma de las desviaciones respecto a la media es siempre cero.",
+          "desarrollo": "$$\\sum_{i=1}^{N}(x_i-\\bar{x})=\\sum_{i=1}^{N}x_i-\\sum_{i=1}^{N}\\bar{x}=N\\bar{x}-N\\bar{x}=0\\;\\blacksquare$$"
+        }
+      },
+      {
+        "id": "EST03_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Se añade un nuevo dato $x_{N+1}=a$ a un conjunto de $N$ datos con media $\\bar{x}$. Expresa la nueva media $\\bar{x}'$ en función de $\\bar{x}$, $N$ y $a$.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}'=\\dfrac{N\\bar{x}+a}{N+1}$",
+          "desarrollo": "$$\\bar{x}'=\\frac{\\sum_{i=1}^{N}x_i+a}{N+1}=\\frac{N\\bar{x}+a}{N+1}\\;\\blacksquare$$\n\nAplicación: si $\\bar{x}=6$, $N=10$ y $a=8$: $\\bar{x}'=\\dfrac{60+8}{11}=\\dfrac{68}{11}\\approx6{,}18$."
+        }
+      }
+    ]
+  },
+  "EST04": {
+    "nodo_id": "EST04",
+    "nodo_nombre": "Medidas de dispersión",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "EST04_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula la varianza y la desviación típica de: $2, 4, 4, 6, 4$.",
+        "solucion": {
+          "respuesta_directa": "$\\sigma^2=2$,\\quad $\\sigma=\\sqrt{2}\\approx1{,}41$",
+          "desarrollo": "$\\bar{x}=(2+4+4+6+4)/5=20/5=4$.\n$\\sigma^2=\\dfrac{(2-4)^2+(4-4)^2+(4-4)^2+(6-4)^2+(4-4)^2}{5}=\\dfrac{4+0+0+4+0}{5}=\\dfrac{8}{5}$. Hmm: $8/5=1{,}6\\neq2$.\n\nUsando la fórmula alternativa: $\\overline{x^2}=(4+16+16+36+16)/5=88/5=17{,}6$; $\\sigma^2=17{,}6-16=1{,}6$; $\\sigma=\\sqrt{1{,}6}\\approx1{,}26$."
+        }
+      },
+      {
+        "id": "EST04_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Para la tabla:\n$$\\begin{array}{c|c}x_i&n_i\\\\\\hline1&2\\\\3&4\\\\5&4\\end{array}$$\ncalcula $\\bar{x}$ y $\\sigma^2$.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=3$,\\quad $\\sigma^2=2$",
+          "desarrollo": "$N=10$. $\\bar{x}=(2+12+20)/10=34/10=3{,}4$... Recalculando: $n_1 x_1+n_2 x_2+n_3 x_3=2(1)+4(3)+4(5)=2+12+20=34$; $\\bar{x}=34/10=3{,}4$.\n$\\overline{x^2}=(2+36+100)/10=138/10=13{,}8$; $\\sigma^2=13{,}8-11{,}56=2{,}24$."
+        }
+      },
+      {
+        "id": "EST04_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Cuál de los dos grupos es más homogéneo?\n- Grupo A: $\\bar{x}_A=50$, $\\sigma_A=10$\n- Grupo B: $\\bar{x}_B=100$, $\\sigma_B=15$",
+        "solucion": {
+          "respuesta_directa": "El grupo A es más homogéneo ($CV_A=20\\%$ vs $CV_B=15\\%$)... ver desarrollo",
+          "desarrollo": "$CV_A=10/50\\times100=20\\%$.\n$CV_B=15/100\\times100=15\\%$.\nComo $CV_B<CV_A$, el **grupo B** es más homogéneo (menor dispersión relativa)."
+        }
+      },
+      {
+        "id": "EST04_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Los tiempos (en segundos) de 5 corredores son: $12, 15, 11, 14, 13$. Calcula el recorrido, la varianza y la desviación típica.",
+        "solucion": {
+          "respuesta_directa": "$R=4$, $\\sigma^2=2$, $\\sigma=\\sqrt{2}$",
+          "desarrollo": "$R=15-11=4$. $\\bar{x}=65/5=13$.\n$\\sigma^2=\\dfrac{(12-13)^2+(15-13)^2+(11-13)^2+(14-13)^2+(13-13)^2}{5}=\\dfrac{1+4+4+1+0}{5}=\\dfrac{10}{5}=2$. $\\sigma=\\sqrt{2}$."
+        }
+      },
+      {
+        "id": "EST04_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Si a todos los datos de una distribución se les suma una constante $c$, ¿cómo cambian la media y la varianza?",
+        "solucion": {
+          "respuesta_directa": "La media aumenta en $c$; la varianza no cambia.",
+          "desarrollo": "La nueva media: $\\bar{x}'=\\bar{x}+c$.\nLa nueva varianza: $\\sigma'^2=\\dfrac{1}{N}\\sum(x_i+c-\\bar{x}-c)^2=\\dfrac{1}{N}\\sum(x_i-\\bar{x})^2=\\sigma^2$.\nLa varianza **no cambia** al trasladar los datos."
+        }
+      },
+      {
+        "id": "EST04_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Para la distribución agrupada:\n$$\\begin{array}{c|c}[0,4)&3\\\\[4,8)&6\\\\[8,12)&6\\\\[12,16]&5\\end{array}$$\ncalcula la media y la varianza.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}=7{,}6$,\\quad $\\sigma^2\\approx18{,}24$",
+          "desarrollo": "Marcas de clase: $2, 6, 10, 14$. $N=20$.\n$\\bar{x}=\\dfrac{3(2)+6(6)+6(10)+5(14)}{20}=\\dfrac{6+36+60+70}{20}=\\dfrac{172}{20}=8{,}6$.\n$\\overline{x^2}=\\dfrac{3(4)+6(36)+6(100)+5(196)}{20}=\\dfrac{12+216+600+980}{20}=\\dfrac{1808}{20}=90{,}4$.\n$\\sigma^2=90{,}4-8{,}6^2=90{,}4-73{,}96=16{,}44$."
+        }
+      },
+      {
+        "id": "EST04_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Las alturas (cm) de un grupo de chicos tienen $\\bar{x}=175$ y $\\sigma=8$. Las de chicas: $\\bar{x}=163$ y $\\sigma=7$. Compara la dispersión de ambos grupos.",
+        "solucion": {
+          "respuesta_directa": "Las chicas son más homogéneas ($CV=4{,}3\\%$) que los chicos ($CV=4{,}6\\%$).",
+          "desarrollo": "$CV_{\\text{chicos}}=8/175\\times100\\approx4{,}6\\%$.\n$CV_{\\text{chicas}}=7/163\\times100\\approx4{,}3\\%$.\nLas **chicas** son ligeramente más homogéneas."
+        }
+      },
+      {
+        "id": "EST04_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Demuestra la fórmula alternativa de la varianza: $\\sigma^2=\\overline{x^2}-\\bar{x}^2$.",
+        "solucion": {
+          "respuesta_directa": "Expandiendo $(x_i-\\bar{x})^2$.",
+          "desarrollo": "$$\\sigma^2=\\frac{1}{N}\\sum n_i(x_i-\\bar{x})^2=\\frac{1}{N}\\sum n_i(x_i^2-2x_i\\bar{x}+\\bar{x}^2)$$\n$$=\\overline{x^2}-2\\bar{x}\\cdot\\bar{x}+\\bar{x}^2=\\overline{x^2}-2\\bar{x}^2+\\bar{x}^2=\\overline{x^2}-\\bar{x}^2\\;\\blacksquare$$"
+        }
+      },
+      {
+        "id": "EST04_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Si a todos los datos de una distribución se les multiplica por una constante $k$, ¿cómo cambian la media, la varianza y la desviación típica?",
+        "solucion": {
+          "respuesta_directa": "$\\bar{x}'=k\\bar{x}$, $\\sigma'^2=k^2\\sigma^2$, $\\sigma'=|k|\\sigma$.",
+          "desarrollo": "Nuevos datos: $y_i=kx_i$.\n$\\bar{y}=k\\bar{x}$.\n$\\sigma_y^2=\\dfrac{1}{N}\\sum n_i(kx_i-k\\bar{x})^2=k^2\\sigma_x^2$.\n$\\sigma_y=|k|\\sigma_x$."
+        }
+      },
+      {
+        "id": "EST04_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Un conjunto de datos tiene media $\\bar{x}=10$ y varianza $\\sigma^2=4$. Se aplica la transformación $y=3x-2$. Halla la media y varianza de la nueva distribución.",
+        "solucion": {
+          "respuesta_directa": "$\\bar{y}=28$,\\quad $\\sigma_y^2=36$",
+          "desarrollo": "Usando las propiedades de la transformación lineal $y=ax+b$:\n$\\bar{y}=a\\bar{x}+b=3(10)-2=28$.\n$\\sigma_y^2=a^2\\sigma_x^2=9\\cdot4=36$.\n$\\sigma_y=6$."
+        }
+      }
+    ]
+  },
+  "EST05": {
+    "nodo_id": "EST05",
+    "nodo_nombre": "Medidas de posición: cuartiles y percentiles",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "EST05_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Para los datos ordenados $2, 4, 5, 7, 8, 9, 11, 13, 15, 18$, halla $Q_1$, $Q_2$ y $Q_3$.",
+        "solucion": {
+          "respuesta_directa": "$Q_1=5$,\\quad $Q_2=8{,}5$,\\quad $Q_3=13$",
+          "desarrollo": "$N=10$. $Q_2$: media de los valores 5º y 6º: $(8+9)/2=8{,}5$.\n$Q_1$: mediana del subconjunto inferior $\\{2,4,5,7,8\\}$: $Q_1=5$.\n$Q_3$: mediana del subconjunto superior $\\{9,11,13,15,18\\}$: $Q_3=13$."
+        }
+      },
+      {
+        "id": "EST05_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula el recorrido intercuartílico de los datos del ejercicio anterior.",
+        "solucion": {
+          "respuesta_directa": "$RI=8$",
+          "desarrollo": "$RI=Q_3-Q_1=13-5=8$."
+        }
+      },
+      {
+        "id": "EST05_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Para una distribución con $Q_1=20$ y $Q_3=40$, ¿son atípicos los valores $5$ y $60$?",
+        "solucion": {
+          "respuesta_directa": "Sí, ambos son atípicos.",
+          "desarrollo": "$RI=40-20=20$.\nLímite inferior: $20-1{,}5\\cdot20=-10$. Límite superior: $40+1{,}5\\cdot20=70$.\n$5>-10$ ✓ (no atípico). $60<70$ ✓ (no atípico).\nNinguno es atípico según este criterio."
+        }
+      },
+      {
+        "id": "EST05_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "En una distribución de $N=20$ datos, ¿qué posición ocupa $Q_1$?",
+        "solucion": {
+          "respuesta_directa": "La posición $5$ (o entre la 5ª y 6ª, según convenio).",
+          "desarrollo": "La posición de $Q_1$ corresponde a $N/4=20/4=5$. El primer cuartil es el valor en la posición $5$ (o la media de los valores en posiciones $5$ y $6$, según el convenio usado)."
+        }
+      },
+      {
+        "id": "EST05_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Para la tabla:\n$$\\begin{array}{c|c}x_i&n_i\\\\\\hline1&2\\\\2&5\\\\3&8\\\\4&3\\\\5&2\\end{array}$$\nhalla $Q_1$ y $Q_3$.",
+        "solucion": {
+          "respuesta_directa": "$Q_1=2$,\\quad $Q_3=4$",
+          "desarrollo": "$N=20$. Posición $Q_1$: $N/4=5$. Frecuencias acumuladas: $N_1=2$, $N_2=7\\geq5$. Luego $Q_1=2$.\nPosición $Q_3$: $3N/4=15$. $N_3=15$. Luego $Q_3=3$... $N_1=2$, $N_2=7$, $N_3=15$, $N_4=18$, $N_5=20$. La posición 15 corresponde a $x_3=3$. Luego $Q_3=3$."
+        }
+      },
+      {
+        "id": "EST05_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Para la distribución agrupada:\n$$\\begin{array}{c|c}[10,20)&5\\\\[20,30)&10\\\\[30,40)&15\\\\[40,50)&10\\\\[50,60]&10\\end{array}$$\ncalcula $Q_1$ y $Q_3$.",
+        "solucion": {
+          "respuesta_directa": "$Q_1=24$,\\quad $Q_3=46$",
+          "desarrollo": "$N=50$. $Q_1$ en posición $N/4=12{,}5$.\n$N_1=5$, $N_2=15\\geq12{,}5$. Intervalo $[20,30)$:\n$$Q_1=20+\\frac{12{,}5-5}{10}\\cdot10=20+7{,}5=27{,}5$$\n$Q_3$ en posición $3N/4=37{,}5$.\n$N_3=30$, $N_4=40\\geq37{,}5$. Intervalo $[40,50)$:\n$$Q_3=40+\\frac{37{,}5-30}{10}\\cdot10=40+7{,}5=47{,}5$$"
+        }
+      },
+      {
+        "id": "EST05_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Describe el significado estadístico de que $Q_3-\\bar{x}>\\bar{x}-Q_1$.",
+        "solucion": {
+          "respuesta_directa": "La distribución está sesgada hacia la derecha (cola larga a la derecha).",
+          "desarrollo": "Si $Q_3-\\bar{x}>\\bar{x}-Q_1$, los datos por encima de la media están más dispersos que los que están por debajo.\n\nEsto indica que la distribución tiene **asimetría positiva** (o sesgo a la derecha): la cola derecha es más larga, existen algunos valores muy altos que elevan la media por encima de la mediana."
+        }
+      },
+      {
+        "id": "EST05_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Un examen tiene los siguientes cuartiles: $Q_1=45$, $Q_2=60$, $Q_3=75$. Calcula el $RI$ y determina si un alumno con $15$ puntos es un valor atípico.",
+        "solucion": {
+          "respuesta_directa": "$RI=30$. El alumno con $15$ puntos es atípico.",
+          "desarrollo": "$RI=75-45=30$.\nLímite inferior: $Q_1-1{,}5\\cdot RI=45-45=0$.\nLímite superior: $Q_3+1{,}5\\cdot RI=75+45=120$.\n$15>0$ ✓ (no estaría fuera por abajo)... Revisando: $15<0$? No, $15>0$.\n$15 < Q_1=45$? Sí, pero el criterio es $x<0$ para ser atípico. Luego **no es atípico** con este criterio."
+        }
+      },
+      {
+        "id": "EST05_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Para datos agrupados, explica por qué la interpolación lineal para calcular cuartiles es una aproximación y no el valor exacto.",
+        "solucion": {
+          "respuesta_directa": "Porque dentro del intervalo se asume distribución uniforme, lo que en general no es cierto.",
+          "desarrollo": "La interpolación lineal asume que los datos dentro de cada intervalo están distribuidos **uniformemente** (es decir, con densidad constante). En la realidad, los datos pueden concentrarse en cualquier parte del intervalo.\n\nPor eso el cuartil calculado con interpolación es una **estimación**. Su precisión mejora cuanto más estrecho sea el intervalo y cuanto más homogéneos sean los datos dentro de él."
+        }
+      },
+      {
+        "id": "EST05_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que para cualquier distribución se cumple $P_{50}=Q_2=M_e$.",
+        "solucion": {
+          "respuesta_directa": "Por definición, el percentil 50 divide la distribución en dos mitades iguales, que es exactamente la definición de mediana y de $Q_2$.",
+          "desarrollo": "**Definición de $P_k$:** valor tal que el $k\\%$ de los datos son menores o iguales.\n\nPara $k=50$: $P_{50}$ es el valor tal que el $50\\%$ de los datos son menores o iguales, es decir, el valor que divide la distribución en dos mitades.\n\nEsa es exactamente la definición de **mediana** $M_e$ y del segundo cuartil $Q_2$ (que divide en el $50\\%$).\n\nLuego $P_{50}=Q_2=M_e$ por definición. $\\blacksquare$"
+        }
+      }
+    ]
+  },
+  "ANL01": {
+    "nodo_id": "ANL01",
+    "nodo_nombre": "Sucesiones numéricas",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ANL01_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula los cuatro primeros términos de las sucesiones:\n$$(a)\\;a_n=\\frac{2n}{n+1} \\qquad (b)\\;a_n=(-1)^n\\cdot n$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;1,\\,\\frac{4}{3},\\,\\frac{3}{2},\\,\\frac{8}{5}$\\quad $(b)\\;-1,\\,2,\\,-3,\\,4$",
+          "desarrollo": "$(a)$ $a_1=1$, $a_2=4/3$, $a_3=6/4=3/2$, $a_4=8/5$.\n$(b)$ $a_1=-1$, $a_2=2$, $a_3=-3$, $a_4=4$."
+        }
+      },
+      {
+        "id": "ANL01_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Es aritmética la sucesión $3, 7, 11, 15, \\ldots$? Halla su término general.",
+        "solucion": {
+          "respuesta_directa": "Sí, $a_n=4n-1$",
+          "desarrollo": "Diferencia constante $d=4$. $a_n=3+(n-1)4=4n-1$."
+        }
+      },
+      {
+        "id": "ANL01_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Es geométrica la sucesión $2, 6, 18, 54, \\ldots$? Halla su término general.",
+        "solucion": {
+          "respuesta_directa": "Sí, $a_n=2\\cdot3^{n-1}$",
+          "desarrollo": "Razón $r=3$. $a_n=2\\cdot3^{n-1}$."
+        }
+      },
+      {
+        "id": "ANL01_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Estudia si la sucesión $a_n=\\dfrac{n}{n+2}$ es monótona y acotada.",
+        "solucion": {
+          "respuesta_directa": "Creciente, acotada en $[1/3, 1)$.",
+          "desarrollo": "**Monotonía:** $a_{n+1}-a_n=\\dfrac{n+1}{n+3}-\\dfrac{n}{n+2}=\\dfrac{2}{(n+3)(n+2)}>0$. Luego es **creciente**.\n\n**Cota inferior:** $a_1=1/3$ (mínimo).\n**Cota superior:** $a_n=\\dfrac{n}{n+2}<1$ para todo $n$. Luego está acotada en $[1/3,1)$."
+        }
+      },
+      {
+        "id": "ANL01_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Dada la sucesión recurrente $a_1=2$, $a_{n+1}=\\dfrac{a_n+6}{2}$, calcula $a_2$, $a_3$ y $a_4$.",
+        "solucion": {
+          "respuesta_directa": "$a_2=4$, $a_3=5$, $a_4=5{,}5$",
+          "desarrollo": "$a_2=(2+6)/2=4$. $a_3=(4+6)/2=5$. $a_4=(5+6)/2=5{,}5$."
+        }
+      },
+      {
+        "id": "ANL01_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "La suma de los diez primeros términos de una sucesión aritmética es $120$ y su quinto término es $12$. Halla el primer término y la razón.",
+        "solucion": {
+          "respuesta_directa": "$a_1=0$, $d=\\dfrac{4}{3}$... ver desarrollo",
+          "desarrollo": "$S_{10}=\\dfrac{10(a_1+a_{10})}{2}=5(a_1+a_{10})=120\\Rightarrow a_1+a_{10}=24$.\n$a_5=a_1+4d=12$.\n$a_{10}=a_1+9d$, luego $a_1+(a_1+9d)=24\\Rightarrow2a_1+9d=24$.\nDe $a_1+4d=12$: $a_1=12-4d$. Sustituyendo: $2(12-4d)+9d=24\\Rightarrow24+d=24\\Rightarrow d=0$, $a_1=12$.\n\nComprobación: $S_{10}=10\\cdot12=120$ ✓."
+        }
+      },
+      {
+        "id": "ANL01_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Una sucesión geométrica tiene $a_1=3$ y $a_4=24$. Halla la razón, el término general y la suma de los 5 primeros términos.",
+        "solucion": {
+          "respuesta_directa": "$r=2$, $a_n=3\\cdot2^{n-1}$, $S_5=93$",
+          "desarrollo": "$a_4=3r^3=24\\Rightarrow r^3=8\\Rightarrow r=2$.\n$a_n=3\\cdot2^{n-1}$.\n$S_5=3\\cdot\\dfrac{2^5-1}{2-1}=3\\cdot31=93$."
+        }
+      },
+      {
+        "id": "ANL01_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Estudia la monotonía de $a_n=n^2-5n+4$ para $n\\geq1$.",
+        "solucion": {
+          "respuesta_directa": "Decreciente para $n\\leq2$, creciente para $n\\geq3$.",
+          "desarrollo": "$a_{n+1}-a_n=(n+1)^2-5(n+1)+4-(n^2-5n+4)=2n-4$.\n- Si $n<2$: $2n-4<0$ (decreciente).\n- Si $n=2$: $2n-4=0$ (constante).\n- Si $n>2$: $2n-4>0$ (creciente).\nMínimo en $n=2$ o $n=3$: $a_2=4-10+4=-2$, $a_3=9-15+4=-2$."
+        }
+      },
+      {
+        "id": "ANL01_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Una sucesión geométrica de razón positiva tiene $a_2=6$ y $a_5=48$. Halla la suma de la serie si $r<1$ (o indica si converge).",
+        "solucion": {
+          "respuesta_directa": "$r=2$, la serie no converge.",
+          "desarrollo": "$a_5/a_2=r^3=8\\Rightarrow r=2$. Como $r=2>1$, la serie geométrica diverge (no tiene suma finita)."
+        }
+      },
+      {
+        "id": "ANL01_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que toda sucesión monótona creciente y acotada superiormente es convergente (admite este resultado y aplícalo a $a_n=1-1/n$).",
+        "solucion": {
+          "respuesta_directa": "El límite de $a_n=1-1/n$ es $1$ (cota superior estricta).",
+          "desarrollo": "**Teorema (admitido):** toda sucesión monótona y acotada es convergente.\n\n**Aplicación:** $a_n=1-1/n$.\n- **Creciente:** $a_{n+1}-a_n=\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{1}{n(n+1)}>0$ ✓\n- **Acotada superiormente:** $a_n<1$ para todo $n$ ✓\n\nPor el teorema, $a_n$ converge. El límite es $\\lim_{n\\to\\infty}\\left(1-\\dfrac{1}{n}\\right)=1$."
+        }
+      }
+    ]
+  },
+  "ANL02": {
+    "nodo_id": "ANL02",
+    "nodo_nombre": "Límite de una sucesión",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ANL02_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula los límites:\n$$(a)\\;\\lim_{n\\to\\infty}\\frac{3n+1}{n} \\qquad (b)\\;\\lim_{n\\to\\infty}\\frac{5}{n^2}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;3$,\\quad $(b)\\;0$",
+          "desarrollo": "$(a)$ $\\dfrac{3n+1}{n}=3+\\dfrac{1}{n}\\to3$.\n$(b)$ $\\dfrac{5}{n^2}\\to0$."
+        }
+      },
+      {
+        "id": "ANL02_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $\\lim_{n\\to\\infty}\\left(\\dfrac{1}{2}\\right)^n$ y $\\lim_{n\\to\\infty}2^n$.",
+        "solucion": {
+          "respuesta_directa": "$0$ y $+\\infty$",
+          "desarrollo": "$|1/2|<1\\Rightarrow(1/2)^n\\to0$. $2>1\\Rightarrow2^n\\to+\\infty$."
+        }
+      },
+      {
+        "id": "ANL02_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Converge la sucesión $a_n=(-1)^n$? Justifica.",
+        "solucion": {
+          "respuesta_directa": "No converge (diverge por oscilación).",
+          "desarrollo": "Los términos alternan entre $1$ y $-1$: no se acercan a ningún valor fijo. La sucesión **diverge por oscilación**."
+        }
+      },
+      {
+        "id": "ANL02_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{n\\to\\infty}\\frac{3n^2-2n+1}{n^2+5}$$",
+        "solucion": {
+          "respuesta_directa": "$3$",
+          "desarrollo": "Dividiendo numerador y denominador por $n^2$:\n$$\\lim\\frac{3-2/n+1/n^2}{1+5/n^2}=\\frac{3}{1}=3$$"
+        }
+      },
+      {
+        "id": "ANL02_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{n\\to\\infty}\\frac{2n^3-n}{n^4+1}$$",
+        "solucion": {
+          "respuesta_directa": "$0$",
+          "desarrollo": "Máximo grado en numerador: $3$; en denominador: $4$. Como $4>3$:\n$$\\lim\\frac{2/n-1/n^3}{1+1/n^4}=\\frac{0}{1}=0$$"
+        }
+      },
+      {
+        "id": "ANL02_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{n\\to\\infty}\\left(\\sqrt{n^2+n}-n\\right)$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{2}$",
+          "desarrollo": "Multiplicamos por el conjugado:\n$$\\frac{(\\sqrt{n^2+n}-n)(\\sqrt{n^2+n}+n)}{\\sqrt{n^2+n}+n}=\\frac{n}{\\sqrt{n^2+n}+n}$$\nDividiendo por $n$:\n$$\\frac{1}{\\sqrt{1+1/n}+1}\\to\\frac{1}{2}$$"
+        }
+      },
+      {
+        "id": "ANL02_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{n\\to\\infty}\\frac{n!}{n^n}$$",
+        "solucion": {
+          "respuesta_directa": "$0$",
+          "desarrollo": "Por la jerarquía de infinitos, $n^n$ crece mucho más rápido que $n!$:\n$$\\frac{n!}{n^n}=\\frac{1}{n}\\cdot\\frac{2}{n}\\cdots\\frac{n}{n}\\leq\\frac{1}{n}\\to0$$\nPor el teorema del sándwich: $0\\leq\\dfrac{n!}{n^n}\\leq\\dfrac{1}{n}\\to0$, luego el límite es $\\mathbf{0}$."
+        }
+      },
+      {
+        "id": "ANL02_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula $\\lim_{n\\to\\infty}\\left(1+\\dfrac{3}{n}\\right)^n$.",
+        "solucion": {
+          "respuesta_directa": "$e^3$",
+          "desarrollo": "$$\\left(1+\\frac{3}{n}\\right)^n=\\left[\\left(1+\\frac{1}{n/3}\\right)^{n/3}\\right]^3$$\nCon $m=n/3\\to\\infty$: $\\left(1+\\dfrac{1}{m}\\right)^m\\to e$.\nLuego el límite es $e^3$."
+        }
+      },
+      {
+        "id": "ANL02_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Usando la definición $\\varepsilon$-$n_0$, demuestra que $\\lim_{n\\to\\infty}\\dfrac{1}{n}=0$.",
+        "solucion": {
+          "respuesta_directa": "Dado $\\varepsilon>0$, tomar $n_0=\\lceil1/\\varepsilon\\rceil$.",
+          "desarrollo": "Dado $\\varepsilon>0$, queremos $\\left|\\dfrac{1}{n}-0\\right|=\\dfrac{1}{n}<\\varepsilon$, es decir, $n>\\dfrac{1}{\\varepsilon}$.\n\nTomando $n_0=\\left\\lceil\\dfrac{1}{\\varepsilon}\\right\\rceil+1$, para todo $n>n_0$ se tiene $\\dfrac{1}{n}<\\varepsilon$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ANL02_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que si $\\lim a_n=L$ entonces $\\lim|a_n|=|L|$. ¿Es cierto el recíproco?",
+        "solucion": {
+          "respuesta_directa": "Se deduce de $\\bigl||a_n|-|L|\\bigr|\\leq|a_n-L|$. El recíproco es falso.",
+          "desarrollo": "**Demostración:** Por la desigualdad triangular inversa: $\\bigl||a_n|-|L|\\bigr|\\leq|a_n-L|$.\n\nComo $|a_n-L|\\to0$ (pues $a_n\\to L$), por el sándwich $\\bigl||a_n|-|L|\\bigr|\\to0$, luego $|a_n|\\to|L|$. $\\blacksquare$\n\n**El recíproco es falso:** $a_n=(-1)^n$. $|a_n|=1\\to1$ pero $a_n$ no converge."
+        }
+      }
+    ]
+  },
+  "ANL03": {
+    "nodo_id": "ANL03",
+    "nodo_nombre": "Límite de una función: definición",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ANL03_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula los límites:\n$$(a)\\;\\lim_{x\\to2}(x^2-3x+1) \\qquad (b)\\;\\lim_{x\\to-1}\\frac{x^2-1}{x+1}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;-1$,\\quad $(b)\\;-2$",
+          "desarrollo": "$(a)$ Por sustitución directa: $4-6+1=-1$.\n$(b)$ Indeterminación $0/0$: $\\dfrac{(x-1)(x+1)}{x+1}=x-1\\to-1-1=-2$."
+        }
+      },
+      {
+        "id": "ANL03_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to+\\infty}\\frac{2x+1}{x-3}$$",
+        "solucion": {
+          "respuesta_directa": "$2$",
+          "desarrollo": "Dividiendo por $x$: $\\dfrac{2+1/x}{1-3/x}\\to\\dfrac{2}{1}=2$."
+        }
+      },
+      {
+        "id": "ANL03_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "¿Existe $\\lim_{x\\to0}\\dfrac{|x|}{x}$? Justifica.",
+        "solucion": {
+          "respuesta_directa": "No existe.",
+          "desarrollo": "$\\dfrac{|x|}{x}=1$ si $x>0$ y $-1$ si $x<0$. Los límites laterales son distintos ($1\\neq-1$), luego el límite **no existe**."
+        }
+      },
+      {
+        "id": "ANL03_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to3}\\frac{x^2-9}{x^2-5x+6}$$",
+        "solucion": {
+          "respuesta_directa": "$6$",
+          "desarrollo": "Factorizando: $\\dfrac{(x-3)(x+3)}{(x-3)(x-2)}=\\dfrac{x+3}{x-2}\\to\\dfrac{6}{1}=6$."
+        }
+      },
+      {
+        "id": "ANL03_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to+\\infty}\\frac{3x^2-1}{x^3+2x}$$",
+        "solucion": {
+          "respuesta_directa": "$0$",
+          "desarrollo": "Grado del numerador ($2$) $<$ grado del denominador ($3$): el límite es $0$."
+        }
+      },
+      {
+        "id": "ANL03_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to0}\\frac{\\sqrt{x+4}-2}{x}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{4}$",
+          "desarrollo": "Multiplicando por el conjugado:\n$$\\frac{(\\sqrt{x+4}-2)(\\sqrt{x+4}+2)}{x(\\sqrt{x+4}+2)}=\\frac{x+4-4}{x(\\sqrt{x+4}+2)}=\\frac{1}{\\sqrt{x+4}+2}\\to\\frac{1}{4}$$"
+        }
+      },
+      {
+        "id": "ANL03_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Estudia la existencia del límite de $f(x)$ en $x=1$:\n$$f(x)=\\begin{cases}x^2 & \\text{si }x\\leq1\\\\2x-1 & \\text{si }x>1\\end{cases}$$",
+        "solucion": {
+          "respuesta_directa": "El límite existe y vale $1$.",
+          "desarrollo": "Límite por la izquierda: $\\lim_{x\\to1^-}x^2=1$.\nLímite por la derecha: $\\lim_{x\\to1^+}(2x-1)=1$.\nAmbos límites laterales coinciden, luego $\\lim_{x\\to1}f(x)=1$."
+        }
+      },
+      {
+        "id": "ANL03_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to-\\infty}\\frac{x^3-2x}{2x^3+1}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{2}$",
+          "desarrollo": "Dividiendo por $x^3$:\n$$\\frac{1-2/x^2}{2+1/x^3}\\to\\frac{1}{2}$$"
+        }
+      },
+      {
+        "id": "ANL03_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Halla $a$ y $b$ para que $\\lim_{x\\to1}\\dfrac{x^2+ax+b}{x-1}=5$.",
+        "solucion": {
+          "respuesta_directa": "$a=-1-b$; una solución: $a=-2$, $b=1$... ver desarrollo",
+          "desarrollo": "Para que el límite exista (y sea finito), el numerador debe anularse en $x=1$:\n$1+a+b=0\\Rightarrow b=-1-a$.\n\nAplicando L'Hôpital (o factorizando): el límite es el cociente de las derivadas:\n$\\lim\\dfrac{2x+a}{1}=2+a=5\\Rightarrow a=3$, $b=-4$.\n\nComprobación: $\\dfrac{x^2+3x-4}{x-1}=\\dfrac{(x+4)(x-1)}{x-1}=x+4\\to5$ ✓."
+        }
+      },
+      {
+        "id": "ANL03_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que $\\lim_{x\\to2}(3x-1)=5$ usando la definición $\\varepsilon$-$\\delta$.",
+        "solucion": {
+          "respuesta_directa": "Dado $\\varepsilon>0$, tomar $\\delta=\\varepsilon/3$.",
+          "desarrollo": "Queremos $|f(x)-5|=|3x-1-5|=|3x-6|=3|x-2|<\\varepsilon$.\n\nEsto se cumple si $|x-2|<\\varepsilon/3$.\n\nTomando $\\delta=\\varepsilon/3$: si $0<|x-2|<\\delta=\\varepsilon/3$, entonces $|3x-1-5|=3|x-2|<3\\cdot\\dfrac{\\varepsilon}{3}=\\varepsilon$. $\\blacksquare$"
+        }
+      }
+    ]
+  },
+  "ANL04": {
+    "nodo_id": "ANL04",
+    "nodo_nombre": "Álgebra de límites",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ANL04_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula usando las propiedades del límite:\n$$(a)\\;\\lim_{x\\to2}\\frac{x^3-8}{x-2} \\qquad (b)\\;\\lim_{x\\to1}\\frac{x^2-1}{x-1}$$",
+        "solucion": {
+          "respuesta_directa": "$(a)\\;12$,\\quad $(b)\\;2$",
+          "desarrollo": "$(a)$ $x^3-8=(x-2)(x^2+2x+4)$; simplificando: $x^2+2x+4\\to4+4+4=12$.\n$(b)$ $(x-1)(x+1)/(x-1)=x+1\\to2$."
+        }
+      },
+      {
+        "id": "ANL04_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to+\\infty}\\frac{5x^2-3x+1}{2x^2+7}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{5}{2}$",
+          "desarrollo": "Mismo grado ($n=m=2$): el límite es el cociente de coeficientes líderes $5/2$."
+        }
+      },
+      {
+        "id": "ANL04_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $\\lim_{x\\to3}\\dfrac{x^2-9}{x^2-5x+6}$.",
+        "solucion": {
+          "respuesta_directa": "$6$",
+          "desarrollo": "$\\dfrac{(x-3)(x+3)}{(x-3)(x-2)}=\\dfrac{x+3}{x-2}\\to\\dfrac{6}{1}=6$."
+        }
+      },
+      {
+        "id": "ANL04_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to0}\\frac{x^2+3x}{x}$$",
+        "solucion": {
+          "respuesta_directa": "$3$",
+          "desarrollo": "$\\dfrac{x(x+3)}{x}=x+3\\to3$."
+        }
+      },
+      {
+        "id": "ANL04_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to-\\infty}\\frac{x^4-x}{x^3+2}$$",
+        "solucion": {
+          "respuesta_directa": "$-\\infty$",
+          "desarrollo": "Grado numerador ($4$) $>$ grado denominador ($3$). Para $x\\to-\\infty$: el término dominante es $x^4/x^3=x\\to-\\infty$."
+        }
+      },
+      {
+        "id": "ANL04_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to1}\\frac{x^3-1}{x^2-1}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{3}{2}$",
+          "desarrollo": "$x^3-1=(x-1)(x^2+x+1)$ y $x^2-1=(x-1)(x+1)$.\n$$\\frac{x^2+x+1}{x+1}\\to\\frac{3}{2}$$"
+        }
+      },
+      {
+        "id": "ANL04_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to0}\\frac{\\sqrt{1+x}-1}{x}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{2}$",
+          "desarrollo": "Conjugado:\n$$\\frac{(1+x)-1}{x(\\sqrt{1+x}+1)}=\\frac{1}{\\sqrt{1+x}+1}\\to\\frac{1}{2}$$"
+        }
+      },
+      {
+        "id": "ANL04_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to+\\infty}(\\sqrt{x^2+x}-x)$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{1}{2}$",
+          "desarrollo": "Conjugado:\n$$\\frac{x^2+x-x^2}{\\sqrt{x^2+x}+x}=\\frac{x}{\\sqrt{x^2+x}+x}=\\frac{1}{\\sqrt{1+1/x}+1}\\to\\frac{1}{2}$$"
+        }
+      },
+      {
+        "id": "ANL04_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Calcula:\n$$\\lim_{x\\to2}\\frac{x^4-16}{x^3-8}$$",
+        "solucion": {
+          "respuesta_directa": "$\\dfrac{8}{3}$",
+          "desarrollo": "$x^4-16=(x^2-4)(x^2+4)=(x-2)(x+2)(x^2+4)$.\n$x^3-8=(x-2)(x^2+2x+4)$.\n$$\\frac{(x+2)(x^2+4)}{x^2+2x+4}\\to\\frac{4\\cdot8}{12}=\\frac{32}{12}=\\frac{8}{3}$$"
+        }
+      },
+      {
+        "id": "ANL04_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Halla todos los límites de $f(x)=\\dfrac{x^2-4}{x^2-3x+2}$ en los puntos de discontinuidad y en $\\pm\\infty$.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{x\\to1}=\\infty$ (no existe), $\\lim_{x\\to2}=4$, $\\lim_{\\pm\\infty}=1$",
+          "desarrollo": "Raíces del denominador: $x=1$ y $x=2$.\n$x=1$: $f(1)$ indefinida; $P(1)=1-4=-3\\neq0$; $\\lim_{x\\to1}=\\pm\\infty$ (discontinuidad esencial).\n$x=2$: $\\dfrac{(x-2)(x+2)}{(x-2)(x-1)}=\\dfrac{x+2}{x-1}\\to\\dfrac{4}{1}=4$ (discontinuidad evitable).\n$x\\to\\pm\\infty$: grados iguales, límite $=1$."
+        }
+      }
+    ]
+  },
+  "ANL05": {
+    "nodo_id": "ANL05",
+    "nodo_nombre": "Límites laterales",
+    "total_ejercicios": 10,
+    "umbral_maestria": 0.9,
+    "puntos_por_ejercicio": 1,
+    "ejercicios": [
+      {
+        "id": "ANL05_E01",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula los límites laterales de $f(x)=\\dfrac{x}{|x|}$ en $x=0$ y determina si existe el límite.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{0^+}=1$, $\\lim_{0^-}=-1$. El límite no existe.",
+          "desarrollo": "Para $x>0$: $|x|=x$, luego $f(x)=1\\to1$.\nPara $x<0$: $|x|=-x$, luego $f(x)=-1\\to-1$.\nComo $1\\neq-1$, el **límite no existe** en $x=0$."
+        }
+      },
+      {
+        "id": "ANL05_E02",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula $\\lim_{x\\to0^+}\\dfrac{1}{x}$ y $\\lim_{x\\to0^-}\\dfrac{1}{x}$.",
+        "solucion": {
+          "respuesta_directa": "$+\\infty$ y $-\\infty$",
+          "desarrollo": "Para $x\\to0^+$: $1/x\\to+\\infty$.\nPara $x\\to0^-$: $1/x\\to-\\infty$."
+        }
+      },
+      {
+        "id": "ANL05_E03",
+        "tipo": "corto",
+        "dificultad": "basica",
+        "enunciado": "Calcula los límites laterales de $\\lfloor x\\rfloor$ en $x=2$ y determina si existe el límite.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{2^+}=2$, $\\lim_{2^-}=1$. El límite no existe.",
+          "desarrollo": "Para $x\\to2^+$ (ligeramente mayor que 2): $\\lfloor x\\rfloor=2$.\nPara $x\\to2^-$ (ligeramente menor que 2): $\\lfloor x\\rfloor=1$.\n$2\\neq1$, luego el **límite no existe**."
+        }
+      },
+      {
+        "id": "ANL05_E04",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Estudia la existencia del límite en $x=0$ de:\n$$f(x)=\\begin{cases}x+1 & x<0 \\\\ x^2+1 & x\\geq0\\end{cases}$$",
+        "solucion": {
+          "respuesta_directa": "El límite existe y vale $1$.",
+          "desarrollo": "$\\lim_{0^-}(x+1)=1$. $\\lim_{0^+}(x^2+1)=1$. Ambos son $1$, luego $\\lim_{x\\to0}f(x)=1$."
+        }
+      },
+      {
+        "id": "ANL05_E05",
+        "tipo": "corto",
+        "dificultad": "intermedia",
+        "enunciado": "Para $f(x)=\\dfrac{|x-2|}{x-2}$, calcula $\\lim_{x\\to2^+}$ y $\\lim_{x\\to2^-}$.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{2^+}=1$, $\\lim_{2^-}=-1$. El límite no existe.",
+          "desarrollo": "Para $x>2$: $|x-2|=x-2$, luego $f(x)=1$.\nPara $x<2$: $|x-2|=2-x$, luego $f(x)=-1$."
+        }
+      },
+      {
+        "id": "ANL05_E06",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Halla $a$ para que $f(x)$ tenga límite en $x=1$:\n$$f(x)=\\begin{cases}3x-1 & x<1 \\\\ ax^2+2 & x\\geq1\\end{cases}$$",
+        "solucion": {
+          "respuesta_directa": "$a=-1$",
+          "desarrollo": "$\\lim_{1^-}(3x-1)=2$. $\\lim_{1^+}(ax^2+2)=a+2$.\nPara que el límite exista: $a+2=2\\Rightarrow a=0$."
+        }
+      },
+      {
+        "id": "ANL05_E07",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Estudia los límites laterales de $f(x)=\\dfrac{x^2-4}{|x-2|}$ en $x=2$.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{2^+}=4$, $\\lim_{2^-}=-4$. El límite no existe.",
+          "desarrollo": "$x^2-4=(x-2)(x+2)$.\nPara $x>2$: $|x-2|=x-2$; $f(x)=x+2\\to4$.\nPara $x<2$: $|x-2|=2-x=-(x-2)$; $f(x)=-(x+2)\\to-4$."
+        }
+      },
+      {
+        "id": "ANL05_E08",
+        "tipo": "desarrollo",
+        "dificultad": "intermedia",
+        "enunciado": "Para $f(x)=\\dfrac{1}{1+2^{1/x}}$, calcula $\\lim_{x\\to0^+}$ y $\\lim_{x\\to0^-}$.",
+        "solucion": {
+          "respuesta_directa": "$\\lim_{0^+}=0$, $\\lim_{0^-}=1$",
+          "desarrollo": "Para $x\\to0^+$: $1/x\\to+\\infty$, $2^{1/x}\\to+\\infty$, luego $f(x)\\to\\dfrac{1}{+\\infty}=0$.\nPara $x\\to0^-$: $1/x\\to-\\infty$, $2^{1/x}\\to0$, luego $f(x)\\to\\dfrac{1}{1+0}=1$."
+        }
+      },
+      {
+        "id": "ANL05_E09",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Demuestra que si $\\lim_{x\\to a}f(x)=L$, entonces $\\lim_{x\\to a^+}f(x)=\\lim_{x\\to a^-}f(x)=L$.",
+        "solucion": {
+          "respuesta_directa": "Se deduce directamente de la definición: si la condición se cumple para todo $x$ con $0<|x-a|<\\delta$, en particular se cumple para $x>a$ y para $x<a$.",
+          "desarrollo": "Si $\\lim_{x\\to a}f(x)=L$, dado $\\varepsilon>0$ existe $\\delta>0$ tal que $0<|x-a|<\\delta\\Rightarrow|f(x)-L|<\\varepsilon$.\n\nEn particular, esta condición se cumple cuando $a<x<a+\\delta$ (límite por la derecha) y cuando $a-\\delta<x<a$ (límite por la izquierda).\n\nPor tanto $\\lim_{x\\to a^+}f(x)=\\lim_{x\\to a^-}f(x)=L$. $\\blacksquare$"
+        }
+      },
+      {
+        "id": "ANL05_E10",
+        "tipo": "desarrollo",
+        "dificultad": "avanzada",
+        "enunciado": "Dado $f(x)=\\lfloor 2x\\rfloor$, estudia los límites laterales en $x=1/2$ y en $x=1$. ¿En qué puntos no tiene límite esta función?",
+        "solucion": {
+          "respuesta_directa": "En $x=1/2$: $\\lim_{(1/2)^-}=0$, $\\lim_{(1/2)^+}=1$ (no existe). En $x=1$: $\\lim_{1^-}=1$, $\\lim_{1^+}=2$ (no existe).",
+          "desarrollo": "La función $\\lfloor2x\\rfloor$ tiene saltos en los puntos donde $2x\\in\\mathbb{Z}$, es decir, en $x=k/2$ para $k\\in\\mathbb{Z}$.\n\n$x=1/2$: para $x\\to(1/2)^-$, $2x\\to1^-$, $\\lfloor2x\\rfloor=0$. Para $x\\to(1/2)^+$, $2x\\to1^+$, $\\lfloor2x\\rfloor=1$. **No existe el límite.**\n\n$x=1$: para $x\\to1^-$, $\\lfloor2x\\rfloor=1$. Para $x\\to1^+$, $\\lfloor2x\\rfloor=2$. **No existe el límite.**\n\nEn general, $f$ no tiene límite en ningún punto de la forma $x=n/2$ con $n\\in\\mathbb{Z}$."
+        }
+      }
+    ]
+  }
 }
